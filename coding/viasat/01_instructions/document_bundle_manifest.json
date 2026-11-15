@@ -1,0 +1,96 @@
+{
+ "items": [
+  {
+   "file": "01_eurepoc_1514.txt",
+   "text_sha256": "605e777c0ff827bd8d596c25fef87dd9fa8c9b41b88b049e36bf73e75d202aa1"
+  },
+  {
+   "file": "02_orkl_06ffedd8.txt",
+   "text_sha256": "50e7a7307e4ce902b8c6d03231b9c2c1f5f21d7006bb86a45e3a7efe1069581a"
+  },
+  {
+   "file": "03_orkl_9bb5eb63.txt",
+   "text_sha256": "d50ca96b81bae4fdb6735f6abd67fb81d44fb65d63dbcb6da44df985bf54313b"
+  },
+  {
+   "file": "04_orkl_a097c1ac.txt",
+   "text_sha256": "4cc3a0632b3466fc3450c22bbba770ab55f40d1384af26ee41e9b348d03f9338"
+  },
+  {
+   "file": "05_orkl_4d2199c5.txt",
+   "text_sha256": "fd0b48a7b472898337e56ab5e63ce315365e42a848ac2a5793fc727bb0e6753d"
+  },
+  {
+   "file": "06_orkl_8e8f2355.txt",
+   "text_sha256": "5055468a5f436bd1a060d8706aa14295a1ee4978cca2a90ad092f6e3cdc90dec"
+  },
+  {
+   "file": "07_orkl_4e0707bd.txt",
+   "text_sha256": "087b1f3472ce570bf3c3e194962d892b92bade52ec7a3e6481ca143b0b3fc6ef"
+  },
+  {
+   "file": "08_orkl_80592130.txt",
+   "text_sha256": "b63672b84d1a4a1e5db7cdd75471d4e8adba818a73fa7e9d863e4bcea9817469"
+  },
+  {
+   "file": "09_orkl_ba259eb4.txt",
+   "text_sha256": "ee7162cad607f0e287a1aa89f8084957a0d5f55e0b9f74d75a48a47eec1d6067"
+  },
+  {
+   "file": "10_orkl_a2975eaf.txt",
+   "text_sha256": "828d2d9831cb5d1d60f20626231d4bbe6583d2ef818f670f8ffecd13c2383c5a"
+  },
+  {
+   "file": "11_viasat_2022-03-30.txt",
+   "text_sha256": "4b7af693237876bc76b482923331c394cd0b8f07758967f6d6fdd6156f30dcf8"
+  },
+  {
+   "file": "12_eu_hr_2022-05-10.txt",
+   "text_sha256": "22848d497006f9e321939d7e563eaf64e17f0fc1de231b60cea03c300c92c7f3"
+  },
+  {
+   "file": "13_us_state_2022-05-10.txt",
+   "text_sha256": "7f39f4d47d577bf001801ee1220909533b10e786411d140f94ee0ef37a1375b9"
+  },
+  {
+   "file": "14_uk_ncsc_2022-05-10.txt",
+   "text_sha256": "80479107d68e361979c57bf67cd53f608190ef8fd5d39f35c819ea1b1b6b5699"
+  },
+  {
+   "file": "15_uk_fcdo_2022-05-10.txt",
+   "text_sha256": "4a78a9533c4b59b6b780009eb5a8742050af0c342991343bc5d25fdf145b3dab"
+  },
+  {
+   "file": "16_s1_acidrain_2022-03-31.txt",
+   "text_sha256": "76a026cfaec176ac79bfaccc928f5f015f175db033678c355008d54f85813aa1"
+  },
+  {
+   "file": "17_orkl_bf272245.txt",
+   "text_sha256": "57b71ba5a967fc29809c9aac91ee161d1847d6e76567cfe06b45da6a379630fd"
+  },
+  {
+   "file": "18_orkl_2d804484.txt",
+   "text_sha256": "d05fa31222dcbac4cabc18d683f77aae243bc733afdf1af33546ef36df422f57"
+  },
+  {
+   "file": "19_orkl_74f570fc.txt",
+   "text_sha256": "5d74ffe5a0d508e843eb2c4bdb83989e0d2b4fc21c0e4629385660926f74da47"
+  },
+  {
+   "file": "20_orkl_5ad57873.txt",
+   "text_sha256": "b77bc2722c1a23c90d7e4df8ba3c29e39aa2d4a46e8aaf181dd551525e9fc688"
+  },
+  {
+   "file": "21_orkl_3fb76771.txt",
+   "text_sha256": "cae60af2f83f0ed4c01789714bbc6042dd5a7e0627f3251987841c9ed335f242"
+  },
+  {
+   "file": "22_orkl_572fe6bb.txt",
+   "text_sha256": "7907ce9c67824986f37610d341de1d148ee392bfa22aad01802de86ed6aa121e"
+  },
+  {
+   "file": "23_orkl_7a676c83.txt",
+   "text_sha256": "8e62b826cab5bd67d24ff8973322acb2bcb139f0378a521da44abb95ca2a360a"
+  }
+ ]
+}

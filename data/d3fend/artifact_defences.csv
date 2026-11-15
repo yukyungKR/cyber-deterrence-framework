@@ -1,0 +1,1339 @@
+artifact,via_artifact,via_artifact_label,relation,defensive_technique,defensive_technique_label,d3fend_id,tactics
+d3f:AccessControlConfiguration,d3f:AccessControlConfiguration,Access Control Configuration,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:AccessControlConfiguration,d3f:AccessControlConfiguration,Access Control Configuration,maps,d3f:NetworkTrafficPolicyMapping,Network Traffic Policy Mapping,D3-NTPM,Model
+d3f:AccessControlConfiguration,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:AccessControlConfiguration,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:AccessToken,d3f:AccessToken,Access Token,strengthens,d3f:TokenBinding,Token Binding,D3-TB,Harden
+d3f:AccessToken,d3f:AccessToken,Access Token,uses,d3f:Token-basedAuthentication,Token-based Authentication,D3-TBA,Harden
+d3f:AccessToken,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:AccessToken,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:AccessToken,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:AccessToken,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:AccessToken,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:AccessToken,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:AccessToken,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:AccessToken,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:AccessToken,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:AdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:ApplicationConfiguration,d3f:ApplicationConfiguration,Application Configuration,configures,d3f:DisableRemoteAccess,Disable Remote Access,D3-DRA,Harden
+d3f:ApplicationConfiguration,d3f:ApplicationConfiguration,Application Configuration,hardens,d3f:ApplicationConfigurationHardening,Application Configuration Hardening,D3-ACH,Harden
+d3f:ApplicationConfiguration,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:ApplicationConfiguration,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:ApplicationConfigurationDatabase,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:ApplicationConfigurationDatabase,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:ApplicationConfigurationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ApplicationConfigurationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ApplicationConfigurationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ApplicationConfigurationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ApplicationConfigurationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ApplicationConfigurationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ApplicationConfigurationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ApplicationConfigurationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ApplicationConfigurationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ApplicationConfigurationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ApplicationConfigurationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ArchiveFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ArchiveFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ArchiveFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ArchiveFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ArchiveFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ArchiveFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ArchiveFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ArchiveFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ArchiveFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ArchiveFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ArchiveFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:AudioInputDevice,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:AudioInputDevice,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:AudioInputDevice,d3f:InputDevice,Input Device,analyzes,d3f:InputDeviceAnalysis,Input Device Analysis,D3-IDA,Detect
+d3f:AudioInputDevice,d3f:InputDevice,Input Device,filters,d3f:IOPortRestriction,IO Port Restriction,D3-IOPR,Isolate
+d3f:AuthenticationLog,d3f:EventLog,Event Log,monitors,d3f:OperationalProcessMonitoring,Operational Process Monitoring,D3-OPM,Detect
+d3f:AuthenticationLog,d3f:Log,Log,monitors,d3f:ApplicationExceptionMonitoring,Application Exception Monitoring,D3-AEM,Detect
+d3f:AuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:AuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:AuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:AuthenticationService,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:AuthenticationService,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:AuthenticationService,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:AuthenticationService,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:AuthenticationService,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:AuthenticationService,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:AuthenticationService,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:AuthenticationService,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:AuthenticationService,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:BootLoader,d3f:BootLoader,Boot Loader,authenticates,d3f:BootloaderAuthentication,Bootloader Authentication,D3-BA,Harden
+d3f:BootLoader,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:BootLoader,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:BootLoader,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:BootLoader,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:Browser,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Browser,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Browser,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Browser,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:BrowserExtension,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:BrowserExtension,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:BrowserExtension,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:BrowserExtension,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:Certificate,d3f:Certificate,Certificate,hardens,d3f:CertificatePinning,Certificate Pinning,D3-CP,Harden
+d3f:Certificate,d3f:Certificate,Certificate,reads,d3f:Certificate-basedAuthentication,Certificate-based Authentication,D3-CBAN,Harden
+d3f:Certificate,d3f:Certificate,Certificate,regenerates,d3f:CertificateRotation,Certificate Rotation,D3-CERO,Harden
+d3f:CertificateFile,d3f:CertificateFile,Certificate File,analyzes,d3f:CertificateAnalysis,Certificate Analysis,D3-CA,Detect
+d3f:CertificateFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:CertificateFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:CertificateFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:CertificateFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:CertificateFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:CertificateFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:CertificateFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:CertificateFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:CertificateFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:CertificateFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:CertificateFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ClientApplication,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:ClientApplication,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:ClientApplication,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:ClientApplication,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:CloudConfiguration,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:CloudConfiguration,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:CloudInstanceMetadata,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:CloudInstanceMetadata,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:CloudStorage,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:CloudStorage,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:CloudStorage,d3f:SecondaryStorage,Secondary Storage,erases,d3f:DiskErasure,Disk Erasure,D3-DKE,Evict
+d3f:CloudStorage,d3f:SecondaryStorage,Secondary Storage,hardens,d3f:Hardware-basedWriteProtection,Hardware-based Write Protection,D3-HBWP,Harden
+d3f:CloudStorage,d3f:SecondaryStorage,Secondary Storage,modifies,d3f:DiskFormatting,Disk Formatting,D3-DKF,Evict
+d3f:CloudStorage,d3f:Storage,Storage,encrypts,d3f:DiskEncryption,Disk Encryption,D3-DENCR,Harden
+d3f:CloudUserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:CloudUserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:CloudUserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:CloudUserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:CloudUserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:CloudUserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:CloudUserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:CodeRepository,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:CodeRepository,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:CommandHistoryLog,d3f:EventLog,Event Log,monitors,d3f:OperationalProcessMonitoring,Operational Process Monitoring,D3-OPM,Detect
+d3f:CommandHistoryLog,d3f:Log,Log,monitors,d3f:ApplicationExceptionMonitoring,Application Exception Monitoring,D3-AEM,Detect
+d3f:CommandHistoryLogFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:CommandHistoryLogFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:CommandHistoryLogFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:CommandHistoryLogFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:CommandHistoryLogFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:CommandHistoryLogFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:CommandHistoryLogFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:CommandHistoryLogFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:CommandHistoryLogFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:CommandHistoryLogFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:CommandHistoryLogFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:Compiler,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Compiler,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Compiler,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Compiler,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:CompilerConfigurationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:CompilerConfigurationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:CompilerConfigurationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:CompilerConfigurationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:CompilerConfigurationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:CompilerConfigurationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:CompilerConfigurationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:CompilerConfigurationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:CompilerConfigurationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:CompilerConfigurationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:CompilerConfigurationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ConfigurationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ConfigurationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ConfigurationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ConfigurationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ConfigurationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ConfigurationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ConfigurationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ConfigurationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ConfigurationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ConfigurationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ConfigurationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ConfigurationResource,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:ConfigurationResource,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:ContainerImage,d3f:ContainerImage,Container Image,analyzes,d3f:ContainerImageAnalysis,Container Image Analysis,D3-CIA,Model
+d3f:ControlServer,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:ControlServer,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:ControlServer,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:ControlServer,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:ControlServer,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:ControlServer,d3f:OTController,OT Controller,hardens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:CopyToken,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:CopyToken,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:CreateFile,d3f:CreateFile,Create File,analyzes,d3f:FileCreationAnalysis,File Creation Analysis,D3-FCA,Detect
+d3f:CreateFile,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:CreateFile,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:CreateProcess,d3f:CreateProcess,Create Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:CreateProcess,d3f:CreateProcess,Create Process,filters,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:CreateProcess,d3f:CreateProcess,Create Process,filters,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:CreateProcess,d3f:CreateProcess,Create Process,restricts,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:CreateProcess,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:CreateProcess,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:CreateSocket,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:CreateSocket,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:CreateThread,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:CreateThread,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:Credential,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:Credential,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:Credential,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:Credential,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:Credential,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:Credential,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:Credential,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:Credential,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:Credential,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:CredentialManagementSystem,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:CredentialManagementSystem,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:CredentialManagementSystem,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:CredentialManagementSystem,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:CredentialManagementSystem,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:CustomArchiveFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:CustomArchiveFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:CustomArchiveFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:CustomArchiveFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:CustomArchiveFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:CustomArchiveFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:CustomArchiveFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:CustomArchiveFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:CustomArchiveFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:CustomArchiveFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:CustomArchiveFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:DHCPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:DNSLookup,d3f:DNSLookup,DNS Lookup,may-contain,d3f:DNSTrafficAnalysis,DNS Traffic Analysis,D3-DNSTA,Detect
+d3f:DatabaseFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:DatabaseFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:DatabaseFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:DatabaseFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:DatabaseFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:DatabaseFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:DatabaseFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:DatabaseFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:DatabaseFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:DatabaseFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:DatabaseFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:DatabaseQuery,d3f:DatabaseQuery,Database Query,analyzes,d3f:DatabaseQueryStringAnalysis,Database Query String Analysis,D3-DQSA,Detect
+d3f:DecoyArtifact,d3f:DecoyArtifact,Decoy Artifact,manages,d3f:DecoyEnvironment,Decoy Environment,D3-DE,Deceive
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:DefaultUserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:DigitalCamera,d3f:DigitalCamera,Digital Camera,monitors,d3f:VideoSurveillance,Video Surveillance,D3-VS,Detect
+d3f:DigitalCamera,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:DigitalCamera,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:Directory,d3f:Directory,Directory,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:DirectoryService,d3f:DirectoryService,Directory Service,restricts,d3f:DomainTrustPolicy,Domain Trust Policy,D3-DTP,Isolate
+d3f:DirectoryService,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:DirectoryService,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:DirectoryService,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:DirectoryService,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:DirectoryService,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:DirectoryService,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:DirectoryService,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:DirectoryService,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:DirectoryService,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:DirectoryService,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:DirectoryService,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:DirectoryService,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:DomainUserAccount,d3f:DomainUserAccount,Domain User Account,monitors,d3f:DomainAccountMonitoring,Domain Account Monitoring,D3-DAM,Detect
+d3f:DomainUserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:DomainUserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:DomainUserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:DomainUserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:DomainUserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:DomainUserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:DomainUserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:Email,d3f:DocumentFile,Document File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:Email,d3f:DocumentFile,Document File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:Email,d3f:DocumentFile,Document File,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:Email,d3f:Email,Email,analyzes,d3f:HomoglyphDetection,Homoglyph Detection,D3-HD,Detect
+d3f:Email,d3f:Email,Email,analyzes,d3f:SenderMTAReputationAnalysis,Sender MTA Reputation Analysis,D3-SMRA,Detect
+d3f:Email,d3f:Email,Email,analyzes,d3f:SenderReputationAnalysis,Sender Reputation Analysis,D3-SRA,Detect
+d3f:Email,d3f:Email,Email,deletes,d3f:EmailRemoval,Email Removal,D3-ER,Evict
+d3f:Email,d3f:Email,Email,filters,d3f:EmailFiltering,Email Filtering,D3-EF,Isolate
+d3f:Email,d3f:Email,Email,restores,d3f:RestoreEmail,Restore Email,D3-RE,Restore
+d3f:Email,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:Email,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:Email,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:Email,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:Email,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:Email,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:Email,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:Email,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:Email,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:Email,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:Email,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:EmailRule,d3f:ApplicationConfiguration,Application Configuration,configures,d3f:DisableRemoteAccess,Disable Remote Access,D3-DRA,Harden
+d3f:EmailRule,d3f:ApplicationConfiguration,Application Configuration,hardens,d3f:ApplicationConfigurationHardening,Application Configuration Hardening,D3-ACH,Harden
+d3f:EmailRule,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:EmailRule,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:EncryptedCredential,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:EncryptedCredential,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:EncryptedCredential,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:EncryptedCredential,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:EncryptedCredential,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:EncryptedCredential,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:EncryptedCredential,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:EncryptedCredential,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:EncryptedCredential,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:EventLog,d3f:EventLog,Event Log,monitors,d3f:OperationalProcessMonitoring,Operational Process Monitoring,D3-OPM,Detect
+d3f:EventLog,d3f:Log,Log,monitors,d3f:ApplicationExceptionMonitoring,Application Exception Monitoring,D3-AEM,Detect
+d3f:ExecutableBinary,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:ExecutableBinary,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:ExecutableBinary,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:ExecutableBinary,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:ExecutableBinary,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ExecutableBinary,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ExecutableBinary,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ExecutableBinary,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ExecutableBinary,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ExecutableBinary,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ExecutableBinary,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ExecutableBinary,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ExecutableBinary,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ExecutableBinary,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ExecutableBinary,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ExecutableFile,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:ExecutableFile,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:ExecutableFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:ExecutableFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:ExecutableFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ExecutableFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ExecutableFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ExecutableFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ExecutableFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ExecutableFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ExecutableFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ExecutableFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ExecutableFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ExecutableFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ExecutableFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:ExecutableScript,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:ExecutableScript,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:ExecutableScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:ExecutableScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:ExecutableScript,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ExecutableScript,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ExecutableScript,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ExecutableScript,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ExecutableScript,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ExecutableScript,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ExecutableScript,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ExecutableScript,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ExecutableScript,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ExecutableScript,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ExecutableScript,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:File,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:File,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:File,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:File,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:File,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:File,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:File,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:File,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:File,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:File,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:File,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:Firewall,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:Firewall,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:Firewall,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:Firewall,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:Firmware,d3f:Firmware,Firmware,analyzes,d3f:FirmwareBehaviorAnalysis,Firmware Behavior Analysis,D3-FBA,Detect
+d3f:Firmware,d3f:Firmware,Firmware,analyzes,d3f:FirmwareEmbeddedMonitoringCode,Firmware Embedded Monitoring Code,D3-FEMC,Detect
+d3f:Firmware,d3f:Firmware,Firmware,verifies,d3f:FirmwareVerification,Firmware Verification,D3-FV,Detect
+d3f:Firmware,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Firmware,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Firmware,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Firmware,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:GetOpenSockets,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetOpenSockets,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetOpenWindows,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetOpenWindows,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetRunningProcesses,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetRunningProcesses,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetScreenCapture,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetScreenCapture,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetSystemConfigValue,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetSystemConfigValue,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetSystemNetworkConfigValue,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetSystemNetworkConfigValue,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GetSystemTime,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:GetSystemTime,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:GlobalUserAccount,d3f:DomainUserAccount,Domain User Account,monitors,d3f:DomainAccountMonitoring,Domain Account Monitoring,D3-DAM,Detect
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:GlobalUserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:GroupPolicy,d3f:AccessControlConfiguration,Access Control Configuration,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:GroupPolicy,d3f:AccessControlConfiguration,Access Control Configuration,maps,d3f:NetworkTrafficPolicyMapping,Network Traffic Policy Mapping,D3-NTPM,Model
+d3f:GroupPolicy,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:GroupPolicy,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:HMIApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:HMIApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:HMIApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:HMIApplicationProcess,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:HMIApplicationProcess,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:HMIApplicationProcess,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:HMIApplicationProcess,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:HMIApplicationProcess,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:HMIApplicationProcess,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:HMIApplicationProcess,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:HMIApplicationProcess,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:HardwareDevice,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:HardwareDevice,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:Host,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:Host,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:Host,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:Host,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:Host,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:IOModule,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:IOModule,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:IOModule,d3f:IOModule,I/O Module,isolates,d3f:IOPortRestriction,IO Port Restriction,D3-IOPR,Isolate
+d3f:In-memoryPasswordStore,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:In-memoryPasswordStore,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:InboundInternetMailTraffic,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic,analyzes,d3f:InboundSessionVolumeAnalysis,Inbound Session Volume Analysis,D3-ISVA,Detect
+d3f:InboundInternetMailTraffic,d3f:InboundNetworkTraffic,Inbound Network Traffic,filters,d3f:InboundTrafficFiltering,Inbound Traffic Filtering,D3-ITF,Isolate
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:InboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:InboundInternetNetworkTraffic,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic,analyzes,d3f:InboundSessionVolumeAnalysis,Inbound Session Volume Analysis,D3-ISVA,Detect
+d3f:InboundInternetNetworkTraffic,d3f:InboundNetworkTraffic,Inbound Network Traffic,filters,d3f:InboundTrafficFiltering,Inbound Traffic Filtering,D3-ITF,Isolate
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:InboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:InternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic,analyzes,d3f:AdministrativeNetworkActivityAnalysis,Administrative Network Activity Analysis,D3-ANAA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetAdministrativeNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetFileTransferTraffic,d3f:FileTransferNetworkTraffic,File Transfer Network Traffic,analyzes,d3f:FileCarving,File Carving,D3-FC,Detect
+d3f:IntranetFileTransferTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:IntranetIPCNetworkTraffic,Intranet IPC Network Traffic,analyzes,d3f:IPCTrafficAnalysis,IPC Traffic Analysis,D3-IPCTA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetIPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetMulticastNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetNetworkTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:IntranetWebNetworkTraffic,d3f:IntranetNetworkTraffic,Intranet Network Traffic,analyzes,d3f:ConnectionAttemptAnalysis,Connection Attempt Analysis,D3-CAA,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:IntranetWebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:JobSchedule,d3f:JobSchedule,Job Schedule,analyzes,d3f:ScheduledJobAnalysis,Scheduled Job Analysis,D3-SJA,Detect
+d3f:KerberosTicket,d3f:AccessToken,Access Token,strengthens,d3f:TokenBinding,Token Binding,D3-TB,Harden
+d3f:KerberosTicket,d3f:AccessToken,Access Token,uses,d3f:Token-basedAuthentication,Token-based Authentication,D3-TBA,Harden
+d3f:KerberosTicket,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:KerberosTicket,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:KerberosTicket,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:KerberosTicket,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:KerberosTicket,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:KerberosTicket,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:KerberosTicket,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:KerberosTicket,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:KerberosTicket,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:KerberosTicketGrantingTicket,d3f:AccessToken,Access Token,strengthens,d3f:TokenBinding,Token Binding,D3-TB,Harden
+d3f:KerberosTicketGrantingTicket,d3f:AccessToken,Access Token,uses,d3f:Token-basedAuthentication,Token-based Authentication,D3-TBA,Harden
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:KerberosTicketGrantingTicket,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:Kernel,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Kernel,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Kernel,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Kernel,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:KernelModule,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:KernelModule,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:KernelModule,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:KernelModule,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:KernelModule,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:KernelModule,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:KernelModule,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:KernelModule,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:KernelModule,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:KernelModule,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:KernelModule,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:KeyboardInputDevice,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:KeyboardInputDevice,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:KeyboardInputDevice,d3f:InputDevice,Input Device,analyzes,d3f:InputDeviceAnalysis,Input Device Analysis,D3-IDA,Detect
+d3f:KeyboardInputDevice,d3f:InputDevice,Input Device,filters,d3f:IOPortRestriction,IO Port Restriction,D3-IOPR,Isolate
+d3f:LegacySystem,d3f:DigitalSystem,Digital System,evaluates,d3f:SystemVulnerabilityAssessment,System Vulnerability Assessment,D3-SYSVA,Model
+d3f:LocalUserAccount,d3f:LocalUserAccount,Local User Account,analyzes,d3f:LocalAccountMonitoring,Local Account Monitoring,D3-LAM,Detect
+d3f:LocalUserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:LocalUserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:LocalUserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:LocalUserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:LocalUserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:LocalUserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:LocalUserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:Log,d3f:Log,Log,monitors,d3f:ApplicationExceptionMonitoring,Application Exception Monitoring,D3-AEM,Detect
+d3f:LoginSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:MacOSKeychain,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:MacOSKeychain,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:MailServer,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:MailServer,d3f:MailServer,Mail Server,may-access,d3f:EmailRemoval,Email Removal,D3-ER,Evict
+d3f:MailServer,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:MailServer,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:MailServer,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:MailServer,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:MessageTransferAgent,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:MessageTransferAgent,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:MessageTransferAgent,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:MessageTransferAgent,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:MessageTransferAgent,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:MessageTransferAgent,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:MessageTransferAgent,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:MessageTransferAgent,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:MessageTransferAgent,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:MessageTransferAgent,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:MessageTransferAgent,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:MessageTransferAgent,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:MicrosoftHTMLApplication,d3f:DocumentFile,Document File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:MicrosoftHTMLApplication,d3f:DocumentFile,Document File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:MicrosoftHTMLApplication,d3f:DocumentFile,Document File,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:MicrosoftHTMLApplication,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:MicrosoftHTMLApplication,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:MicrosoftHTMLApplication,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:MicrosoftHTMLApplication,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:MicrosoftHTMLApplication,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:MicrosoftHTMLApplication,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:MicrosoftHTMLApplication,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:MicrosoftHTMLApplication,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:MicrosoftHTMLApplication,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:MicrosoftHTMLApplication,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:MicrosoftHTMLApplication,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:MoveFile,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:MoveFile,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:NetworkFileShareResource,d3f:NetworkResource,Network Resource,isolates,d3f:NetworkResourceAccessMediation,Network Resource Access Mediation,D3-NRAM,Isolate
+d3f:NetworkFileShareResource,d3f:NetworkResource,Network Resource,spoofs,d3f:DecoyNetworkResource,Decoy Network Resource,D3-DNR,Deceive
+d3f:NetworkInitScriptFileResource,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:NetworkInitScriptFileResource,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:NetworkInitScriptFileResource,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:NetworkInitScriptFileResource,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:NetworkInitScriptFileResource,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:NetworkInitScriptFileResource,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:NetworkInitScriptFileResource,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:NetworkInitScriptFileResource,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:NetworkInitScriptFileResource,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:NetworkInitScriptFileResource,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:NetworkInitScriptFileResource,d3f:NetworkResource,Network Resource,isolates,d3f:NetworkResourceAccessMediation,Network Resource Access Mediation,D3-NRAM,Isolate
+d3f:NetworkInitScriptFileResource,d3f:NetworkResource,Network Resource,spoofs,d3f:DecoyNetworkResource,Decoy Network Resource,D3-DNR,Deceive
+d3f:NetworkResource,d3f:NetworkResource,Network Resource,isolates,d3f:NetworkResourceAccessMediation,Network Resource Access Mediation,D3-NRAM,Isolate
+d3f:NetworkResource,d3f:NetworkResource,Network Resource,spoofs,d3f:DecoyNetworkResource,Decoy Network Resource,D3-DNR,Deceive
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:NetworkServiceApplicationProcess,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:NetworkServiceApplicationProcess,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:NetworkSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:NetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OTChangeControlProgramCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTChangeControlProgramCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTChangeControlProgramCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTChangeDataCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTChangeDataCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTChangeDataCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTChangeDataCommand,d3f:OTWriteCommand,OT Write Command,restricts,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:OTControlCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTControlCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTControlCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTControlLogicProcess,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:OTControlLogicProcess,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:OTControlLogicProcess,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:OTControlLogicProcess,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:OTControlLogicProcess,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:OTControlLogicProcess,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:OTControlLogicProcess,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:OTControlLogicProcess,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:OTControlLogicProcess,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:OTControlLogicProcess,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:OTControlLogicProcess,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:OTControlLogicProcess,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:OTControlProgram,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:OTControlProgram,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:OTControlProgram,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:OTControlProgram,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:OTControlProgram,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:OTControlVariable,d3f:OTLogicVariable,OT Logic Variable,limits,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:OTControllerOperatingMode,d3f:OTControllerOperatingMode,OT Controller Operating Mode,monitors,d3f:OperatingModeMonitoring,Operating Mode Monitoring,D3-OMM,Detect
+d3f:OTControllerOperatingMode,d3f:OTControllerOperatingMode,OT Controller Operating Mode,restricts,d3f:OperatingModeRestriction,Operating Mode Restriction,D3-OPR,Isolate
+d3f:OTDeleteDataCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDeleteDataCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDeleteDataCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDeleteDataCommand,d3f:OTWriteCommand,OT Write Command,restricts,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:OTDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDeviceConfigurationCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDeviceDescriptionMessage,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDeviceDescriptionMessage,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDeviceDescriptionMessage,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDeviceFirmwareCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDeviceFirmwareCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDeviceFirmwareCommand,d3f:OTDeviceFirmwareCommand,OT Device Firmware Command,detects,d3f:RemoteFirmwareUpdateMonitoring,Remote Firmware Update Monitoring,D3-RFUM,Detect
+d3f:OTDeviceFirmwareCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDeviceIdentificationMessage,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDeviceIdentificationMessage,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDeviceIdentificationMessage,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDiagnosticsMessage,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDiagnosticsMessage,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDiagnosticsMessage,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTDownloadControlProgramCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTDownloadControlProgramCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTDownloadControlProgramCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTEmbeddedComputer,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:OTEmbeddedComputer,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:OTEmbeddedComputer,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:OTEmbeddedComputer,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:OTEmbeddedComputer,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:OTEngineeringWorkstation,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:OTEngineeringWorkstation,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:OTEngineeringWorkstation,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:OTEngineeringWorkstation,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:OTEngineeringWorkstation,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:OTHumanMachineInterface,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:OTHumanMachineInterface,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:OTHumanMachineInterface,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:OTHumanMachineInterface,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:OTHumanMachineInterface,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:OTLogicVariable,d3f:OTLogicVariable,OT Logic Variable,limits,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:OTModeSwitch,d3f:ApplicationConfiguration,Application Configuration,configures,d3f:DisableRemoteAccess,Disable Remote Access,D3-DRA,Harden
+d3f:OTModeSwitch,d3f:ApplicationConfiguration,Application Configuration,hardens,d3f:ApplicationConfigurationHardening,Application Configuration Hardening,D3-ACH,Harden
+d3f:OTModeSwitch,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:OTModeSwitch,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:OTModifyControlProgramCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTModifyControlProgramCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTModifyControlProgramCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTModifyDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTModifyDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTModifyDeviceConfigurationCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTModifyDeviceOperatingModeCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTModifyDeviceOperatingModeCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTModifyDeviceOperatingModeCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OTNetworkTraffic,d3f:OTNetworkTraffic,OT Network Traffic,monitors,d3f:RemoteFirmwareUpdateMonitoring,Remote Firmware Update Monitoring,D3-RFUM,Detect
+d3f:OTProcessDataHistorian,d3f:OTProcessDataHistorian,OT Process Data Historian,uses,d3f:OperationalProcessMonitoring,Operational Process Monitoring,D3-OPM,Detect
+d3f:OTProcessDataHistorian,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:OTProcessDataHistorian,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:OTProcessDataHistorian,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:OTProcessDataHistorian,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:OTProcessVariable,d3f:OTLogicVariable,OT Logic Variable,limits,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:OTProtocolMessage,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTProtocolMessage,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTProtocolMessage,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTReadCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTReadCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTReadCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTReadDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTReadDeviceConfigurationCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTReadDeviceConfigurationCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTReadValueCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTReadValueCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTReadValueCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTSensor,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:OTSensor,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:OTWriteCommand,d3f:DigitalMessage,Digital Message,authenticates,d3f:MessageAuthentication,Message Authentication,D3-MAN,Harden
+d3f:OTWriteCommand,d3f:DigitalMessage,Digital Message,encrypts,d3f:MessageEncryption,Message Encryption,D3-MENCR,Harden
+d3f:OTWriteCommand,d3f:OTProtocolMessage,OT Protocol Message,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OTWriteCommand,d3f:OTWriteCommand,OT Write Command,restricts,d3f:OTVariableAccessRestriction,OT Variable Access Restriction,D3-OVAR,Isolate
+d3f:ObjectFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:ObjectFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:ObjectFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:ObjectFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:ObjectFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:ObjectFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:ObjectFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:ObjectFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:ObjectFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:ObjectFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:ObjectFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OfficeApplication,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:OfficeApplication,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:OfficeApplication,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:OfficeApplication,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:OfficeApplicationFile,d3f:DocumentFile,Document File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:OfficeApplicationFile,d3f:DocumentFile,Document File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:OfficeApplicationFile,d3f:DocumentFile,Document File,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:OfficeApplicationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OfficeApplicationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OfficeApplicationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OfficeApplicationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OfficeApplicationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OfficeApplicationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OfficeApplicationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OfficeApplicationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OfficeApplicationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OfficeApplicationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OfficeApplicationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemConfiguration,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:OperatingSystemConfiguration,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:OperatingSystemConfigurationComponent,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:OperatingSystemConfigurationComponent,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:OperatingSystemConfigurationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OperatingSystemConfigurationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OperatingSystemConfigurationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OperatingSystemConfigurationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OperatingSystemConfigurationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OperatingSystemConfigurationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OperatingSystemConfigurationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OperatingSystemConfigurationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OperatingSystemConfigurationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OperatingSystemConfigurationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OperatingSystemConfigurationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemConfigurationFile,d3f:OperatingSystemFile,Operating System File,analyzes,d3f:SystemFileAnalysis,System File Analysis,D3-SFA,Detect
+d3f:OperatingSystemExecutableFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OperatingSystemExecutableFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OperatingSystemExecutableFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OperatingSystemExecutableFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OperatingSystemExecutableFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OperatingSystemExecutableFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OperatingSystemExecutableFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OperatingSystemExecutableFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OperatingSystemExecutableFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OperatingSystemExecutableFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OperatingSystemExecutableFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemExecutableFile,d3f:OperatingSystemFile,Operating System File,analyzes,d3f:SystemFileAnalysis,System File Analysis,D3-SFA,Detect
+d3f:OperatingSystemFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OperatingSystemFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OperatingSystemFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OperatingSystemFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OperatingSystemFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OperatingSystemFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OperatingSystemFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OperatingSystemFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OperatingSystemFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OperatingSystemFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OperatingSystemFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemFile,d3f:OperatingSystemFile,Operating System File,analyzes,d3f:SystemFileAnalysis,System File Analysis,D3-SFA,Detect
+d3f:OperatingSystemLogFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OperatingSystemLogFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OperatingSystemLogFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OperatingSystemLogFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OperatingSystemLogFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OperatingSystemLogFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OperatingSystemLogFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OperatingSystemLogFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OperatingSystemLogFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OperatingSystemLogFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OperatingSystemLogFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemLogFile,d3f:OperatingSystemFile,Operating System File,analyzes,d3f:SystemFileAnalysis,System File Analysis,D3-SFA,Detect
+d3f:OperatingSystemProcess,d3f:OperatingSystemProcess,Operating System Process,monitors,d3f:SystemDaemonMonitoring,System Daemon Monitoring,D3-SDM,Detect
+d3f:OperatingSystemProcess,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:OperatingSystemProcess,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:OperatingSystemProcess,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:OperatingSystemProcess,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:OperatingSystemProcess,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:OperatingSystemProcess,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:OperatingSystemProcess,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:OperatingSystemProcess,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:OperatingSystemProcess,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:OperatingSystemProcess,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:OperatingSystemProcess,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:OperatingSystemSharedLibraryFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:OperatingSystemSharedLibraryFile,d3f:OperatingSystemFile,Operating System File,analyzes,d3f:SystemFileAnalysis,System File Analysis,D3-SFA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:DNSNetworkTraffic,DNS Network Traffic,blocks,d3f:DNSDenylisting,DNS Denylisting,D3-DNSDL,Isolate
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetDNSLookupTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic,analyzes,d3f:DNSTrafficAnalysis,DNS Traffic Analysis,D3-DNSTA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic,blocks,d3f:DNSAllowlisting,DNS Allowlisting,D3-DNSAL,Isolate
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic,blocks,d3f:ForwardResolutionDomainDenylisting,Forward Resolution Domain Denylisting,D3-FRDDL,Isolate
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic,blocks,d3f:ReverseResolutionIPDenylisting,Reverse Resolution IP Denylisting,D3-RRID,Isolate
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetDNSLookupTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetEncryptedRemoteTerminalTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetEncryptedTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetEncryptedTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetEncryptedWebTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetEncryptedWebTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetFileTransferTraffic,d3f:FileTransferNetworkTraffic,File Transfer Network Traffic,analyzes,d3f:FileCarving,File Carving,D3-FC,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetFileTransferTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetFileTransferTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetMailTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetMailTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetMailTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetNetworkTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundInternetWebTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundInternetWebTraffic,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic,analyzes,d3f:RelayPatternAnalysis,Relay Pattern Analysis,D3-RPA,Detect
+d3f:OutboundInternetWebTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:OutboundNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:OutboundNetworkTraffic,d3f:OutboundNetworkTraffic,Outbound Network Traffic,filters,d3f:OutboundTrafficFiltering,Outbound Traffic Filtering,D3-OTF,Isolate
+d3f:PartitionTable,d3f:PartitionTable,Partition Table,creates,d3f:DiskPartitioning,Disk Partitioning,D3-DKP,Evict
+d3f:Password,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:Password,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:Password,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:Password,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:Password,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:Password,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:Password,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:Password,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:Password,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:Password,d3f:Password,Password,regenerates,d3f:PasswordRotation,Password Rotation,D3-PR,Harden
+d3f:Password,d3f:Password,Password,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:Password,d3f:Password,Password,strengthens,d3f:StrongPasswordPolicy,Strong Password Policy,D3-SPP,Harden
+d3f:Password,d3f:Password,Password,use-limits,d3f:One-timePassword,One-time Password,D3-OTP,Harden
+d3f:Password,d3f:Password,Password,uses,d3f:PasswordAuthentication,Password Authentication,D3-PWA,Harden
+d3f:PasswordFile,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:PasswordFile,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:PasswordFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:PasswordFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:PasswordFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:PasswordFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:PasswordFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:PasswordFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:PasswordFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:PasswordFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:PasswordFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:PasswordFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:PasswordFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:PasswordStore,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:PasswordStore,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:PowerShellProfileScript,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:PowerShellProfileScript,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:PowerShellProfileScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:PowerShellProfileScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:PowerShellProfileScript,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:PowerShellProfileScript,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:PowerShellProfileScript,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:PowerShellProfileScript,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:PowerShellProfileScript,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:PowerShellProfileScript,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:Process,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:Process,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:Process,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:Process,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:Process,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:Process,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:Process,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:Process,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:Process,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:Process,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:Process,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:ProcessCodeSegment,d3f:ProcessCodeSegment,Process Code Segment,analyzes,d3f:MemoryBoundaryTracking,Memory Boundary Tracking,D3-MBT,Detect
+d3f:ProcessCodeSegment,d3f:ProcessCodeSegment,Process Code Segment,verifies,d3f:ProcessCodeSegmentVerification,Process Code Segment Verification,D3-PCSV,Detect
+d3f:ProcessCodeSegment,d3f:ProcessSegment,Process Segment,neutralizes,d3f:ProcessSegmentExecutionPrevention,Process Segment Execution Prevention,D3-PSEP,Harden
+d3f:ProcessCodeSegment,d3f:ProcessSegment,Process Segment,obfuscates,d3f:SegmentAddressOffsetRandomization,Segment Address Offset Randomization,D3-SAOR,Harden
+d3f:ProcessEnvironmentVariable,d3f:ApplicationConfiguration,Application Configuration,configures,d3f:DisableRemoteAccess,Disable Remote Access,D3-DRA,Harden
+d3f:ProcessEnvironmentVariable,d3f:ApplicationConfiguration,Application Configuration,hardens,d3f:ApplicationConfigurationHardening,Application Configuration Hardening,D3-ACH,Harden
+d3f:ProcessEnvironmentVariable,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:ProcessEnvironmentVariable,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:ProcessSegment,d3f:ProcessSegment,Process Segment,neutralizes,d3f:ProcessSegmentExecutionPrevention,Process Segment Execution Prevention,D3-PSEP,Harden
+d3f:ProcessSegment,d3f:ProcessSegment,Process Segment,obfuscates,d3f:SegmentAddressOffsetRandomization,Segment Address Offset Randomization,D3-SAOR,Harden
+d3f:PropertyListFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:PropertyListFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:PropertyListFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:PropertyListFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:PropertyListFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:PropertyListFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:PropertyListFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:PropertyListFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:PropertyListFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:PropertyListFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:PropertyListFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:RDPSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:RPCNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:RPCNetworkTraffic,d3f:RPCNetworkTraffic,RPC Network Traffic,analyzes,d3f:RPCTrafficAnalysis,RPC Traffic Analysis,D3-RTA,Detect
+d3f:ReadFile,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:ReadFile,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:RemoteAuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:RemoteAuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:RemoteAuthenticationService,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:RemoteAuthenticationService,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:RemoteAuthenticationService,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:RemoteAuthenticationService,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:RemoteAuthenticationService,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:RemoteAuthenticationService,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:RemoteAuthenticationService,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:RemoteAuthenticationService,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:RemoteAuthenticationService,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:RemoteAuthenticationService,d3f:ServiceApplicationProcess,Service Application Process,isolates,d3f:WebSessionAccessMediation,Web Session Access Mediation,D3-WSAM,Isolate
+d3f:RemoteSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:RemoteTerminalSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:RemovableMediaDevice,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:RemovableMediaDevice,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:RemovableMediaDevice,d3f:RemovableMediaDevice,Removable Media Device,filters,d3f:IOPortRestriction,IO Port Restriction,D3-IOPR,Isolate
+d3f:ResourceFork,d3f:FileSection,File Section,analyzes,d3f:FileFormatVerification,File Format Verification,D3-FFV,Isolate
+d3f:SSHSession,d3f:Session,Session,deletes,d3f:SessionTermination,Session Termination,D3-ST,Evict
+d3f:ScheduledJob,d3f:OperatingSystemProcess,Operating System Process,monitors,d3f:SystemDaemonMonitoring,System Daemon Monitoring,D3-SDM,Detect
+d3f:ScheduledJob,d3f:Process,Process,analyzes,d3f:ProcessLineageAnalysis,Process Lineage Analysis,D3-PLA,Detect
+d3f:ScheduledJob,d3f:Process,Process,analyzes,d3f:ProcessSelf-ModificationDetection,Process Self-Modification Detection,D3-PSMD,Detect
+d3f:ScheduledJob,d3f:Process,Process,analyzes,d3f:ProcessSpawnAnalysis,Process Spawn Analysis,D3-PSA,Detect
+d3f:ScheduledJob,d3f:Process,Process,isolates,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:ScheduledJob,d3f:Process,Process,isolates,d3f:Hardware-basedProcessIsolation,Hardware-based Process Isolation,D3-HBPI,Isolate
+d3f:ScheduledJob,d3f:Process,Process,isolates,d3f:Kernel-basedProcessIsolation,Kernel-based Process Isolation,D3-KBPI,Isolate
+d3f:ScheduledJob,d3f:Process,Process,isolates,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:ScheduledJob,d3f:Process,Process,suspends,d3f:ProcessSuspension,Process Suspension,D3-PS,Evict
+d3f:ScheduledJob,d3f:Process,Process,terminates,d3f:HostReboot,Host Reboot,D3-HR,Evict
+d3f:ScheduledJob,d3f:Process,Process,terminates,d3f:HostShutdown,Host Shutdown,D3-HS,Evict
+d3f:ScheduledJob,d3f:Process,Process,terminates,d3f:ProcessTermination,Process Termination,D3-PT,Evict
+d3f:SecurityToken,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:SecurityToken,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:Server,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:Server,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:Server,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:Server,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:Server,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:ServiceApplication,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:ServiceApplication,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:ServiceApplication,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:ServiceApplication,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:ServiceApplication,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:SessionCookie,d3f:Credential,Credential,analyzes,d3f:CredentialCompromiseScopeAnalysis,Credential Compromise Scope Analysis,D3-CCSA,Detect
+d3f:SessionCookie,d3f:Credential,Credential,deletes,d3f:AuthenticationCacheInvalidation,Authentication Cache Invalidation,D3-ANCI,Evict
+d3f:SessionCookie,d3f:Credential,Credential,deletes,d3f:CredentialRevocation,Credential Revocation,D3-CR,Evict
+d3f:SessionCookie,d3f:Credential,Credential,hardens,d3f:CredentialHardening,Credential Hardening,D3-CH,Harden
+d3f:SessionCookie,d3f:Credential,Credential,isolates,d3f:CredentialTransmissionScoping,Credential Transmission Scoping,D3-CTS,Isolate
+d3f:SessionCookie,d3f:Credential,Credential,regenerates,d3f:CredentialRotation,Credential Rotation,D3-CRO,Harden
+d3f:SessionCookie,d3f:Credential,Credential,restores,d3f:ReissueCredential,Reissue Credential,D3-RIC,Restore
+d3f:SessionCookie,d3f:Credential,Credential,spoofs,d3f:DecoyUserCredential,Decoy User Credential,D3-DUC,Deceive
+d3f:SessionCookie,d3f:Credential,Credential,uses,d3f:Multi-factorAuthentication,Multi-factor Authentication,D3-MFA,Harden
+d3f:SharedLibraryFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:SharedLibraryFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:SharedLibraryFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:SharedLibraryFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:SharedLibraryFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:SharedLibraryFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:SharedLibraryFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:SharedLibraryFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:SharedLibraryFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:SharedLibraryFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:SharedLibraryFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:Shim,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Shim,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Shim,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Shim,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:ShimDatabase,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:ShimDatabase,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:Software,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:Software,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:Software,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:Software,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:SoftwareDeploymentTool,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:SoftwareDeploymentTool,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:SoftwareDeploymentTool,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:SoftwareDeploymentTool,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:SoftwareDeploymentTool,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:StackFrame,d3f:StackFrame,Stack Frame,analyzes,d3f:ShadowStackComparisons,Shadow Stack Comparisons,D3-SSC,Detect
+d3f:StackFrame,d3f:StackFrame,Stack Frame,validates,d3f:StackFrameCanaryValidation,Stack Frame Canary Validation,D3-SFCV,Harden
+d3f:Storage,d3f:Storage,Storage,encrypts,d3f:DiskEncryption,Disk Encryption,D3-DENCR,Harden
+d3f:StoredProcedure,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:StoredProcedure,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:StoredProcedure,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:StoredProcedure,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:StoredProcedure,d3f:Subroutine,Subroutine,hardens,d3f:CredentialScrubbing,Credential Scrubbing,D3-CS,Harden
+d3f:StoredProcedure,d3f:Subroutine,Subroutine,hardens,d3f:TrustedLibrary,Trusted Library,D3-TL,Harden
+d3f:StoredProcedure,d3f:Subroutine,Subroutine,hardens,d3f:VariableInitialization,Variable Initialization,D3-VI,Harden
+d3f:StoredProcedure,d3f:Subroutine,Subroutine,restricts,d3f:Application-basedProcessIsolation,Application-based Process Isolation,D3-ABPI,Isolate
+d3f:StoredProcedure,d3f:Subroutine,Subroutine,validates,d3f:DomainLogicValidation,Domain Logic Validation,D3-DLV,Harden
+d3f:SymbolicLink,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:SymbolicLink,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:SymbolicLink,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:SymbolicLink,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:SymbolicLink,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:SymbolicLink,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:SymbolicLink,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:SymbolicLink,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:SymbolicLink,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:SymbolicLink,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:SymbolicLink,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:SystemCall,d3f:SystemCall,System Call,analyzes,d3f:SystemCallAnalysis,System Call Analysis,D3-SCA,Detect
+d3f:SystemCall,d3f:SystemCall,System Call,filters,d3f:SystemCallFiltering,System Call Filtering,D3-SCF,Isolate
+d3f:SystemConfigurationDatabase,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:SystemConfigurationDatabase,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:SystemConfigurationDatabase,d3f:SystemConfigurationDatabase,System Configuration Database,restricts,d3f:SystemConfigurationPermissions,System Configuration Permissions,D3-SCP,Harden
+d3f:SystemConfigurationDatabaseRecord,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:SystemConfigurationDatabaseRecord,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:SystemConfigurationDatabaseRecord,d3f:DatabaseRecord,Database Record,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:SystemConfigurationInitDatabaseRecord,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:SystemConfigurationInitDatabaseRecord,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:SystemConfigurationInitDatabaseRecord,d3f:DatabaseRecord,Database Record,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:SystemConfigurationInitDatabaseRecord,d3f:SystemInitConfiguration,System Init Configuration,analyzes,d3f:SystemInitConfigAnalysis,System Init Config Analysis,D3-SICA,Detect
+d3f:SystemFirewallConfiguration,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:SystemFirewallConfiguration,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:SystemFirmware,d3f:Firmware,Firmware,analyzes,d3f:FirmwareBehaviorAnalysis,Firmware Behavior Analysis,D3-FBA,Detect
+d3f:SystemFirmware,d3f:Firmware,Firmware,analyzes,d3f:FirmwareEmbeddedMonitoringCode,Firmware Embedded Monitoring Code,D3-FEMC,Detect
+d3f:SystemFirmware,d3f:Firmware,Firmware,verifies,d3f:FirmwareVerification,Firmware Verification,D3-FV,Detect
+d3f:SystemFirmware,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:SystemFirmware,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:SystemFirmware,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:SystemFirmware,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:SystemFirmware,d3f:SystemFirmware,System Firmware,verifies,d3f:SystemFirmwareVerification,System Firmware Verification,D3-SFV,Detect
+d3f:SystemInitScript,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:SystemInitScript,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:SystemInitScript,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:SystemInitScript,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:SystemInitScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:SystemInitScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:SystemInitScript,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:SystemInitScript,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:SystemInitScript,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:SystemInitScript,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:SystemInitScript,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:SystemInitScript,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:SystemInitScript,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:SystemInitScript,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:SystemInitScript,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:SystemInitScript,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:SystemInitScript,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:SystemInitScript,d3f:SystemInitConfiguration,System Init Configuration,analyzes,d3f:SystemInitConfigAnalysis,System Init Config Analysis,D3-SICA,Detect
+d3f:SystemPasswordDatabase,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:SystemPasswordDatabase,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:SystemServiceSoftware,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:SystemServiceSoftware,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:SystemServiceSoftware,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:SystemServiceSoftware,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:SystemStartupDirectory,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:SystemStartupDirectory,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:SystemStartupDirectory,d3f:Directory,Directory,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:SystemStartupDirectory,d3f:SystemInitConfiguration,System Init Configuration,analyzes,d3f:SystemInitConfigAnalysis,System Init Config Analysis,D3-SICA,Detect
+d3f:SystemTimeApplication,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:SystemTimeApplication,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:SystemTimeApplication,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:SystemTimeApplication,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:TFTPNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:URL,d3f:Identifier,Identifier,analyzes,d3f:IdentifierActivityAnalysis,Identifier Activity Analysis,D3-IAA,Detect
+d3f:URL,d3f:URL,URL,analyzes,d3f:HomoglyphDetection,Homoglyph Detection,D3-HD,Detect
+d3f:URL,d3f:URL,URL,analyzes,d3f:URLAnalysis,URL Analysis,D3-UA,Detect
+d3f:URL,d3f:URL,URL,analyzes,d3f:URLReputationAnalysis,URL Reputation Analysis,D3-URA,Detect
+d3f:UserAccount,d3f:UserAccount,User Account,disables,d3f:AccountLocking,Account Locking,D3-AL,Evict
+d3f:UserAccount,d3f:UserAccount,User Account,maps,d3f:AccessModeling,Access Modeling,D3-AM,Model
+d3f:UserAccount,d3f:UserAccount,User Account,restores,d3f:RestoreUserAccountAccess,Restore User Account Access,D3-RUAA,Restore
+d3f:UserAccount,d3f:UserAccount,User Account,restores,d3f:UnlockAccount,Unlock Account,D3-ULA,Restore
+d3f:UserAccount,d3f:UserAccount,User Account,restricts,d3f:UserAccountPermissions,User Account Permissions,D3-UAP,Isolate
+d3f:UserAccount,d3f:UserAccount,User Account,strengthens,d3f:AgentAuthentication,Agent Authentication,D3-AA,Harden
+d3f:UserAccount,d3f:UserAccount,User Account,strengthens,d3f:ChangeDefaultPassword,Change Default Password,D3-CDP,Harden
+d3f:UserInitConfigurationFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:UserInitConfigurationFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:UserInitConfigurationFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:UserInitConfigurationFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:UserInitConfigurationFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:UserInitConfigurationFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:UserInitConfigurationFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:UserInitConfigurationFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:UserInitConfigurationFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:UserInitConfigurationFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:UserInitConfigurationFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:UserInitConfigurationFile,d3f:UserInitConfigurationFile,User Init Configuration File,analyzes,d3f:UserSessionInitConfigAnalysis,User Session Init Config Analysis,D3-USICA,Detect
+d3f:UserInitScript,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:UserInitScript,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:UserInitScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:UserInitScript,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:UserInitScript,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:UserInitScript,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:UserInitScript,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:UserInitScript,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:UserInitScript,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:UserInitScript,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:UserInitScript,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:UserInitScript,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:UserInitScript,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:UserInitScript,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:UserInitScript,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:UserStartupScriptFile,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:UserStartupScriptFile,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:UserStartupScriptFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:UserStartupScriptFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:UserStartupScriptFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:UserStartupScriptFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:UserStartupScriptFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:UserStartupScriptFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:UserStartupScriptFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:UserStartupScriptFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:VideoInputDevice,d3f:HardwareDevice,Hardware Device,hardens,d3f:RadiationHardening,Radiation Hardening,D3-RH,Harden
+d3f:VideoInputDevice,d3f:HardwareDevice,Hardware Device,inventories,d3f:HardwareComponentInventory,Hardware Component Inventory,D3-HCI,Model
+d3f:VideoInputDevice,d3f:InputDevice,Input Device,analyzes,d3f:InputDeviceAnalysis,Input Device Analysis,D3-IDA,Detect
+d3f:VideoInputDevice,d3f:InputDevice,Input Device,filters,d3f:IOPortRestriction,IO Port Restriction,D3-IOPR,Isolate
+d3f:VirtualizationSoftware,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:VirtualizationSoftware,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:VirtualizationSoftware,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:VirtualizationSoftware,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:VirtualizationSoftware,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:WebApplication,d3f:ServiceApplication,Service Application,verifies,d3f:ServiceBinaryVerification,Service Binary Verification,D3-SBV,Detect
+d3f:WebApplication,d3f:Software,Software,evaluates,d3f:AssetVulnerabilityEnumeration,Asset Vulnerability Enumeration,D3-AVE,Model
+d3f:WebApplication,d3f:Software,Software,inventories,d3f:SoftwareInventory,Software Inventory,D3-SWI,Model
+d3f:WebApplication,d3f:Software,Software,restores,d3f:RestoreSoftware,Restore Software,D3-RS,Restore
+d3f:WebApplication,d3f:Software,Software,updates,d3f:SoftwareUpdate,Software Update,D3-SU,Harden
+d3f:WebFileResource,d3f:NetworkResource,Network Resource,isolates,d3f:NetworkResourceAccessMediation,Network Resource Access Mediation,D3-NRAM,Isolate
+d3f:WebFileResource,d3f:NetworkResource,Network Resource,spoofs,d3f:DecoyNetworkResource,Decoy Network Resource,D3-DNR,Deceive
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:Client-serverPayloadProfiling,Client-server Payload Profiling,D3-CSPP,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficCommunityDeviation,Network Traffic Community Deviation,D3-NTCD,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:NetworkTrafficSignatureAnalysis,Network Traffic Signature Analysis,D3-NTSA,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:PerHostDownload-UploadRatioAnalysis,Per Host Download-Upload Ratio Analysis,D3-PHDURA,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:ProtocolMetadataAnomalyDetection,Protocol Metadata Anomaly Detection,D3-PMAD,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:RemoteTerminalSessionDetection,Remote Terminal Session Detection,D3-RTSD,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,analyzes,d3f:UserGeolocationLogonPatternAnalysis,User Geolocation Logon Pattern Analysis,D3-UGLPA,Detect
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,filters,d3f:NetworkTrafficFiltering,Network Traffic Filtering,D3-NTF,Isolate
+d3f:WebNetworkTraffic,d3f:NetworkTraffic,Network Traffic,monitors,d3f:ApplicationProtocolCommandAnalysis,Application Protocol Command Analysis,D3-APCA,Detect
+d3f:WebScriptFile,d3f:ExecutableFile,Executable File,analyzes,d3f:DynamicAnalysis,Dynamic Analysis,D3-DA,Detect
+d3f:WebScriptFile,d3f:ExecutableFile,Executable File,analyzes,d3f:EmulatedFileAnalysis,Emulated File Analysis,D3-EFA,Detect
+d3f:WebScriptFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableAllowlisting,Executable Allowlisting,D3-EAL,Isolate
+d3f:WebScriptFile,d3f:ExecutableFile,Executable File,blocks,d3f:ExecutableDenylisting,Executable Denylisting,D3-EDL,Isolate
+d3f:WebScriptFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:WebScriptFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:WebScriptFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:WebScriptFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:WebScriptFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:WebScriptFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:WebScriptFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:WebScriptFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:WebScriptFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:WebScriptFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:WebScriptFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:WebServer,d3f:Host,Host,restores,d3f:RestoreNetworkAccess,Restore Network Access,D3-RNA,Restore
+d3f:WebServer,d3f:NetworkNode,Network Node,inventories,d3f:NetworkNodeInventory,Network Node Inventory,D3-NNI,Model
+d3f:WebServer,d3f:NetworkNode,Network Node,maps,d3f:LogicalLinkMapping,Logical Link Mapping,D3-LLM,Model
+d3f:WebServer,d3f:NetworkNode,Network Node,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:WebServer,d3f:NetworkNode,Network Node,monitors,d3f:EndpointHealthBeacon,Endpoint Health Beacon,D3-EHB,Detect
+d3f:WindowsRegistry,d3f:Database,Database,inventories,d3f:DataInventory,Data Inventory,D3-DI,Model
+d3f:WindowsRegistry,d3f:Database,Database,restores,d3f:RestoreDatabase,Restore Database,D3-RD,Restore
+d3f:WindowsRegistry,d3f:SystemConfigurationDatabase,System Configuration Database,restricts,d3f:SystemConfigurationPermissions,System Configuration Permissions,D3-SCP,Harden
+d3f:WindowsRegistryKey,d3f:ConfigurationResource,Configuration Resource,inventories,d3f:ConfigurationInventory,Configuration Inventory,D3-CI,Model
+d3f:WindowsRegistryKey,d3f:ConfigurationResource,Configuration Resource,restores,d3f:RestoreConfiguration,Restore Configuration,D3-RC,Restore
+d3f:WindowsRegistryKey,d3f:DatabaseRecord,Database Record,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:WindowsRegistryKey,d3f:WindowsRegistryKey,Windows Registry Key,deletes,d3f:RegistryKeyDeletion,Registry Key Deletion,D3-RKD,Evict
+d3f:WindowsShortcutFile,d3f:File,File,analyzes,d3f:FileAnalysis,File Analysis,D3-FA,Detect
+d3f:WindowsShortcutFile,d3f:File,File,analyzes,d3f:FileIntegrityMonitoring,File Integrity Monitoring,D3-FIM,Detect
+d3f:WindowsShortcutFile,d3f:File,File,deletes,d3f:FileEviction,File Eviction,D3-FEV,Evict
+d3f:WindowsShortcutFile,d3f:File,File,encrypts,d3f:FileEncryption,File Encryption,D3-FE,Harden
+d3f:WindowsShortcutFile,d3f:File,File,filters,d3f:ContentFiltering,Content Filtering,D3-CF,Isolate
+d3f:WindowsShortcutFile,d3f:File,File,isolates,d3f:RemoteFileAccessMediation,Remote File Access Mediation,D3-RFAM,Isolate
+d3f:WindowsShortcutFile,d3f:File,File,modifies,d3f:ContentModification,Content Modification,D3-CM,Isolate
+d3f:WindowsShortcutFile,d3f:File,File,quarantines,d3f:ContentQuarantine,Content Quarantine,D3-CQ,Isolate
+d3f:WindowsShortcutFile,d3f:File,File,restores,d3f:RestoreFile,Restore File,D3-RF,Restore
+d3f:WindowsShortcutFile,d3f:File,File,restricts,d3f:LocalFilePermissions,Local File Permissions,D3-LFP,Isolate
+d3f:WindowsShortcutFile,d3f:File,File,spoofs,d3f:DecoyFile,Decoy File,D3-DF,Deceive
+d3f:WirelessLink,d3f:PhysicalLink,Physical Link,maps,d3f:PhysicalLinkMapping,Physical Link Mapping,D3-PLM,Model
+d3f:WirelessLink,d3f:PhysicalLink,Physical Link,restricts,d3f:DirectionalNetworkLink,Directional Network Link,D3-DNL,Isolate

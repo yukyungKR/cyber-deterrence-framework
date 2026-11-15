@@ -1,0 +1,105 @@
+{
+ "note": "묶음 25건의 파일 이름과 sha256(이 디렉터리의 pack/ 사본 바이트 — 수집자 메모 가림 뒤)",
+ "items": [
+  {
+   "file": "resp_16_DOJ_20261112.txt",
+   "sha256": "d73941a3df2a46e528bff06ed6728d2f963a866318c21801ae56c3a42035e521"
+  },
+  {
+   "file": "resp_17_외교부_20261105.txt",
+   "sha256": "6a1a51d7706411183c368656e008c25548ac678f3e8576f119d0a818a5aa74b9"
+  },
+  {
+   "file": "resp_18_외교부_20261110.txt",
+   "sha256": "f7436621dd101092fb24a2030c2b6372428720afbfa9ed7deaceb2139600132b"
+  },
+  {
+   "file": "tech_01_Binance_20261103.txt",
+   "sha256": "d16448174e8e29eda912115c173d92248c64e435200103276e8a431f8b66e527"
+  },
+  {
+   "file": "tech_02_RichardTeng_20261030.txt",
+   "sha256": "b2b3aa8887fde678760f373a572a8b5b83b335939f07d2fc5a8a9cd02b15c50d"
+  },
+  {
+   "file": "tech_03_RichardTeng-video_20261030.txt",
+   "sha256": "2bf5e1601148f1136deb8214e9361be6d80d637ae43a7c53679f8c86b9a51ecd"
+  },
+  {
+   "file": "tech_04_FBI_20261031.txt",
+   "sha256": "cdff6a9c982ff646d32e53f8234713d22ee100741cb023d4561ccfc01979b960"
+  },
+  {
+   "file": "tech_05_TRMLabs_20261029.txt",
+   "sha256": "52e729c112a4afbc03a53c215575630bc17e712f7e63b012f3b1742615710683"
+  },
+  {
+   "file": "tech_06_Blockaid_20261029.txt",
+   "sha256": "d88d6817cd0b6a2ad333bed58c2378b9e986edb68bec8792b4398131e330c611"
+  },
+  {
+   "file": "tech_07_Elliptic_20261030.txt",
+   "sha256": "9bb8035e3319640f8cdcb3b9f1e4f59eecf59261ec0a0c372783750d334e21a1"
+  },
+  {
+   "file": "tech_08_Chainalysis_20261030.txt",
+   "sha256": "65bd882ab10f1006681b155481189e6d54822bdfe2b05e7f8cdfe6c6ce4f7cfc"
+  },
+  {
+   "file": "tech_09_LimitedSupply_20261030.txt",
+   "sha256": "970c1297e4a2f500ab21bdffa54e8d899d8e8d124a1f6980e6dc155f164d34e5"
+  },
+  {
+   "file": "tech_10_Cointegrity_20261030.txt",
+   "sha256": "7dcc3ae750e50b8656164c8b886e0369d3cca5666bb6b1a18cb64761a27d9f87"
+  },
+  {
+   "file": "tech_11_Hacken_20261030.txt",
+   "sha256": "e1b38a90a337755ffa60d5adc8370969e7f3dac237211da86c485051d8520203"
+  },
+  {
+   "file": "tech_12_banteg-gist_undated.txt",
+   "sha256": "0cad99c5988a87c5b3a6727761c048270e9ed36aaacf4c98c87a6a375402946e"
+  },
+  {
+   "file": "tech_13_ReversingLabs_20261031.txt",
+   "sha256": "49d6e75548f3e64cb899b919bfb36698724ec0b06429a8244f46020037f8109a"
+  },
+  {
+   "file": "tech_14_SafeDep_20261103.txt",
+   "sha256": "f966ca022b43111edd882413b1c4cc9b029078fbf3593d1499c4afd7d577f025"
+  },
+  {
+   "file": "tech_15_Chainalysis_20261103.txt",
+   "sha256": "5c65c5d6112344c5c1656e38fdb555d5cf359465215b122c3a9f65a2099dadc0"
+  },
+  {
+   "file": "tech_16_Elliptic_20261103.txt",
+   "sha256": "006ad465c5f8e8aed916a08b24a76c87ffebb50db1e27cb93e34a1d6afc4b37f"
+  },
+  {
+   "file": "tech_17_Rekt_20261106.txt",
+   "sha256": "547d4a0d097fb818533d800230d24cec0e889f9196697442b7d0c1e4d315d38a"
+  },
+  {
+   "file": "tech_18_Elliptic_20261109.txt",
+   "sha256": "ed82931708cdf36b7598a9a4d3ec354cfae3d944847f957c098edd318e14efa8"
+  },
+  {
+   "file": "tech_19_Constella_20261111.txt",
+   "sha256": "da0fb34c834d05498f4d3ab2415d7fead8be9beb85a211545e28f93d269a9391"
+  },
+  {
+   "file": "tech_22_SANS-ISC_20260501.txt",
+   "sha256": "ae040e572cfe57579d6b02092c120e7ae9ff7d770620b6451c7032dd7b131794"
+  },
+  {
+   "file": "tech_23_Binance_20261030.txt",
+   "sha256": "7515e42e80da8ff2cd62a1c719c1a929f980abe50c3db29626905bbff5891ece"
+  },
+  {
+   "file": "tech_24_Blockaid-X_20261029.txt",
+   "sha256": "5d68364ce955603b53502cbd21f6c6708fdcccfa7c32c2da04fef4cbbc359608"
+  }
+ ]
+}

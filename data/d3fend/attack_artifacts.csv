@@ -1,0 +1,1143 @@
+attack_id,relation,artifact,artifact_label
+T0800,modifies,d3f:OTControllerOperatingMode,OT Controller Operating Mode
+T0800,produces,d3f:OTDeviceFirmwareCommand,OT Device Firmware Command
+T0801,accesses,d3f:OTLogicVariable,OT Logic Variable
+T0801,produces,d3f:OTReadCommand,OT Read Command
+T0802,produces,d3f:OTControlCommand,OT Control Command
+T0803,blocks,d3f:OTDeviceConfigurationCommand,OT Device Configuration Command
+T0805,blocks,d3f:OTProtocolMessage,OT Protocol Message
+T0806,impairs,d3f:OTControlLogicProcess,OT Control Logic Process
+T0806,modifies,d3f:OTProcessVariable,OT Process Variable
+T0806,produces,d3f:OTChangeDataCommand,OT Change Data Command
+T0807,accesses,d3f:OTEmbeddedComputer,OT Embedded Computer
+T0807,may-produce,d3f:RemoteTerminalSession,Remote Terminal Session
+T0807,uses,d3f:CommandLineInterface,Command Line Interface
+T0809,modifies,d3f:OTEmbeddedComputer,OT Embedded Computer
+T0809,produces,d3f:OTDeleteDataCommand,OT Delete Data Command
+T0811,accesses,d3f:OTProcessDataHistorian,OT Process Data Historian
+T0811,produces,d3f:OTReadCommand,OT Read Command
+T0812,uses,d3f:DefaultUserAccount,Default User Account
+T0812,uses,d3f:Password,Password
+T0813,impairs,d3f:OTControlLogicProcess,OT Control Logic Process
+T0814,impairs,d3f:OTControlLogicProcess,OT Control Logic Process
+T0814,produces,d3f:OTNetworkTraffic,OT Network Traffic
+T0816,disables,d3f:OTEmbeddedComputer,OT Embedded Computer
+T0817,accesses,d3f:URL,URL
+T0817,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T0817,uses,d3f:Browser,Browser
+T0819,accesses,d3f:NetworkServiceApplicationProcess,Network Service Application Process
+T0819,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T0820,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T0820,may-modify,d3f:StackFrame,Stack Frame
+T0821,modifies,d3f:OTControlLogicProcess,OT Control Logic Process
+T0821,produces,d3f:OTModifyControlProgramCommand,OT Modify Control Program Command
+T0822,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T0822,produces,d3f:NetworkSession,Network Session
+T0823,accesses,d3f:HMIApplicationProcess,HMI Application Process
+T0823,uses,d3f:GraphicalUserInterface,Graphical User Interface
+T0830,may-modify,d3f:NetworkTraffic,Network Traffic
+T0834,invokes,d3f:SystemCall,System Call
+T0835,modifies,d3f:OTControlVariable,OT Control Variable
+T0835,produces,d3f:OTChangeDataCommand,OT Change Data Command
+T0836,modifies,d3f:OTLogicVariable,OT Logic Variable
+T0836,produces,d3f:OTWriteCommand,OT Write Command
+T0838,produces,d3f:OTModifyDeviceConfigurationCommand,OT Modify Device Configuration Command
+T0839,modifies,d3f:Firmware,Firmware
+T0839,produces,d3f:OTDeviceFirmwareCommand,OT Device Firmware Command
+T0840,may-produce,d3f:OTDeviceIdentificationMessage,OT Device Identification Message
+T0840,monitors,d3f:NetworkTraffic,Network Traffic
+T0842,may-produce,d3f:DNSLookup,DNS Lookup
+T0842,monitors,d3f:NetworkTraffic,Network Traffic
+T0843,creates,d3f:OTControlProgram,OT Control Program
+T0843,produces,d3f:OTDownloadControlProgramCommand,OT Download Control Program Command
+T0843.001,creates,d3f:OTControlProgram,OT Control Program
+T0843.001,produces,d3f:OTDownloadControlProgramCommand,OT Download Control Program Command
+T0843.002,creates,d3f:OTControlProgram,OT Control Program
+T0843.002,produces,d3f:OTDownloadControlProgramCommand,OT Download Control Program Command
+T0843.003,creates,d3f:OTControlProgram,OT Control Program
+T0843.003,produces,d3f:OTDownloadControlProgramCommand,OT Download Control Program Command
+T0845,produces,d3f:OTReadDeviceConfigurationCommand,OT Read Device Configuration Command
+T0845,reads,d3f:OTControlProgram,OT Control Program
+T0846,may-invoke,d3f:CreateProcess,Create Process
+T0846,may-invoke,d3f:CreateSocket,Create Socket
+T0846,may-produce,d3f:OTDeviceIdentificationMessage,OT Device Identification Message
+T0846,monitors,d3f:NetworkTraffic,Network Traffic
+T0846.001,may-invoke,d3f:CreateProcess,Create Process
+T0846.001,may-invoke,d3f:CreateSocket,Create Socket
+T0846.001,may-produce,d3f:OTDeviceIdentificationMessage,OT Device Identification Message
+T0846.001,monitors,d3f:NetworkTraffic,Network Traffic
+T0846.002,may-invoke,d3f:CreateProcess,Create Process
+T0846.002,may-invoke,d3f:CreateSocket,Create Socket
+T0846.002,may-produce,d3f:OTDeviceIdentificationMessage,OT Device Identification Message
+T0846.002,monitors,d3f:NetworkTraffic,Network Traffic
+T0846.003,may-invoke,d3f:CreateProcess,Create Process
+T0846.003,may-invoke,d3f:CreateSocket,Create Socket
+T0846.003,may-produce,d3f:OTDeviceIdentificationMessage,OT Device Identification Message
+T0846.003,monitors,d3f:NetworkTraffic,Network Traffic
+T0847,uses,d3f:RemovableMediaDevice,Removable Media Device
+T0848,creates,d3f:ControlServer,Control Server
+T0848,monitors,d3f:NetworkTraffic,Network Traffic
+T0848,produces,d3f:NetworkTraffic,Network Traffic
+T0851,may-modify,d3f:BootSector,Boot Sector
+T0851,may-modify,d3f:Firmware,Firmware
+T0851,may-modify,d3f:Kernel,Kernel
+T0851,may-modify,d3f:KernelModule,Kernel Module
+T0851,may-modify,d3f:SharedLibraryFile,Shared Library File
+T0852,may-access,d3f:DisplayServer,Display Server
+T0852,may-invoke,d3f:GetScreenCapture,Get Screen Capture
+T0853,executes,d3f:ExecutableScript,Executable Script
+T0855,may-produce,d3f:OTControlCommand,OT Control Command
+T0856,produces,d3f:OTDiagnosticsMessage,OT Diagnostics Message
+T0857,disables,d3f:OTHumanMachineInterface,OT Human Machine Interface
+T0857,may-produce,d3f:OTProtocolMessage,OT Protocol Message
+T0858,may-invoke,d3f:OTModeSwitch,OT Mode Switch
+T0858,may-produce,d3f:OTModifyDeviceOperatingModeCommand,OT Modify Device Operating Mode Command
+T0858,modifies,d3f:OTControllerOperatingMode,OT Controller Operating Mode
+T0859,uses,d3f:UserAccount,User Account
+T0860,may-access,d3f:IOModule,I/O Module
+T0860,may-access,d3f:OTSensor,OT Sensor
+T0860,uses,d3f:WirelessLink,Wireless Link
+T0861,may-produce,d3f:OTReadDeviceConfigurationCommand,OT Read Device Configuration Command
+T0861,reads,d3f:OTLogicVariable,OT Logic Variable
+T0863,invokes,d3f:CreateProcess,Create Process
+T0864,uses,d3f:OTEngineeringWorkstation,OT Engineering Workstation
+T0865,produces,d3f:Email,Email
+T0865,produces,d3f:InboundInternetMailTraffic,Inbound Internet Mail Traffic
+T0866,may-be-associated-with,d3f:Server,Server
+T0866,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T0866,may-modify,d3f:ProcessSegment,Process Segment
+T0866,may-modify,d3f:StackFrame,Stack Frame
+T0866,may-produce,d3f:OTProtocolMessage,OT Protocol Message
+T0866,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T0867,may-be-associated-with,d3f:Server,Server
+T0868,detects,d3f:OperatingMode,Operating Mode
+T0868,may-evaluate,d3f:OTModeSwitch,OT Mode Switch
+T0868,may-produce,d3f:OTReadDeviceConfigurationCommand,OT Read Device Configuration Command
+T0869,produces,d3f:OTProtocolMessage,OT Protocol Message
+T0869,produces,d3f:OutboundNetworkTraffic,Outbound Network Traffic
+T0871,executes,d3f:ExecutableScript,Executable Script
+T0873,modifies,d3f:OTControlProgram,OT Control Program
+T0873,produces,d3f:OTChangeControlProgramCommand,OT Change Control Program Command
+T0873.001,modifies,d3f:OTControlProgram,OT Control Program
+T0873.001,produces,d3f:OTChangeControlProgramCommand,OT Change Control Program Command
+T0874,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T0877,produces,d3f:OTReadValueCommand,OT Read Value Command
+T0877,reads,d3f:OTLogicVariable,OT Logic Variable
+T0878,disables,d3f:OTDiagnosticsMessage,OT Diagnostics Message
+T0878,may-modify,d3f:OTControlLogicProcess,OT Control Logic Process
+T0878,produces,d3f:OTDiagnosticsMessage,OT Diagnostics Message
+T0884,may-produce,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T0884,may-produce,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T0885,produces,d3f:NetworkTraffic,Network Traffic
+T0885,uses,d3f:OTProtocolMessage,OT Protocol Message
+T0886,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T0887,monitors,d3f:WirelessLink,Wireless Link
+T0887,uses,d3f:WirelessLink,Wireless Link
+T0888,may-access,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T0888,may-invoke,d3f:CreateProcess,Create Process
+T0888,may-invoke,d3f:CreateSocket,Create Socket
+T0888,may-produce,d3f:OTDeviceDescriptionMessage,OT Device Description Message
+T0888,produces,d3f:NetworkTraffic,Network Traffic
+T0889,modifies,d3f:OTControlProgram,OT Control Program
+T0889,produces,d3f:OTModifyControlProgramCommand,OT Modify Control Program Command
+T0890,may-modify,d3f:StackFrame,Stack Frame
+T0890,modifies,d3f:ProcessCodeSegment,Process Code Segment
+T0891,uses,d3f:Credential,Credential
+T0892,modifies,d3f:Credential,Credential
+T0893,may-access,d3f:ConfigurationFile,Configuration File
+T0893,may-access,d3f:DatabaseFile,Database File
+T0893,may-produce,d3f:OTReadCommand,OT Read Command
+T0894,executes,d3f:ExecutableScript,Executable Script
+T0894,executes,d3f:ShellCommand,Shell Command
+T0894,invokes,d3f:CreateProcess,Create Process
+T0894,invokes,d3f:CreateThread,Create Thread
+T0894,loads,d3f:SharedLibraryFile,Shared Library File
+T0894,may-add,d3f:Software,Software
+T0894,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T0894,may-produce,d3f:NetworkTraffic,Network Traffic
+T0894,modifies,d3f:ProcessSegment,Process Segment
+T0895,executes,d3f:ExecutableScript,Executable Script
+T0895,invokes,d3f:CreateProcess,Create Process
+T0895,may-produce,d3f:NetworkTraffic,Network Traffic
+T1001,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1001.001,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1001.002,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1001.003,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1003,accesses,d3f:AuthenticationService,Authentication Service
+T1003,accesses,d3f:EncryptedCredential,Encrypted Credential
+T1003,accesses,d3f:OperatingSystemFile,Operating System File
+T1003,accesses,d3f:PasswordFile,Password File
+T1003,accesses,d3f:Process,Process
+T1003,accesses,d3f:ProcessImage,Process Image
+T1003,may-access,d3f:AuthenticationService,Authentication Service
+T1003,may-access,d3f:Process,Process
+T1003,may-access,d3f:SystemPasswordDatabase,System Password Database
+T1003,may-modify,d3f:EventLog,Event Log
+T1003,may-modify,d3f:Log,Log
+T1003,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1003.001,accesses,d3f:AuthenticationService,Authentication Service
+T1003.001,accesses,d3f:Process,Process
+T1003.002,may-access,d3f:AuthenticationService,Authentication Service
+T1003.002,may-access,d3f:Process,Process
+T1003.002,may-access,d3f:SystemPasswordDatabase,System Password Database
+T1003.003,accesses,d3f:EncryptedCredential,Encrypted Credential
+T1003.004,may-access,d3f:Process,Process
+T1003.004,may-access,d3f:SystemPasswordDatabase,System Password Database
+T1003.005,accesses,d3f:EncryptedCredential,Encrypted Credential
+T1003.005,may-modify,d3f:Log,Log
+T1003.006,may-modify,d3f:EventLog,Event Log
+T1003.006,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1003.007,accesses,d3f:OperatingSystemFile,Operating System File
+T1003.007,accesses,d3f:ProcessImage,Process Image
+T1003.008,accesses,d3f:EncryptedCredential,Encrypted Credential
+T1003.008,accesses,d3f:PasswordFile,Password File
+T1005,accesses,d3f:File,File
+T1005,accesses,d3f:LocalResource,Local Resource
+T1006,accesses,d3f:Volume,Volume
+T1007,may-invoke,d3f:CreateProcess,Create Process
+T1007,may-invoke,d3f:GetRunningProcesses,Get Running Processes
+T1008,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1010,may-invoke,d3f:CreateProcess,Create Process
+T1010,may-invoke,d3f:GetOpenWindows,Get Open Windows
+T1011,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1011.001,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1012,accesses,d3f:SystemConfigurationDatabase,System Configuration Database
+T1012,may-invoke,d3f:GetSystemConfigValue,Get System Config Value
+T1014,may-modify,d3f:BootSector,Boot Sector
+T1014,may-modify,d3f:Firmware,Firmware
+T1014,may-modify,d3f:Kernel,Kernel
+T1014,may-modify,d3f:KernelModule,Kernel Module
+T1014,may-modify,d3f:SharedLibraryFile,Shared Library File
+T1016,may-execute,d3f:ExecutableScript,Executable Script
+T1016,may-invoke,d3f:CreateProcess,Create Process
+T1016,may-invoke,d3f:GetSystemNetworkConfigValue,Get System Network Config Value
+T1016.001,may-execute,d3f:ExecutableScript,Executable Script
+T1016.001,may-invoke,d3f:CreateProcess,Create Process
+T1016.001,may-invoke,d3f:GetSystemNetworkConfigValue,Get System Network Config Value
+T1016.002,may-execute,d3f:ExecutableScript,Executable Script
+T1016.002,may-invoke,d3f:CreateProcess,Create Process
+T1016.002,may-invoke,d3f:GetSystemNetworkConfigValue,Get System Network Config Value
+T1018,may-access,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1018,may-invoke,d3f:CreateProcess,Create Process
+T1018,may-invoke,d3f:CreateSocket,Create Socket
+T1018,produces,d3f:NetworkTraffic,Network Traffic
+T1020,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1020.001,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1021,creates,d3f:RDPSession,RDP Session
+T1021,creates,d3f:SSHSession,SSH Session
+T1021,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1021,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.001,creates,d3f:RDPSession,RDP Session
+T1021.001,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1021.001,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.002,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.003,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.004,creates,d3f:SSHSession,SSH Session
+T1021.004,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1021.004,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.005,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.006,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.007,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1021.008,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1025,accesses,d3f:RemovableMediaDevice,Removable Media Device
+T1027,creates,d3f:ExecutableFile,Executable File
+T1027,creates,d3f:JavaScriptBlob,JavaScript Blob
+T1027,modifies,d3f:ExecutableBinary,Executable Binary
+T1027,obfuscates,d3f:ExecutableFile,Executable File
+T1027.001,modifies,d3f:ExecutableBinary,Executable Binary
+T1027.002,obfuscates,d3f:ExecutableFile,Executable File
+T1027.004,creates,d3f:ExecutableFile,Executable File
+T1027.006,creates,d3f:JavaScriptBlob,JavaScript Blob
+T1029,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1030,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1033,may-access,d3f:DirectoryService,Directory Service
+T1033,may-access,d3f:GetSystemConfigValue,Get System Config Value
+T1033,may-access,d3f:PasswordFile,Password File
+T1033,may-access,d3f:ProcessSegment,Process Segment
+T1033,may-invoke,d3f:CopyToken,Copy Token
+T1033,may-invoke,d3f:CreateProcess,Create Process
+T1036,creates,d3f:ExecutableBinary,Executable Binary
+T1036,creates,d3f:File,File
+T1036,invokes,d3f:MoveFile,Move File
+T1036,may-create,d3f:ExecutableFile,Executable File
+T1036,may-create,d3f:File,File
+T1036,may-modify,d3f:OperatingSystemExecutableFile,Operating System Executable File
+T1036,modifies,d3f:FileSystemMetadata,File System Metadata
+T1036,modifies,d3f:JobSchedule,Job Schedule
+T1036.001,creates,d3f:ExecutableBinary,Executable Binary
+T1036.002,modifies,d3f:FileSystemMetadata,File System Metadata
+T1036.003,may-create,d3f:ExecutableFile,Executable File
+T1036.003,may-modify,d3f:OperatingSystemExecutableFile,Operating System Executable File
+T1036.004,modifies,d3f:JobSchedule,Job Schedule
+T1036.005,invokes,d3f:MoveFile,Move File
+T1036.005,may-create,d3f:File,File
+T1036.006,creates,d3f:File,File
+T1036.007,modifies,d3f:FileSystemMetadata,File System Metadata
+T1037,modifies,d3f:NetworkInitScriptFileResource,Network Init Script File Resource
+T1037,modifies,d3f:SystemInitScript,System Init Script
+T1037,modifies,d3f:SystemStartupDirectory,System Startup Directory
+T1037,modifies,d3f:UserInitScript,User Init Script
+T1037.001,modifies,d3f:UserInitScript,User Init Script
+T1037.002,modifies,d3f:UserInitScript,User Init Script
+T1037.003,modifies,d3f:NetworkInitScriptFileResource,Network Init Script File Resource
+T1037.004,modifies,d3f:SystemInitScript,System Init Script
+T1037.005,modifies,d3f:SystemStartupDirectory,System Startup Directory
+T1039,accesses,d3f:NetworkFileShareResource,Network File Share Resource
+T1040,may-produce,d3f:DNSLookup,DNS Lookup
+T1041,may-transfer,d3f:CertificateFile,Certificate File
+T1041,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1047,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1047,may-invoke,d3f:CreateProcess,Create Process
+T1048,may-transfer,d3f:CertificateFile,Certificate File
+T1048,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1048,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1048,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1048.001,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1048.001,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1048.002,may-transfer,d3f:CertificateFile,Certificate File
+T1048.002,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1048.002,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1048.003,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1048.003,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1049,may-invoke,d3f:GetOpenSockets,Get Open Sockets
+T1052,modifies,d3f:RemovableMediaDevice,Removable Media Device
+T1052.001,modifies,d3f:RemovableMediaDevice,Removable Media Device
+T1053,creates,d3f:PropertyListFile,Property List File
+T1053,executes,d3f:ScheduledJob,Scheduled Job
+T1053,invokes,d3f:CreateProcess,Create Process
+T1053,modifies,d3f:JobSchedule,Job Schedule
+T1053.001,executes,d3f:ScheduledJob,Scheduled Job
+T1053.001,invokes,d3f:CreateProcess,Create Process
+T1053.001,modifies,d3f:JobSchedule,Job Schedule
+T1053.002,executes,d3f:ScheduledJob,Scheduled Job
+T1053.002,invokes,d3f:CreateProcess,Create Process
+T1053.002,modifies,d3f:JobSchedule,Job Schedule
+T1053.003,executes,d3f:ScheduledJob,Scheduled Job
+T1053.003,invokes,d3f:CreateProcess,Create Process
+T1053.003,modifies,d3f:JobSchedule,Job Schedule
+T1053.004,creates,d3f:PropertyListFile,Property List File
+T1053.004,executes,d3f:ScheduledJob,Scheduled Job
+T1053.004,invokes,d3f:CreateProcess,Create Process
+T1053.004,modifies,d3f:JobSchedule,Job Schedule
+T1053.005,executes,d3f:ScheduledJob,Scheduled Job
+T1053.005,invokes,d3f:CreateProcess,Create Process
+T1053.005,modifies,d3f:JobSchedule,Job Schedule
+T1053.006,executes,d3f:ScheduledJob,Scheduled Job
+T1053.006,invokes,d3f:CreateProcess,Create Process
+T1053.006,modifies,d3f:JobSchedule,Job Schedule
+T1053.007,executes,d3f:ScheduledJob,Scheduled Job
+T1053.007,invokes,d3f:CreateProcess,Create Process
+T1053.007,modifies,d3f:JobSchedule,Job Schedule
+T1055,accesses,d3f:OperatingSystemFile,Operating System File
+T1055,accesses,d3f:SharedLibraryFile,Shared Library File
+T1055,adds,d3f:SharedLibraryFile,Shared Library File
+T1055,invokes,d3f:CreateProcess,Create Process
+T1055,invokes,d3f:SystemCall,System Call
+T1055,loads,d3f:SharedLibraryFile,Shared Library File
+T1055,may-add,d3f:ExecutableBinary,Executable Binary
+T1055,may-add,d3f:ObjectFile,Object File
+T1055,may-invoke,d3f:CreateProcess,Create Process
+T1055,may-modify,d3f:OperatingSystemFile,Operating System File
+T1055,modifies,d3f:ProcessCodeSegment,Process Code Segment
+T1055.001,adds,d3f:SharedLibraryFile,Shared Library File
+T1055.001,invokes,d3f:SystemCall,System Call
+T1055.001,loads,d3f:SharedLibraryFile,Shared Library File
+T1055.002,may-add,d3f:ObjectFile,Object File
+T1055.003,invokes,d3f:SystemCall,System Call
+T1055.003,may-add,d3f:ExecutableBinary,Executable Binary
+T1055.004,may-invoke,d3f:CreateProcess,Create Process
+T1055.005,invokes,d3f:SystemCall,System Call
+T1055.008,invokes,d3f:SystemCall,System Call
+T1055.009,accesses,d3f:OperatingSystemFile,Operating System File
+T1055.009,may-modify,d3f:OperatingSystemFile,Operating System File
+T1055.012,modifies,d3f:ProcessCodeSegment,Process Code Segment
+T1055.013,invokes,d3f:CreateProcess,Create Process
+T1055.014,accesses,d3f:SharedLibraryFile,Shared Library File
+T1055.014,invokes,d3f:SystemCall,System Call
+T1056,accesses,d3f:GraphicalUserInterface,Graphical User Interface
+T1056,accesses,d3f:KeyboardInputDevice,Keyboard Input Device
+T1056,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T1056,modifies,d3f:WebApplication,Web Application
+T1056.001,accesses,d3f:KeyboardInputDevice,Keyboard Input Device
+T1056.002,accesses,d3f:GraphicalUserInterface,Graphical User Interface
+T1056.003,modifies,d3f:WebApplication,Web Application
+T1056.004,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T1057,may-invoke,d3f:CreateProcess,Create Process
+T1057,may-invoke,d3f:GetRunningProcesses,Get Running Processes
+T1059,executes,d3f:ExecutableScript,Executable Script
+T1059.001,executes,d3f:ExecutableScript,Executable Script
+T1059.002,executes,d3f:ExecutableScript,Executable Script
+T1059.003,executes,d3f:ExecutableScript,Executable Script
+T1059.004,executes,d3f:ExecutableScript,Executable Script
+T1059.005,executes,d3f:ExecutableScript,Executable Script
+T1059.006,executes,d3f:ExecutableScript,Executable Script
+T1059.007,executes,d3f:ExecutableScript,Executable Script
+T1059.008,executes,d3f:ExecutableScript,Executable Script
+T1059.009,executes,d3f:ExecutableScript,Executable Script
+T1059.010,executes,d3f:ExecutableScript,Executable Script
+T1059.011,executes,d3f:ExecutableScript,Executable Script
+T1059.012,executes,d3f:ExecutableScript,Executable Script
+T1059.013,executes,d3f:ExecutableScript,Executable Script
+T1068,may-modify,d3f:StackFrame,Stack Frame
+T1068,modifies,d3f:ProcessCodeSegment,Process Code Segment
+T1070,deletes,d3f:File,File
+T1070,forges,d3f:FileSystemMetadata,File System Metadata
+T1070,may-modify,d3f:File,File
+T1070,modifies,d3f:CommandHistoryLog,Command History Log
+T1070,modifies,d3f:EventLog,Event Log
+T1070,modifies,d3f:OperatingSystemLogFile,Operating System Log File
+T1070,unmounts,d3f:NetworkFileShareResource,Network File Share Resource
+T1070.001,modifies,d3f:EventLog,Event Log
+T1070.002,modifies,d3f:OperatingSystemLogFile,Operating System Log File
+T1070.003,modifies,d3f:CommandHistoryLog,Command History Log
+T1070.004,deletes,d3f:File,File
+T1070.004,may-modify,d3f:File,File
+T1070.005,unmounts,d3f:NetworkFileShareResource,Network File Share Resource
+T1070.006,forges,d3f:FileSystemMetadata,File System Metadata
+T1071,may-transfer,d3f:CertificateFile,Certificate File
+T1071,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1071,produces,d3f:OutboundInternetFileTransferTraffic,Outbound Internet File Transfer Traffic
+T1071,produces,d3f:OutboundInternetMailTraffic,Outbound Internet Mail Traffic
+T1071,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1071,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1071.001,may-transfer,d3f:CertificateFile,Certificate File
+T1071.001,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1071.001,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1071.002,may-transfer,d3f:CertificateFile,Certificate File
+T1071.002,produces,d3f:OutboundInternetFileTransferTraffic,Outbound Internet File Transfer Traffic
+T1071.002,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1071.003,may-transfer,d3f:CertificateFile,Certificate File
+T1071.003,produces,d3f:OutboundInternetMailTraffic,Outbound Internet Mail Traffic
+T1071.003,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1071.004,may-transfer,d3f:CertificateFile,Certificate File
+T1071.004,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1071.004,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1071.005,may-transfer,d3f:CertificateFile,Certificate File
+T1071.005,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1072,adds,d3f:File,File
+T1072,executes,d3f:SoftwareDeploymentTool,Software Deployment Tool
+T1072,installs,d3f:Software,Software
+T1074,may-create,d3f:File,File
+T1074,may-invoke,d3f:CreateFile,Create File
+T1074,modifies,d3f:NetworkResource,Network Resource
+T1074,reads,d3f:Resource,Resource
+T1074.001,may-create,d3f:File,File
+T1074.001,may-invoke,d3f:CreateFile,Create File
+T1074.001,reads,d3f:Resource,Resource
+T1074.002,modifies,d3f:NetworkResource,Network Resource
+T1074.002,reads,d3f:Resource,Resource
+T1078,uses,d3f:CloudUserAccount,Cloud User Account
+T1078,uses,d3f:DefaultUserAccount,Default User Account
+T1078,uses,d3f:DomainUserAccount,Domain User Account
+T1078,uses,d3f:LocalUserAccount,Local User Account
+T1078,uses,d3f:UserAccount,User Account
+T1078.001,uses,d3f:DefaultUserAccount,Default User Account
+T1078.001,uses,d3f:UserAccount,User Account
+T1078.002,uses,d3f:DomainUserAccount,Domain User Account
+T1078.002,uses,d3f:UserAccount,User Account
+T1078.003,uses,d3f:LocalUserAccount,Local User Account
+T1078.003,uses,d3f:UserAccount,User Account
+T1078.004,uses,d3f:CloudUserAccount,Cloud User Account
+T1078.004,uses,d3f:UserAccount,User Account
+T1080,modifies,d3f:NetworkResource,Network Resource
+T1082,may-access,d3f:DecoyArtifact,Decoy Artifact
+T1082,may-invoke,d3f:CreateProcess,Create Process
+T1083,accesses,d3f:Directory,Directory
+T1083,accesses,d3f:File,File
+T1087,enumerates,d3f:CloudUserAccount,Cloud User Account
+T1087,enumerates,d3f:DomainUserAccount,Domain User Account
+T1087,enumerates,d3f:LocalUserAccount,Local User Account
+T1087.001,enumerates,d3f:LocalUserAccount,Local User Account
+T1087.002,enumerates,d3f:DomainUserAccount,Domain User Account
+T1087.004,enumerates,d3f:CloudUserAccount,Cloud User Account
+T1090,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1090,produces,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1090,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1090.001,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1090.002,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1090.003,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1090.004,produces,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1091,executes,d3f:RemovableMediaDevice,Removable Media Device
+T1092,modifies,d3f:RemovableMediaDevice,Removable Media Device
+T1095,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1098,creates,d3f:Credential,Credential
+T1098,modifies,d3f:DomainUserAccount,Domain User Account
+T1098,modifies,d3f:GlobalUserAccount,Global User Account
+T1098,modifies,d3f:UserAccount,User Account
+T1098,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1098.001,creates,d3f:Credential,Credential
+T1098.001,modifies,d3f:UserAccount,User Account
+T1098.001,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1098.002,modifies,d3f:DomainUserAccount,Domain User Account
+T1098.002,modifies,d3f:UserAccount,User Account
+T1098.003,modifies,d3f:GlobalUserAccount,Global User Account
+T1098.003,modifies,d3f:UserAccount,User Account
+T1098.004,modifies,d3f:UserAccount,User Account
+T1098.005,modifies,d3f:UserAccount,User Account
+T1098.006,modifies,d3f:UserAccount,User Account
+T1098.007,modifies,d3f:UserAccount,User Account
+T1102,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1102.001,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1102.002,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1102.003,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1104,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1105,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1106,invokes,d3f:SystemCall,System Call
+T1110,accesses,d3f:Password,Password
+T1110,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1110,modifies,d3f:AuthenticationLog,Authentication Log
+T1110.001,accesses,d3f:Password,Password
+T1110.001,modifies,d3f:AuthenticationLog,Authentication Log
+T1110.002,accesses,d3f:Password,Password
+T1110.003,accesses,d3f:Password,Password
+T1110.003,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1110.003,modifies,d3f:AuthenticationLog,Authentication Log
+T1110.004,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1110.004,modifies,d3f:AuthenticationLog,Authentication Log
+T1111,may-access,d3f:SecurityToken,Security Token
+T1112,modifies,d3f:WindowsRegistry,Windows Registry
+T1113,may-access,d3f:DisplayServer,Display Server
+T1113,may-invoke,d3f:GetScreenCapture,Get Screen Capture
+T1114,accesses,d3f:MailServer,Mail Server
+T1114,accesses,d3f:Resource,Resource
+T1114,modifies,d3f:ApplicationConfiguration,Application Configuration
+T1114,reads,d3f:Email,Email
+T1114.001,accesses,d3f:Resource,Resource
+T1114.001,reads,d3f:Email,Email
+T1114.002,accesses,d3f:MailServer,Mail Server
+T1114.002,accesses,d3f:Resource,Resource
+T1114.003,accesses,d3f:Resource,Resource
+T1114.003,modifies,d3f:ApplicationConfiguration,Application Configuration
+T1115,reads,d3f:Clipboard,Clipboard
+T1119,accesses,d3f:File,File
+T1123,accesses,d3f:AudioInputDevice,Audio Input Device
+T1124,may-invoke,d3f:CreateProcess,Create Process
+T1124,may-invoke,d3f:GetSystemTime,Get System Time
+T1125,accesses,d3f:DigitalCamera,Digital Camera
+T1125,accesses,d3f:VideoInputDevice,Video Input Device
+T1127,modifies,d3f:CompilerConfigurationFile,Compiler Configuration File
+T1127,runs,d3f:Compiler,Compiler
+T1127.001,modifies,d3f:CompilerConfigurationFile,Compiler Configuration File
+T1127.001,runs,d3f:Compiler,Compiler
+T1132,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1132.001,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1132.002,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1133,produces,d3f:NetworkSession,Network Session
+T1134,copies,d3f:AccessToken,Access Token
+T1134,creates,d3f:LoginSession,Login Session
+T1134,invokes,d3f:CreateProcess,Create Process
+T1134,may-modify,d3f:EventLog,Event Log
+T1134,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1134.001,copies,d3f:AccessToken,Access Token
+T1134.002,copies,d3f:AccessToken,Access Token
+T1134.002,may-modify,d3f:EventLog,Event Log
+T1134.003,copies,d3f:AccessToken,Access Token
+T1134.003,creates,d3f:LoginSession,Login Session
+T1134.003,may-modify,d3f:EventLog,Event Log
+T1134.004,invokes,d3f:CreateProcess,Create Process
+T1134.005,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1136,creates,d3f:CloudUserAccount,Cloud User Account
+T1136,creates,d3f:DomainUserAccount,Domain User Account
+T1136,creates,d3f:LocalUserAccount,Local User Account
+T1136,creates,d3f:UserAccount,User Account
+T1136.001,creates,d3f:LocalUserAccount,Local User Account
+T1136.001,creates,d3f:UserAccount,User Account
+T1136.002,creates,d3f:DomainUserAccount,Domain User Account
+T1136.002,creates,d3f:UserAccount,User Account
+T1136.003,creates,d3f:CloudUserAccount,Cloud User Account
+T1136.003,creates,d3f:UserAccount,User Account
+T1137,adds,d3f:OfficeApplicationFile,Office Application File
+T1137,adds,d3f:Software,Software
+T1137,may-add,d3f:ExecutableScript,Executable Script
+T1137,may-modify,d3f:ExecutableScript,Executable Script
+T1137,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1137,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1137,modifies,d3f:ApplicationConfigurationDatabase,Application Configuration Database
+T1137,modifies,d3f:OfficeApplication,Office Application
+T1137,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1137.001,may-add,d3f:ExecutableScript,Executable Script
+T1137.001,may-modify,d3f:ExecutableScript,Executable Script
+T1137.001,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1137.002,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1137.003,adds,d3f:OfficeApplicationFile,Office Application File
+T1137.004,modifies,d3f:ApplicationConfigurationDatabase,Application Configuration Database
+T1137.005,modifies,d3f:ApplicationConfigurationDatabase,Application Configuration Database
+T1137.006,adds,d3f:Software,Software
+T1137.006,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1137.006,modifies,d3f:OfficeApplication,Office Application
+T1140,invokes,d3f:CreateProcess,Create Process
+T1140,may-add,d3f:ExecutableFile,Executable File
+T1140,may-modify,d3f:EventLog,Event Log
+T1142,accesses,d3f:EncryptedCredential,Encrypted Credential
+T1176,modifies,d3f:BrowserExtension,Browser Extension
+T1176.001,modifies,d3f:BrowserExtension,Browser Extension
+T1176.002,modifies,d3f:BrowserExtension,Browser Extension
+T1185,produces,d3f:WebNetworkTraffic,Web Network Traffic
+T1187,may-modify,d3f:WindowsShortcutFile,Windows Shortcut File
+T1187,modifies,d3f:AuthenticationLog,Authentication Log
+T1189,modifies,d3f:ProcessSegment,Process Segment
+T1189,produces,d3f:InternetNetworkTraffic,Internet Network Traffic
+T1189,produces,d3f:URL,URL
+T1190,injects,d3f:DatabaseQuery,Database Query
+T1190,modifies,d3f:ProcessSegment,Process Segment
+T1190,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1195,modifies,d3f:HardwareDevice,Hardware Device
+T1195,modifies,d3f:Software,Software
+T1195.001,modifies,d3f:Software,Software
+T1195.002,modifies,d3f:Software,Software
+T1195.003,modifies,d3f:HardwareDevice,Hardware Device
+T1197,may-produce,d3f:IntranetIPCNetworkTraffic,Intranet IPC Network Traffic
+T1197,may-produce,d3f:IntranetWebNetworkTraffic,Intranet Web Network Traffic
+T1197,may-produce,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1199,creates,d3f:LoginSession,Login Session
+T1199,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1200,connects,d3f:HardwareDevice,Hardware Device
+T1203,modifies,d3f:ProcessCodeSegment,Process Code Segment
+T1203,modifies,d3f:StackFrame,Stack Frame
+T1204,accesses,d3f:URL,URL
+T1204,executes,d3f:ExecutableFile,Executable File
+T1204,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1204.001,accesses,d3f:URL,URL
+T1204.001,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1204.002,executes,d3f:ExecutableFile,Executable File
+T1205,produces,d3f:NetworkTraffic,Network Traffic
+T1205.001,produces,d3f:NetworkTraffic,Network Traffic
+T1205.002,produces,d3f:NetworkTraffic,Network Traffic
+T1207,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1207,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1210,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T1210,may-modify,d3f:ProcessSegment,Process Segment
+T1210,may-modify,d3f:StackFrame,Stack Frame
+T1210,produces,d3f:IntranetNetworkTraffic,Intranet Network Traffic
+T1211,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T1211,may-modify,d3f:StackFrame,Stack Frame
+T1212,may-access,d3f:AuthenticationService,Authentication Service
+T1212,may-access,d3f:CredentialManagementSystem,Credential Management System
+T1212,may-modify,d3f:ProcessCodeSegment,Process Code Segment
+T1212,may-modify,d3f:StackFrame,Stack Frame
+T1213,accesses,d3f:Resource,Resource
+T1213,accesses,d3f:WebFileResource,Web File Resource
+T1213,reads,d3f:CodeRepository,Code Repository
+T1213.001,accesses,d3f:Resource,Resource
+T1213.001,accesses,d3f:WebFileResource,Web File Resource
+T1213.002,accesses,d3f:Resource,Resource
+T1213.002,accesses,d3f:WebFileResource,Web File Resource
+T1213.003,accesses,d3f:Resource,Resource
+T1213.003,reads,d3f:CodeRepository,Code Repository
+T1213.004,accesses,d3f:Resource,Resource
+T1213.005,accesses,d3f:Resource,Resource
+T1213.006,accesses,d3f:Resource,Resource
+T1218,executes,d3f:ShellCommand,Shell Command
+T1218,interprets,d3f:MicrosoftHTMLApplication,Microsoft HTML Application
+T1218,invokes,d3f:CreateFile,Create File
+T1218,invokes,d3f:CreateProcess,Create Process
+T1218,invokes,d3f:CreateThread,Create Thread
+T1218,loads,d3f:SharedLibraryFile,Shared Library File
+T1218,may-add,d3f:Software,Software
+T1218,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1218,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1218,may-produce,d3f:NetworkTraffic,Network Traffic
+T1218,modifies,d3f:ProcessSegment,Process Segment
+T1218.001,invokes,d3f:CreateFile,Create File
+T1218.001,invokes,d3f:CreateProcess,Create Process
+T1218.002,invokes,d3f:CreateProcess,Create Process
+T1218.002,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1218.003,invokes,d3f:CreateProcess,Create Process
+T1218.003,may-produce,d3f:NetworkTraffic,Network Traffic
+T1218.005,interprets,d3f:MicrosoftHTMLApplication,Microsoft HTML Application
+T1218.005,invokes,d3f:CreateProcess,Create Process
+T1218.011,invokes,d3f:CreateProcess,Create Process
+T1218.011,loads,d3f:SharedLibraryFile,Shared Library File
+T1218.013,invokes,d3f:CreateThread,Create Thread
+T1218.013,modifies,d3f:ProcessSegment,Process Segment
+T1218.014,executes,d3f:ShellCommand,Shell Command
+T1218.014,may-add,d3f:Software,Software
+T1218.014,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1219,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1219.001,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1219.002,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1219.003,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1220,adds,d3f:File,File
+T1220,interprets,d3f:ExecutableScript,Executable Script
+T1220,invokes,d3f:CreateProcess,Create Process
+T1222,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1222.001,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1222.002,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1484,modifies,d3f:GroupPolicy,Group Policy
+T1484.001,modifies,d3f:GroupPolicy,Group Policy
+T1484.002,modifies,d3f:GroupPolicy,Group Policy
+T1486,encrypts,d3f:File,File
+T1486,uses,d3f:CryptographicKey,Cryptographic Key
+T1489,disables,d3f:ServiceApplication,Service Application
+T1490,modifies,d3f:OperatingSystemConfiguration,Operating System Configuration
+T1490,modifies,d3f:SystemServiceSoftware,System Service Software
+T1491,modifies,d3f:NetworkResource,Network Resource
+T1491,modifies,d3f:Resource,Resource
+T1491.001,modifies,d3f:Resource,Resource
+T1491.002,modifies,d3f:NetworkResource,Network Resource
+T1497,may-invoke,d3f:GetSystemTime,Get System Time
+T1497,may-run,d3f:SystemTimeApplication,System Time Application
+T1497.003,may-invoke,d3f:GetSystemTime,Get System Time
+T1497.003,may-run,d3f:SystemTimeApplication,System Time Application
+T1498,creates,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1498,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1498.001,creates,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1498.002,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1499,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1499.002,produces,d3f:InboundInternetNetworkTraffic,Inbound Internet Network Traffic
+T1505,adds,d3f:MessageTransferAgent,Message Transfer Agent
+T1505,adds,d3f:Software,Software
+T1505,adds,d3f:WebScriptFile,Web Script File
+T1505,creates,d3f:StoredProcedure,Stored Procedure
+T1505,invokes,d3f:CreateProcess,Create Process
+T1505,modifies,d3f:MailServer,Mail Server
+T1505,modifies,d3f:WebServer,Web Server
+T1505,produces,d3f:Process,Process
+T1505.001,creates,d3f:StoredProcedure,Stored Procedure
+T1505.001,invokes,d3f:CreateProcess,Create Process
+T1505.002,adds,d3f:MessageTransferAgent,Message Transfer Agent
+T1505.002,modifies,d3f:MailServer,Mail Server
+T1505.003,adds,d3f:WebScriptFile,Web Script File
+T1505.003,modifies,d3f:WebServer,Web Server
+T1505.003,produces,d3f:Process,Process
+T1505.004,adds,d3f:Software,Software
+T1518,may-access,d3f:FileSystemMetadata,File System Metadata
+T1518,may-access,d3f:KernelProcessTable,Kernel Process Table
+T1518,may-access,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1518,may-access,d3f:SystemFirewallConfiguration,System Firewall Configuration
+T1518,may-invoke,d3f:GetRunningProcesses,Get Running Processes
+T1518.001,may-access,d3f:FileSystemMetadata,File System Metadata
+T1518.001,may-access,d3f:KernelProcessTable,Kernel Process Table
+T1518.001,may-access,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1518.001,may-access,d3f:SystemFirewallConfiguration,System Firewall Configuration
+T1518.001,may-invoke,d3f:GetRunningProcesses,Get Running Processes
+T1525,adds,d3f:ContainerImage,Container Image
+T1526,reads,d3f:CloudConfiguration,Cloud Configuration
+T1528,accesses,d3f:AccessToken,Access Token
+T1531,modifies,d3f:UserAccount,User Account
+T1534,produces,d3f:Email,Email
+T1538,accesses,d3f:CloudConfiguration,Cloud Configuration
+T1539,accesses,d3f:SessionCookie,Session Cookie
+T1542,creates,d3f:TFTPNetworkTraffic,TFTP Network Traffic
+T1542,may-modify,d3f:BootLoader,Boot Loader
+T1542,may-modify,d3f:BootSector,Boot Sector
+T1542,may-modify,d3f:VolumeBootRecord,Volume Boot Record
+T1542,modifies,d3f:Firmware,Firmware
+T1542,modifies,d3f:SystemFirmware,System Firmware
+T1542.001,modifies,d3f:SystemFirmware,System Firmware
+T1542.002,modifies,d3f:Firmware,Firmware
+T1542.003,may-modify,d3f:BootLoader,Boot Loader
+T1542.003,may-modify,d3f:BootSector,Boot Sector
+T1542.003,may-modify,d3f:VolumeBootRecord,Volume Boot Record
+T1542.004,modifies,d3f:SystemFirmware,System Firmware
+T1542.005,creates,d3f:TFTPNetworkTraffic,TFTP Network Traffic
+T1543,creates,d3f:PropertyListFile,Property List File
+T1543,may-create,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1543,may-modify,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1543,modifies,d3f:PropertyListFile,Property List File
+T1543,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1543.001,creates,d3f:PropertyListFile,Property List File
+T1543.002,may-create,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1543.002,may-modify,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1543.003,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1543.004,modifies,d3f:PropertyListFile,Property List File
+T1546,creates,d3f:ExecutableFile,Executable File
+T1546,creates,d3f:Shim,Shim
+T1546,executes,d3f:ShellCommand,Shell Command
+T1546,invokes,d3f:CreateProcess,Create Process
+T1546,loads,d3f:ExecutableBinary,Executable Binary
+T1546,loads,d3f:SharedLibraryFile,Shared Library File
+T1546,may-create,d3f:ExecutableScript,Executable Script
+T1546,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1546,may-create,d3f:PropertyListFile,Property List File
+T1546,may-modify,d3f:ExecutableBinary,Executable Binary
+T1546,may-modify,d3f:ExecutableScript,Executable Script
+T1546,may-modify,d3f:PropertyListFile,Property List File
+T1546,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546,modifies,d3f:ConfigurationResource,Configuration Resource
+T1546,modifies,d3f:EventLog,Event Log
+T1546,modifies,d3f:ExecutableBinary,Executable Binary
+T1546,modifies,d3f:PowerShellProfileScript,PowerShell Profile Script
+T1546,modifies,d3f:ShimDatabase,Shim Database
+T1546,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1546,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546,modifies,d3f:UserInitConfigurationFile,User Init Configuration File
+T1546,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1546,produces,d3f:Process,Process
+T1546.001,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.002,creates,d3f:ExecutableFile,Executable File
+T1546.002,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.003,modifies,d3f:EventLog,Event Log
+T1546.003,produces,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1546.004,modifies,d3f:UserInitConfigurationFile,User Init Configuration File
+T1546.005,executes,d3f:ShellCommand,Shell Command
+T1546.005,may-create,d3f:ExecutableScript,Executable Script
+T1546.005,may-modify,d3f:ExecutableScript,Executable Script
+T1546.005,modifies,d3f:EventLog,Event Log
+T1546.006,modifies,d3f:ExecutableBinary,Executable Binary
+T1546.007,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.007,produces,d3f:Process,Process
+T1546.008,may-create,d3f:IntranetAdministrativeNetworkTraffic,Intranet Administrative Network Traffic
+T1546.008,may-modify,d3f:ExecutableBinary,Executable Binary
+T1546.008,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.009,invokes,d3f:CreateProcess,Create Process
+T1546.009,loads,d3f:SharedLibraryFile,Shared Library File
+T1546.009,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.010,invokes,d3f:CreateProcess,Create Process
+T1546.010,loads,d3f:SharedLibraryFile,Shared Library File
+T1546.010,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1546.011,creates,d3f:Shim,Shim
+T1546.011,modifies,d3f:ShimDatabase,Shim Database
+T1546.012,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1546.013,modifies,d3f:PowerShellProfileScript,PowerShell Profile Script
+T1546.014,may-create,d3f:PropertyListFile,Property List File
+T1546.014,may-modify,d3f:PropertyListFile,Property List File
+T1546.014,modifies,d3f:ConfigurationResource,Configuration Resource
+T1546.015,loads,d3f:ExecutableBinary,Executable Binary
+T1546.015,modifies,d3f:SystemConfigurationDatabase,System Configuration Database
+T1547,may-create,d3f:SharedLibraryFile,Shared Library File
+T1547,may-modify,d3f:SymbolicLink,Symbolic Link
+T1547,may-modify,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1547,may-modify,d3f:UserStartupScriptFile,User Startup Script File
+T1547,modifies,d3f:ApplicationConfigurationFile,Application Configuration File
+T1547,modifies,d3f:KernelModule,Kernel Module
+T1547,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547,modifies,d3f:SystemServiceSoftware,System Service Software
+T1547,modifies,d3f:UserLogonInitResource,User Logon Init Resource
+T1547.001,may-modify,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1547.001,may-modify,d3f:UserStartupScriptFile,User Startup Script File
+T1547.002,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547.003,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547.004,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547.005,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547.006,modifies,d3f:KernelModule,Kernel Module
+T1547.007,modifies,d3f:ApplicationConfigurationFile,Application Configuration File
+T1547.008,may-create,d3f:SharedLibraryFile,Shared Library File
+T1547.008,modifies,d3f:SystemServiceSoftware,System Service Software
+T1547.009,may-modify,d3f:SymbolicLink,Symbolic Link
+T1547.009,may-modify,d3f:UserStartupScriptFile,User Startup Script File
+T1547.010,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1547.011,modifies,d3f:ApplicationConfigurationFile,Application Configuration File
+T1547.015,modifies,d3f:UserLogonInitResource,User Logon Init Resource
+T1548,abuses,d3f:AccessControlConfiguration,Access Control Configuration
+T1548,creates,d3f:SystemConfigurationDatabase,System Configuration Database
+T1548,executes,d3f:ExecutableFile,Executable File
+T1548,invokes,d3f:CreateProcess,Create Process
+T1548,invokes,d3f:SystemCall,System Call
+T1548,may-modify,d3f:EventLog,Event Log
+T1548,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1548,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1548,modifies,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1548,uses,d3f:CloudUserAccount,Cloud User Account
+T1548.001,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1548.002,executes,d3f:ExecutableFile,Executable File
+T1548.002,invokes,d3f:CreateProcess,Create Process
+T1548.002,may-modify,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1548.003,may-modify,d3f:EventLog,Event Log
+T1548.003,modifies,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1548.004,creates,d3f:SystemConfigurationDatabase,System Configuration Database
+T1548.004,invokes,d3f:SystemCall,System Call
+T1548.005,abuses,d3f:AccessControlConfiguration,Access Control Configuration
+T1548.005,uses,d3f:CloudUserAccount,Cloud User Account
+T1550,accesses,d3f:AuthenticationService,Authentication Service
+T1550,adds,d3f:SessionCookie,Session Cookie
+T1550,may-produce,d3f:NetworkTraffic,Network Traffic
+T1550,produces,d3f:WebNetworkTraffic,Web Network Traffic
+T1550,uses,d3f:AccessToken,Access Token
+T1550.001,accesses,d3f:AuthenticationService,Authentication Service
+T1550.001,may-produce,d3f:NetworkTraffic,Network Traffic
+T1550.001,uses,d3f:AccessToken,Access Token
+T1550.002,accesses,d3f:AuthenticationService,Authentication Service
+T1550.003,accesses,d3f:AuthenticationService,Authentication Service
+T1550.004,accesses,d3f:AuthenticationService,Authentication Service
+T1550.004,adds,d3f:SessionCookie,Session Cookie
+T1550.004,produces,d3f:WebNetworkTraffic,Web Network Traffic
+T1552,accesses,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1552,accesses,d3f:CommandHistoryLogFile,Command History Log File
+T1552,accesses,d3f:Credential,Credential
+T1552,accesses,d3f:File,File
+T1552,accesses,d3f:GroupPolicy,Group Policy
+T1552,accesses,d3f:PrivateKey,Private Key
+T1552,accesses,d3f:SystemConfigurationDatabase,System Configuration Database
+T1552.001,accesses,d3f:Credential,Credential
+T1552.001,accesses,d3f:File,File
+T1552.002,accesses,d3f:Credential,Credential
+T1552.002,accesses,d3f:SystemConfigurationDatabase,System Configuration Database
+T1552.003,accesses,d3f:CommandHistoryLogFile,Command History Log File
+T1552.003,accesses,d3f:Credential,Credential
+T1552.004,accesses,d3f:Credential,Credential
+T1552.004,accesses,d3f:PrivateKey,Private Key
+T1552.005,accesses,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1552.005,accesses,d3f:Credential,Credential
+T1552.006,accesses,d3f:Credential,Credential
+T1552.006,accesses,d3f:GroupPolicy,Group Policy
+T1552.007,accesses,d3f:Credential,Credential
+T1552.008,accesses,d3f:Credential,Credential
+T1553,modifies,d3f:CertificateTrustStore,Certificate Trust Store
+T1553,modifies,d3f:FileSystemMetadata,File System Metadata
+T1553,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1553.001,modifies,d3f:FileSystemMetadata,File System Metadata
+T1553.003,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1553.004,modifies,d3f:CertificateTrustStore,Certificate Trust Store
+T1554,modifies,d3f:ClientApplication,Client Application
+T1555,accesses,d3f:DatabaseFile,Database File
+T1555,accesses,d3f:In-memoryPasswordStore,In-memory Password Store
+T1555,accesses,d3f:MacOSKeychain,MacOS Keychain
+T1555,accesses,d3f:PasswordStore,Password Store
+T1555,may-access,d3f:DatabaseFile,Database File
+T1555,may-access,d3f:In-memoryPasswordStore,In-memory Password Store
+T1555,may-invoke,d3f:ReadFile,Read File
+T1555.001,accesses,d3f:MacOSKeychain,MacOS Keychain
+T1555.001,accesses,d3f:PasswordStore,Password Store
+T1555.001,may-access,d3f:DatabaseFile,Database File
+T1555.002,accesses,d3f:In-memoryPasswordStore,In-memory Password Store
+T1555.002,accesses,d3f:PasswordStore,Password Store
+T1555.002,may-access,d3f:DatabaseFile,Database File
+T1555.003,accesses,d3f:DatabaseFile,Database File
+T1555.003,accesses,d3f:PasswordStore,Password Store
+T1555.003,may-access,d3f:DatabaseFile,Database File
+T1555.003,may-access,d3f:In-memoryPasswordStore,In-memory Password Store
+T1555.003,may-invoke,d3f:ReadFile,Read File
+T1555.004,accesses,d3f:PasswordStore,Password Store
+T1555.004,may-access,d3f:DatabaseFile,Database File
+T1555.005,accesses,d3f:PasswordStore,Password Store
+T1555.005,may-access,d3f:DatabaseFile,Database File
+T1555.006,accesses,d3f:PasswordStore,Password Store
+T1555.006,may-access,d3f:DatabaseFile,Database File
+T1556,creates,d3f:SharedLibraryFile,Shared Library File
+T1556,may-modify,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1556,may-modify,d3f:OperatingSystemSharedLibraryFile,Operating System Shared Library File
+T1556,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1556,modifies,d3f:AuthenticationService,Authentication Service
+T1556,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1556.001,modifies,d3f:AuthenticationService,Authentication Service
+T1556.002,creates,d3f:SharedLibraryFile,Shared Library File
+T1556.002,modifies,d3f:AuthenticationService,Authentication Service
+T1556.002,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1556.003,may-modify,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1556.003,may-modify,d3f:OperatingSystemSharedLibraryFile,Operating System Shared Library File
+T1556.003,modifies,d3f:AuthenticationService,Authentication Service
+T1556.004,modifies,d3f:AuthenticationService,Authentication Service
+T1556.005,modifies,d3f:AuthenticationService,Authentication Service
+T1556.006,modifies,d3f:AuthenticationService,Authentication Service
+T1556.007,modifies,d3f:AuthenticationService,Authentication Service
+T1556.008,modifies,d3f:AuthenticationService,Authentication Service
+T1556.009,modifies,d3f:AccessControlConfiguration,Access Control Configuration
+T1556.009,modifies,d3f:AuthenticationService,Authentication Service
+T1557,creates,d3f:DHCPNetworkTraffic,DHCP Network Traffic
+T1557,produces,d3f:IntranetMulticastNetworkTraffic,Intranet Multicast Network Traffic
+T1557,produces,d3f:NetworkTraffic,Network Traffic
+T1557.001,produces,d3f:IntranetMulticastNetworkTraffic,Intranet Multicast Network Traffic
+T1557.001,produces,d3f:NetworkTraffic,Network Traffic
+T1557.002,produces,d3f:NetworkTraffic,Network Traffic
+T1557.003,creates,d3f:DHCPNetworkTraffic,DHCP Network Traffic
+T1557.003,produces,d3f:NetworkTraffic,Network Traffic
+T1557.004,produces,d3f:NetworkTraffic,Network Traffic
+T1558,forges,d3f:KerberosTicketGrantingTicket,Kerberos Ticket Granting Ticket
+T1558,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1558,may-produce,d3f:RPCNetworkTraffic,RPC Network Traffic
+T1558.001,forges,d3f:KerberosTicketGrantingTicket,Kerberos Ticket Granting Ticket
+T1558.001,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558.001,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1558.002,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558.002,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1558.003,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558.003,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1558.003,may-produce,d3f:RPCNetworkTraffic,RPC Network Traffic
+T1558.004,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558.004,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1558.005,may-access,d3f:KerberosTicket,Kerberos Ticket
+T1558.005,may-create,d3f:KerberosTicket,Kerberos Ticket
+T1559,injects,d3f:InterprocessCommunication,Interprocess Communication
+T1559.001,injects,d3f:InterprocessCommunication,Interprocess Communication
+T1559.002,injects,d3f:InterprocessCommunication,Interprocess Communication
+T1559.003,injects,d3f:InterprocessCommunication,Interprocess Communication
+T1560,creates,d3f:ArchiveFile,Archive File
+T1560,creates,d3f:CustomArchiveFile,Custom Archive File
+T1560.001,creates,d3f:ArchiveFile,Archive File
+T1560.002,creates,d3f:ArchiveFile,Archive File
+T1560.003,creates,d3f:ArchiveFile,Archive File
+T1560.003,creates,d3f:CustomArchiveFile,Custom Archive File
+T1561,may-modify,d3f:BootSector,Boot Sector
+T1561,may-modify,d3f:Partition,Partition
+T1561,may-modify,d3f:PartitionTable,Partition Table
+T1561,may-modify,d3f:Volume,Volume
+T1561,modifies,d3f:BlockDevice,Block Device
+T1561.001,may-modify,d3f:BootSector,Boot Sector
+T1561.001,may-modify,d3f:Partition,Partition
+T1561.001,may-modify,d3f:PartitionTable,Partition Table
+T1561.001,may-modify,d3f:Volume,Volume
+T1561.001,modifies,d3f:BlockDevice,Block Device
+T1561.002,may-modify,d3f:BootSector,Boot Sector
+T1561.002,may-modify,d3f:PartitionTable,Partition Table
+T1562,accesses,d3f:LegacySystem,Legacy System
+T1562,disables,d3f:CloudServiceSensor,Cloud Service Sensor
+T1562,disables,d3f:EndpointSensor,Endpoint Sensor
+T1562,disables,d3f:Firewall,Firewall
+T1562,disables,d3f:KernelAPISensor,Kernel API Sensor
+T1562,disables,d3f:OperatingSystemProcess,Operating System Process
+T1562,disables,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1562,may-modify,d3f:ApplicationConfiguration,Application Configuration
+T1562,may-modify,d3f:OperatingSystemConfigurationComponent,Operating System Configuration Component
+T1562,may-modify,d3f:UserInitScript,User Init Script
+T1562,may-modify,d3f:WindowsRegistryKey,Windows Registry Key
+T1562,modifies,d3f:CloudConfiguration,Cloud Configuration
+T1562,modifies,d3f:ProcessEnvironmentVariable,Process Environment Variable
+T1562,modifies,d3f:SystemFirewallConfiguration,System Firewall Configuration
+T1562.001,disables,d3f:OperatingSystemProcess,Operating System Process
+T1562.002,may-modify,d3f:ApplicationConfiguration,Application Configuration
+T1562.002,may-modify,d3f:OperatingSystemConfigurationComponent,Operating System Configuration Component
+T1562.003,may-modify,d3f:UserInitScript,User Init Script
+T1562.003,may-modify,d3f:WindowsRegistryKey,Windows Registry Key
+T1562.003,modifies,d3f:ProcessEnvironmentVariable,Process Environment Variable
+T1562.004,modifies,d3f:SystemFirewallConfiguration,System Firewall Configuration
+T1562.007,modifies,d3f:CloudConfiguration,Cloud Configuration
+T1562.008,disables,d3f:CloudServiceSensor,Cloud Service Sensor
+T1562.008,modifies,d3f:CloudConfiguration,Cloud Configuration
+T1562.009,disables,d3f:EndpointSensor,Endpoint Sensor
+T1562.009,disables,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1562.010,accesses,d3f:LegacySystem,Legacy System
+T1562.012,disables,d3f:KernelAPISensor,Kernel API Sensor
+T1562.013,disables,d3f:Firewall,Firewall
+T1563,accesses,d3f:RDPSession,RDP Session
+T1563,accesses,d3f:RemoteSession,Remote Session
+T1563,accesses,d3f:SSHSession,SSH Session
+T1563,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1563.001,accesses,d3f:RemoteSession,Remote Session
+T1563.001,accesses,d3f:SSHSession,SSH Session
+T1563.001,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1563.002,accesses,d3f:RDPSession,RDP Session
+T1563.002,accesses,d3f:RemoteSession,Remote Session
+T1563.002,produces,d3f:AdministrativeNetworkTraffic,Administrative Network Traffic
+T1564,creates,d3f:File,File
+T1564,executes,d3f:VirtualizationSoftware,Virtualization Software
+T1564,may-add,d3f:VirtualizationSoftware,Virtualization Software
+T1564,may-create,d3f:Directory,Directory
+T1564,may-create,d3f:EmailRule,Email Rule
+T1564,may-create,d3f:ResourceFork,Resource Fork
+T1564,may-modify,d3f:EmailRule,Email Rule
+T1564,may-modify,d3f:PropertyListFile,Property List File
+T1564,may-modify,d3f:ResourceFork,Resource Fork
+T1564,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1564,modifies,d3f:ApplicationConfiguration,Application Configuration
+T1564,modifies,d3f:FileSystemMetadata,File System Metadata
+T1564,modifies,d3f:OfficeApplicationFile,Office Application File
+T1564,modifies,d3f:Storage,Storage
+T1564,modifies,d3f:UserInitConfigurationFile,User Init Configuration File
+T1564.001,modifies,d3f:FileSystemMetadata,File System Metadata
+T1564.002,modifies,d3f:UserInitConfigurationFile,User Init Configuration File
+T1564.003,may-modify,d3f:PropertyListFile,Property List File
+T1564.003,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1564.004,modifies,d3f:FileSystemMetadata,File System Metadata
+T1564.005,may-modify,d3f:SystemConfigurationDatabase,System Configuration Database
+T1564.005,modifies,d3f:Storage,Storage
+T1564.006,creates,d3f:File,File
+T1564.006,executes,d3f:VirtualizationSoftware,Virtualization Software
+T1564.006,may-add,d3f:VirtualizationSoftware,Virtualization Software
+T1564.006,may-create,d3f:Directory,Directory
+T1564.007,modifies,d3f:OfficeApplicationFile,Office Application File
+T1564.008,may-create,d3f:EmailRule,Email Rule
+T1564.008,may-modify,d3f:EmailRule,Email Rule
+T1564.008,modifies,d3f:ApplicationConfiguration,Application Configuration
+T1564.009,may-create,d3f:ResourceFork,Resource Fork
+T1564.009,may-modify,d3f:ResourceFork,Resource Fork
+T1565,may-modify,d3f:ExecutableFile,Executable File
+T1565,may-modify,d3f:NetworkTraffic,Network Traffic
+T1565,modifies,d3f:File,File
+T1565.001,modifies,d3f:File,File
+T1565.002,may-modify,d3f:NetworkTraffic,Network Traffic
+T1565.003,may-modify,d3f:ExecutableFile,Executable File
+T1566,produces,d3f:Email,Email
+T1566,produces,d3f:File,File
+T1566,produces,d3f:InboundInternetMailTraffic,Inbound Internet Mail Traffic
+T1566,produces,d3f:URL,URL
+T1566.001,produces,d3f:Email,Email
+T1566.001,produces,d3f:InboundInternetMailTraffic,Inbound Internet Mail Traffic
+T1566.002,produces,d3f:Email,Email
+T1566.002,produces,d3f:InboundInternetMailTraffic,Inbound Internet Mail Traffic
+T1566.002,produces,d3f:URL,URL
+T1566.003,produces,d3f:File,File
+T1566.003,produces,d3f:URL,URL
+T1567,may-produce,d3f:OutboundInternetEncryptedRemoteTerminalTraffic,Outbound Internet Encrypted Remote Terminal Traffic
+T1567,may-produce,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1567,produces,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1567,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1567.001,may-produce,d3f:OutboundInternetEncryptedRemoteTerminalTraffic,Outbound Internet Encrypted Remote Terminal Traffic
+T1567.001,may-produce,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1567.001,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1567.002,produces,d3f:OutboundInternetEncryptedWebTraffic,Outbound Internet Encrypted Web Traffic
+T1567.002,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1567.003,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1567.004,produces,d3f:OutboundInternetWebTraffic,Outbound Internet Web Traffic
+T1568,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1568.001,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1568.002,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1568.003,produces,d3f:OutboundInternetDNSLookupTraffic,Outbound Internet DNS Lookup Traffic
+T1570,produces,d3f:IntranetFileTransferTraffic,Intranet File Transfer Traffic
+T1571,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1572,produces,d3f:OutboundInternetNetworkTraffic,Outbound Internet Network Traffic
+T1573,creates,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1573,may-transfer,d3f:CertificateFile,Certificate File
+T1573,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1573.001,creates,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1573.001,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1573.002,creates,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1573.002,may-transfer,d3f:CertificateFile,Certificate File
+T1573.002,produces,d3f:OutboundInternetEncryptedTraffic,Outbound Internet Encrypted Traffic
+T1574,adds,d3f:SharedLibraryFile,Shared Library File
+T1574,creates,d3f:ExecutableFile,Executable File
+T1574,may-create,d3f:SharedLibraryFile,Shared Library File
+T1574,may-modify,d3f:SharedLibraryFile,Shared Library File
+T1574,modifies,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1574,modifies,d3f:ServiceApplication,Service Application
+T1574,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1574,modifies,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1574.001,may-create,d3f:SharedLibraryFile,Shared Library File
+T1574.002,may-create,d3f:SharedLibraryFile,Shared Library File
+T1574.002,may-modify,d3f:SharedLibraryFile,Shared Library File
+T1574.004,may-create,d3f:SharedLibraryFile,Shared Library File
+T1574.004,may-modify,d3f:SharedLibraryFile,Shared Library File
+T1574.005,modifies,d3f:ServiceApplication,Service Application
+T1574.006,modifies,d3f:OperatingSystemConfigurationFile,Operating System Configuration File
+T1574.007,creates,d3f:ExecutableFile,Executable File
+T1574.008,creates,d3f:ExecutableFile,Executable File
+T1574.009,creates,d3f:ExecutableFile,Executable File
+T1574.010,modifies,d3f:ServiceApplication,Service Application
+T1574.011,modifies,d3f:SystemConfigurationInitDatabaseRecord,System Configuration Init Database Record
+T1574.012,adds,d3f:SharedLibraryFile,Shared Library File
+T1574.012,modifies,d3f:SystemConfigurationDatabaseRecord,System Configuration Database Record
+T1578,creates,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578,creates,d3f:ComputingSnapshot,Computing Snapshot
+T1578,creates,d3f:Host,Host
+T1578,deletes,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578,deletes,d3f:Host,Host
+T1578,modifies,d3f:CloudConfiguration,Cloud Configuration
+T1578,modifies,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578,modifies,d3f:Host,Host
+T1578.001,creates,d3f:ComputingSnapshot,Computing Snapshot
+T1578.002,creates,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578.002,creates,d3f:Host,Host
+T1578.003,deletes,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578.003,deletes,d3f:Host,Host
+T1578.004,modifies,d3f:CloudInstanceMetadata,Cloud Instance Metadata
+T1578.004,modifies,d3f:Host,Host
+T1578.005,modifies,d3f:CloudConfiguration,Cloud Configuration
+T1606,forges,d3f:Credential,Credential
+T1606,forges,d3f:SessionCookie,Session Cookie
+T1606.001,forges,d3f:Credential,Credential
+T1606.001,forges,d3f:SessionCookie,Session Cookie
+T1606.002,forges,d3f:Credential,Credential
+T1614,accesses,d3f:ConfigurationResource,Configuration Resource
+T1614,queries,d3f:SystemConfigurationDatabase,System Configuration Database
+T1614.001,accesses,d3f:ConfigurationResource,Configuration Resource
+T1614.001,queries,d3f:SystemConfigurationDatabase,System Configuration Database
+T1615,reads,d3f:GroupPolicy,Group Policy
+T1619,accesses,d3f:CloudStorage,Cloud Storage
+T1620,modifies,d3f:ProcessSegment,Process Segment
+T1621,abuses,d3f:RemoteAuthenticationService,Remote Authentication Service
+T1649,accesses,d3f:CertificateFile,Certificate File
+T1649,forges,d3f:Certificate,Certificate
+T1649,may-access,d3f:CertificateTrustStore,Certificate Trust Store
+T1649,may-access,d3f:CredentialManagementSystem,Credential Management System
+T1666,modifies,d3f:CloudConfiguration,Cloud Configuration

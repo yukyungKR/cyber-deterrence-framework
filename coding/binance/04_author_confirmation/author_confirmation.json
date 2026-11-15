@@ -1,0 +1,542 @@
+{
+ "case_id": "BINANCE-2026",
+ "_설명": [
+  "바이낸스 탈취(2026) 저자 확정 파일 — 대조 시트 §1 「저자 확정」 열(44필드)에 옮긴 저자 선택을 필드마다 적었다(값을 고르지 않음). 꼴은 Viasat 회차 2 저자 확정 파일을 따른다. cell = 칸 글 그대로.",
+  "form: A 일치값 확인 · B 코더 판(coder) · D 템플릿 값 · E 코더 판 항목 구성(legal_characterization) · F 항목 목록(responses) · H 코딩 대상 아님(이 사례에서 더함 — techniques). Viasat의 C(회차 1 값)와 G(직접 기입)는 이 사례에 없다.",
+  "decision = 저자 결정 원천. 값은 조립기가 꼴대로 두 코더 산출과 템플릿에서 가져온다(입력 sha256은 inputs).",
+  "assembly_rules = 저자가 칸에서 정하지 않은 자리의 조립 규칙(R-1~R-4 · Viasat 선례). meta = 시트 44필드 밖 키(annotation_pass)."
+ ],
+ "결정 원천": "저자 확정(2026-11-13) · 저자 결정에서 따라 나오는 작업 규칙(identified_date · victim_state · collection_mode · Technique) · 대조 시트 comparison_sheet_binance.md §1 「저자 확정」 열",
+ "inputs": {
+  "comparison_sheet_binance.md(칸 기입 전)": "88197581b4fc5ac6b67ee12402ef5c7e08520bca7846f2940278b2b4b06415d4",
+  "comparison_sheet_binance.md(칸 기입 뒤)": "3e8a43e1f9b5f227ac2e9ae325b95c973ec5e9b76ad240e6548755e967444a5d",
+  "coding_claude_opus.json": "f601f864dc57b656244bf28d0d35d59316b9f9a54e63af634c7b7c9e14754d3e",
+  "coding_claude_fable.json": "de81d7422d422f9e82c857efff4f805cda224131605893d0bf1c7838a6cb0632",
+  "input_record_binance_template.jsonl": "6718f3ecbd73f68199414d4863407ea8b5de92a7826a83babcb5cd5e977fc914"
+ },
+ "decisions": {
+  "case_id": {
+   "no": 1,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "BINANCE-2026",
+   "decision": "템플릿 값",
+   "cell": "두 코더 일치 · 템플릿 값 그대로",
+   "cell_verbatim": true
+  },
+  "name": {
+   "no": 2,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "바이낸스 탈취 사건(2026)",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "alias": {
+   "no": 3,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "[\"Jade Sleet\", \"UNC4899\", \"Slow Pisces\", \"Pressure Chollima\"]",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "actor": {
+   "no": 4,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "TraderTraitor",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "c_id.grade": {
+   "no": 5,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "5",
+   "decision": "저자 확정: 식별 신뢰도 5 · 국가귀속 신뢰도 5 · 국가귀속 근거일 2026-11-12 · 첫 공식 성명일 2026-10-31",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "c_id.basis": {
+   "no": 6,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "c_id.source": {
+   "no": 7,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "tech_04_FBI_20261031.txt; resp_16_DOJ_20261112.txt",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "state_attribution": {
+   "no": 8,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "북한",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "c_st.grade": {
+   "no": 9,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "5",
+   "decision": "저자 확정: 식별 신뢰도 5 · 국가귀속 신뢰도 5 · 국가귀속 근거일 2026-11-12 · 첫 공식 성명일 2026-10-31",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "c_st.basis": {
+   "no": 10,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "c_st.source": {
+   "no": 11,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "resp_16_DOJ_20261112.txt; tech_04_FBI_20261031.txt",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "c_st.reference_date": {
+   "no": 12,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "2026-11-12",
+   "decision": "저자 확정: 식별 신뢰도 5 · 국가귀속 신뢰도 5 · 국가귀속 근거일 2026-11-12 · 첫 공식 성명일 2026-10-31",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "victim_sector": {
+   "no": 13,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "[\"finance_commerce\"]",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "victim_state": {
+   "no": 14,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "미국",
+   "decision": "저자 결정(미국 관점) · 작업 규칙",
+   "cell": "두 코더 일치 · 템플릿 선기입 값 그대로(작업 규칙)",
+   "cell_verbatim": true
+  },
+  "techniques": {
+   "no": 15,
+   "status": "확정",
+   "verdict": "코딩 대상 아님",
+   "form": "H 코딩 대상 아님",
+   "shown": "[]",
+   "decision": "작업 규칙(Technique 집합은 추출기 산출)",
+   "cell": "코딩 대상 아님 · 빈 목록 그대로(추출기가 채운다 · 작업 규칙)",
+   "cell_verbatim": true
+  },
+  "terminal_objective": {
+   "no": 16,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "{}",
+   "decision": "지시문(비우는 키)",
+   "cell": "두 코더 일치 · 비우는 메타 키 그대로",
+   "cell_verbatim": true
+  },
+  "access_depth.draft": {
+   "no": 17,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "core",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "access_depth.basis": {
+   "no": 18,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "timing_grade": {
+   "no": 19,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "절대(사건 수준)",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "effect_realized.value": {
+   "no": 20,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "post",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "effect_realized.by_type": {
+   "no": 21,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "{\"1\": \"post\", \"2\": \"post\", \"3\": \"pre\"}",
+   "decision": "저자 확정: 파괴·교란 미발현 · 절취 발현(두 코더의 값) · 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "effect_realized.boundary_flag": {
+   "no": 22,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "true",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "effect_realized.note": {
+   "no": 23,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "effect_realized.time_basis": {
+   "no": 24,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "intrusion_state.value": {
+   "no": 25,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "terminated",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "intrusion_state.basis": {
+   "no": 26,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "countermeasure_availability": {
+   "no": 27,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "",
+   "decision": "지시문(비우는 키)",
+   "cell": "두 코더 일치 · 비우는 메타 키 그대로",
+   "cell_verbatim": true
+  },
+  "conflict_nexus": {
+   "no": 28,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "none",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "legal_characterization": {
+   "no": 29,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "E 코더 판 항목 구성",
+   "coder": "claude_opus",
+   "items": [
+    {
+     "no": "①",
+     "value": "domestic_political_framing",
+     "subject": "미국",
+     "cell_ref": "tech_04_FBI_20261031.txt:18",
+     "coder_source": "tech_04_FBI_20261031.txt:18",
+     "needs_author_review": true
+    },
+    {
+     "no": "②",
+     "value": "domestic_political_framing",
+     "subject": "미국",
+     "cell_ref": "resp_16_DOJ_20261112.txt:19",
+     "coder_source": "resp_16_DOJ_20261112.txt:19",
+     "needs_author_review": true
+    }
+   ],
+   "decision": "저자 확정: 법적 성격은 코더 A의 값(국내 정치적 규정 · 미국 문서 2건)",
+   "cell": "코더 A의 값",
+   "cell_verbatim": true
+  },
+  "responses": {
+   "no": 30,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "F 항목 목록",
+   "coder": "claude_opus",
+   "items": [
+    {
+     "no": "⑴",
+     "type": "public_attribution",
+     "actor_state": "미국",
+     "date": "2026-10-31",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post",
+     "source": "tech_04_FBI_20261031.txt"
+    },
+    {
+     "no": "⑵",
+     "type": "criminal_investigation",
+     "actor_state": "미국",
+     "date": "2026-10-31",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post",
+     "source": "tech_04_FBI_20261031.txt"
+    },
+    {
+     "no": "⑶",
+     "type": "public_attribution",
+     "actor_state": "미국",
+     "date": "2026-11-12",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post",
+     "source": "resp_16_DOJ_20261112.txt"
+    },
+    {
+     "no": "⑷",
+     "type": "criminal_investigation",
+     "actor_state": "미국",
+     "date": "2026-11-12",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post",
+     "source": "resp_16_DOJ_20261112.txt"
+    }
+   ],
+   "note": "source · effect_at_response.basis · 키 순서도 코더 A 판(저자가 코더 A의 값을 골랐다)",
+   "decision": "저자 확정: 미국의 공개 대응은 코더 A의 4항목",
+   "cell": "코더 A의 값 4항목",
+   "cell_verbatim": true
+  },
+  "aftermath": {
+   "no": 31,
+   "status": "확정",
+   "verdict": "한쪽 결측",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 경계 사례 표시 · 그 이유 · 후속 서술은 코더 A의 값",
+   "cell": "코더 A의 값",
+   "cell_verbatim": true
+  },
+  "tier": {
+   "no": 32,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "v3_case",
+   "decision": "템플릿 값",
+   "cell": "두 코더 일치 · 템플릿 값 그대로",
+   "cell_verbatim": true
+  },
+  "boundary_flag": {
+   "no": 33,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B2 값 그대로",
+   "shown": "true",
+   "decision": "저자 확정: 경계 사례 표시 · 그 이유 · 후속 서술은 코더 A의 값",
+   "cell": "코더 A의 값",
+   "cell_verbatim": true
+  },
+  "boundary_reason": {
+   "no": 34,
+   "status": "확정",
+   "verdict": "한쪽 결측",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 경계 사례 표시 · 그 이유 · 후속 서술은 코더 A의 값",
+   "cell": "코더 A의 값",
+   "cell_verbatim": true
+  },
+  "notes": {
+   "no": 35,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "unit_type": {
+   "no": 36,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "campaign",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "collection_mode": {
+   "no": 37,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "organic",
+   "decision": "작업 규칙",
+   "cell": "두 코더 일치 · 템플릿 선기입 값 그대로(작업 규칙)",
+   "cell_verbatim": true
+  },
+  "collection_mode_basis": {
+   "no": 38,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "D 템플릿 값",
+   "shown": "저자가 사례로 선정(2026-11-13), 표적 수집 아님",
+   "decision": "작업 규칙",
+   "cell": "두 코더 일치 · 템플릿 선기입 문구 그대로(작업 규칙)",
+   "cell_verbatim": true
+  },
+  "target_specificity": {
+   "no": 39,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "specific_victim",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "target_specificity_basis": {
+   "no": 40,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "victim_sector_sub": {
+   "no": 41,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "[\"financial_services\"]",
+   "decision": "저자 확정: 두 코더가 일치한 나머지 값은 그대로",
+   "cell": "두 코더 일치 · 그대로",
+   "cell_verbatim": true
+  },
+  "victim_sector_sub_note": {
+   "no": 42,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B1 문구 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "victim_assets": {
+   "no": 43,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B5 인용 그대로",
+   "decision": "저자 확정: 값은 같고 문면만 다른 칸은 코더 A의 문면",
+   "cell": "코더 A의 문면",
+   "cell_verbatim": true
+  },
+  "identified_date": {
+   "no": 44,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "2026-11-12",
+   "decision": "저자 결정(2026-11-12 기준 한 번 적용) · 작업 규칙",
+   "cell": "두 코더 일치 · 템플릿 선기입 값 그대로(작업 규칙)",
+   "cell_verbatim": true
+  }
+ },
+ "meta": {
+  "annotation_pass": "two_model_author_confirmed"
+ },
+ "meta_notes": {
+  "annotation_pass": "Viasat 확정 레코드 표기를 따른다"
+ },
+ "assembly_rules": {
+  "R-1": "일치값 확인(A) · 템플릿 값(D) · 코딩 대상 아님(H) 필드의 바이트 = 첫 코더(코더 A · Opus) 값 — Viasat merge 규칙 승계(두 코더 값이 같음을 조립 때 확인)",
+  "R-2": "legal_characterization의 needs_author_review 표시 = 저자가 고른 코더 판(코더 A) 표시 그대로(Viasat 조립 규칙 R-2 · 선례). 저자 검토 뒤에도 바꾸지 않는다",
+  "R-3": "responses — 저자가 코더 A의 4항목을 골랐으므로 source · effect_at_response.basis · 키 순서 모두 코더 A 판",
+  "R-4": "annotation_pass = meta(two_model_author_confirmed · Viasat 선례)"
+ }
+}

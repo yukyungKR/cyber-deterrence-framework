@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyber-deterrence-framework"
+version = "1.0.0"
+description = "Cyber Deterrence Decision-Making Framework: objective estimation from precedents, review of response measures, precedent responses and deterrence strategy assessment"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

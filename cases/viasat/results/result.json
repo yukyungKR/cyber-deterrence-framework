@@ -1,0 +1,5436 @@
+{
+ "framework_version": "1.0.0",
+ "case_id": "VIASAT-2022",
+ "name": "Viasat KA-SAT network attack (2022)",
+ "run_options": {
+  "include_same_actor": false,
+  "defender_state": null
+ },
+ "input": {
+  "reference_date": "2022-02-24",
+  "actor": "GRU",
+  "n_techniques": 44,
+  "techniques": [
+   "T1005",
+   "T1021",
+   "T1027",
+   "T1033",
+   "T1036",
+   "T1041",
+   "T1047",
+   "T1048",
+   "T1053",
+   "T1056",
+   "T1059",
+   "T1070",
+   "T1071",
+   "T1078",
+   "T1082",
+   "T1083",
+   "T1102",
+   "T1105",
+   "T1110",
+   "T1112",
+   "T1140",
+   "T1189",
+   "T1190",
+   "T1195",
+   "T1203",
+   "T1484",
+   "T1485",
+   "T1486",
+   "T1491",
+   "T1499",
+   "T1529",
+   "T1542",
+   "T1543",
+   "T1547",
+   "T1553",
+   "T1555",
+   "T1561",
+   "T1566",
+   "T1569",
+   "T1573",
+   "T1587",
+   "T1588",
+   "T1680",
+   "T1685"
+  ],
+  "victim_sector": [
+   "ict",
+   "critical_infrastructure"
+  ],
+  "victim_sector_sub": [
+   "communications",
+   "energy"
+  ],
+  "main_sector": "ict",
+  "main_sector_sub": "communications",
+  "victim_assets": [
+   "Radio Modem",
+   "VPN Server"
+  ],
+  "intrusion_state": "persisting",
+  "intrusion_depth": "core",
+  "effects": {
+   "exfiltration": "pre",
+   "manipulation_disclosure": "pre",
+   "disruption_destruction": "post"
+  },
+  "armed_conflict_nexus": "ambiguous",
+  "actor_identification_grade": 2,
+  "state_attribution_grade": 4,
+  "state_attribution_reference_date": "2022-05-10",
+  "excluded_report_ids": [
+   "06ffedd8-e0a6-447e-a51c-65b6b822b030",
+   "2d804484-f204-40d5-9431-9a3fb05f056b",
+   "3fb76771-4fcb-4eee-9245-33f27ce71157",
+   "4d2199c5-ae89-44fd-9a61-5e06b165a97f",
+   "4e0707bd-f8dc-4fd2-9f84-5810c5d1dd0e",
+   "572fe6bb-d4de-465e-b20e-7f6d3ec4957d",
+   "5ad57873-ba6c-42ef-a16d-1dedd61eb95d",
+   "74f570fc-aa8a-43e7-bb37-ef55fdea1665",
+   "7a676c83-9a85-4e11-8141-193f035c2394",
+   "80592130-6c80-46d1-9dfe-0d3b4ea6fff0",
+   "8e8f2355-f045-4af4-902f-d77b0baac5c1",
+   "9bb5eb63-c8a8-4134-84c1-1013180569b2",
+   "a097c1ac-743e-4cf7-a56b-aca5b2f0258b",
+   "a2975eaf-142c-46a6-9da4-9e3df102acf8",
+   "ba259eb4-971e-48b9-addf-ced24f00afd8",
+   "bf272245-5a99-466f-b0d7-efa493469452"
+  ]
+ },
+ "phase2": {
+  "settings": {
+   "k": 7,
+   "weight_technique": 0.9,
+   "weight_sector": 0.1,
+   "weight_asset": 0.0,
+   "threshold": 0.15,
+   "tie_break": "eurepoc_id (string order)"
+  },
+  "pool": {
+   "training_incidents": 642,
+   "excluded_own_documents": [
+    "1515",
+    "1541",
+    "1716",
+    "1751",
+    "1963",
+    "2085"
+   ],
+   "after_exclusion_list": 636,
+   "reference_date": "2022-02-24",
+   "after_cutoff": 305,
+   "n_actors_after_cutoff": 105,
+   "same_actor_precedents": 0,
+   "same_actor_excluded": true,
+   "query_pool": 305
+  },
+  "neighbours": [
+   {
+    "rank": 1,
+    "eurepoc_id": "3899",
+    "incident_name": "Chinese state-linked hacker group Salt Typhoon (aka FamousSparroww and GhostEmperor) breached wiretapping systems of US internet providers beginning August 2024",
+    "actor": "(unknown or unattributed)",
+    "similarity": 0.5013513513513513,
+    "jaccard": 0.44594594594594594,
+    "sector_match": true,
+    "sector": "ict",
+    "objectives": [],
+    "common_techniques": [
+     "T1005",
+     "T1027",
+     "T1033",
+     "T1036",
+     "T1041",
+     "T1048",
+     "T1056",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1078",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1110",
+     "T1112",
+     "T1140",
+     "T1189",
+     "T1190",
+     "T1195",
+     "T1203",
+     "T1486",
+     "T1491",
+     "T1499",
+     "T1543",
+     "T1547",
+     "T1553",
+     "T1555",
+     "T1566",
+     "T1573",
+     "T1587",
+     "T1588",
+     "T1685"
+    ]
+   },
+   {
+    "rank": 2,
+    "eurepoc_id": "1575",
+    "incident_name": "Several Ukrainian government institutions as well as some banks were attacked by (amongst others) pro-Russian hacktivists through a DDoS attack on 23 February 2022",
+    "actor": "(unknown or unattributed)",
+    "similarity": 0.45849056603773586,
+    "jaccard": 0.5094339622641509,
+    "sector_match": false,
+    "sector": "government_defense",
+    "objectives": [
+     "disruption_destruction"
+    ],
+    "common_techniques": [
+     "T1027",
+     "T1036",
+     "T1041",
+     "T1048",
+     "T1053",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1112",
+     "T1140",
+     "T1189",
+     "T1190",
+     "T1486",
+     "T1491",
+     "T1499",
+     "T1542",
+     "T1543",
+     "T1547",
+     "T1553",
+     "T1566",
+     "T1573",
+     "T1587",
+     "T1588",
+     "T1685"
+    ]
+   },
+   {
+    "rank": 3,
+    "eurepoc_id": "1502",
+    "incident_name": "Iranian state-sponsored hackers disrupted Albanian government websites and essential services on 15 July 2022",
+    "actor": "(unknown or unattributed)",
+    "similarity": 0.45616438356164385,
+    "jaccard": 0.5068493150684932,
+    "sector_match": false,
+    "sector": "government_defense",
+    "objectives": [
+     "exfiltration",
+     "manipulation_disclosure",
+     "disruption_destruction"
+    ],
+    "common_techniques": [
+     "T1005",
+     "T1021",
+     "T1027",
+     "T1033",
+     "T1036",
+     "T1041",
+     "T1047",
+     "T1048",
+     "T1053",
+     "T1056",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1078",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1110",
+     "T1112",
+     "T1140",
+     "T1190",
+     "T1203",
+     "T1485",
+     "T1486",
+     "T1491",
+     "T1499",
+     "T1529",
+     "T1543",
+     "T1547",
+     "T1553",
+     "T1555",
+     "T1561",
+     "T1566",
+     "T1573",
+     "T1587",
+     "T1588",
+     "T1685"
+    ]
+   },
+   {
+    "rank": 4,
+    "eurepoc_id": "747",
+    "incident_name": "Russsian hacker group APT 28 distrupted French TV network TV 5Monde and took control over their social media accounts in April 205",
+    "actor": "Fancy Bear",
+    "similarity": 0.40384615384615385,
+    "jaccard": 0.44871794871794873,
+    "sector_match": false,
+    "sector": "private_other",
+    "objectives": [
+     "disruption_destruction"
+    ],
+    "common_techniques": [
+     "T1005",
+     "T1021",
+     "T1027",
+     "T1033",
+     "T1041",
+     "T1047",
+     "T1053",
+     "T1056",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1078",
+     "T1082",
+     "T1102",
+     "T1105",
+     "T1110",
+     "T1112",
+     "T1140",
+     "T1189",
+     "T1190",
+     "T1195",
+     "T1203",
+     "T1486",
+     "T1491",
+     "T1499",
+     "T1529",
+     "T1542",
+     "T1543",
+     "T1547",
+     "T1553",
+     "T1561",
+     "T1566",
+     "T1587",
+     "T1588",
+     "T1685"
+    ]
+   },
+   {
+    "rank": 5,
+    "eurepoc_id": "1247",
+    "incident_name": "Telecom Providers hack",
+    "actor": "Greenbug",
+    "similarity": 0.3942307692307693,
+    "jaccard": 0.3269230769230769,
+    "sector_match": true,
+    "sector": "ict",
+    "objectives": [
+     "exfiltration"
+    ],
+    "common_techniques": [
+     "T1005",
+     "T1021",
+     "T1027",
+     "T1033",
+     "T1041",
+     "T1048",
+     "T1056",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1078",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1140",
+     "T1555",
+     "T1573"
+    ]
+   },
+   {
+    "rank": 6,
+    "eurepoc_id": "578",
+    "incident_name": "Chinese hacking group APT suspected of MSP Theft Campaign Operation Cloud Hopper between 2014-2018",
+    "actor": "APT10",
+    "similarity": 0.39375,
+    "jaccard": 0.4375,
+    "sector_match": false,
+    "sector": "finance_commerce",
+    "objectives": [
+     "exfiltration"
+    ],
+    "common_techniques": [
+     "T1005",
+     "T1021",
+     "T1027",
+     "T1033",
+     "T1036",
+     "T1041",
+     "T1047",
+     "T1053",
+     "T1056",
+     "T1059",
+     "T1070",
+     "T1071",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1110",
+     "T1112",
+     "T1140",
+     "T1189",
+     "T1190",
+     "T1195",
+     "T1203",
+     "T1486",
+     "T1491",
+     "T1499",
+     "T1529",
+     "T1542",
+     "T1547",
+     "T1553",
+     "T1555",
+     "T1566",
+     "T1573",
+     "T1587",
+     "T1588",
+     "T1685"
+    ]
+   },
+   {
+    "rank": 7,
+    "eurepoc_id": "3962",
+    "incident_name": "Russian State-Sponsored Hacking Group of the Main Intelligence Directorate (GRU) Hacked the Georgian Government and Major Companies Between 2017 and 2020",
+    "actor": "(unknown or unattributed)",
+    "similarity": 0.3879310344827586,
+    "jaccard": 0.43103448275862066,
+    "sector_match": false,
+    "sector": "private_other",
+    "objectives": [],
+    "common_techniques": [
+     "T1005",
+     "T1021",
+     "T1027",
+     "T1033",
+     "T1036",
+     "T1041",
+     "T1048",
+     "T1053",
+     "T1056",
+     "T1059",
+     "T1071",
+     "T1078",
+     "T1082",
+     "T1083",
+     "T1105",
+     "T1110",
+     "T1112",
+     "T1140",
+     "T1195",
+     "T1491",
+     "T1543",
+     "T1555",
+     "T1566",
+     "T1573",
+     "T1685"
+    ]
+   }
+  ],
+  "frequencies": {
+   "exfiltration": {
+    "count": 3,
+    "share": 0.42857142857142855
+   },
+   "manipulation_disclosure": {
+    "count": 1,
+    "share": 0.14285714285714285
+   },
+   "disruption_destruction": {
+    "count": 3,
+    "share": 0.42857142857142855
+   }
+  },
+  "candidate_objectives": [
+   "exfiltration",
+   "disruption_destruction"
+  ],
+  "rule_layer": {
+   "state": null,
+   "estimate_role": "main",
+   "objective_unestablished": {
+    "applies": false,
+    "reason": "an effect is observed (disruption_destruction)"
+   },
+   "dormancy": {
+    "rule_true": false,
+    "held": false,
+    "reason": "an effect is observed (disruption_destruction)"
+   }
+  }
+ },
+ "phase3": {
+  "armed_conflict_nexus": "ambiguous",
+  "path": "peacetime",
+  "timing_state": "effect_observed",
+  "state_attribution_grade": 4,
+  "measures": [
+   {
+    "measure_id": 1,
+    "name": "Public attribution",
+    "deterrence_type": "norms",
+    "punishment_subitem": null,
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 2,
+    "name": "Expulsion of diplomats",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 3,
+    "name": "Visa restrictions",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 4,
+    "name": "Asset freezes",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 5,
+    "name": "Economic sanctions",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 6,
+    "name": "Export controls",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 7,
+    "name": "Suspension of aid",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 8,
+    "name": "Suspension of dialogue or negotiations",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 9,
+    "name": "Refusal of mutual legal assistance",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 10,
+    "name": "Criminal prosecution and other exercise of domestic enforcement jurisdiction",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "law_enforcement",
+    "legal_character": "jurisdiction",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 11,
+    "name": "Extraterritorial enforcement",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "law_enforcement",
+    "legal_character": "consent of the other state",
+    "treatment": "consent",
+    "status": "subject to authorisation or consent",
+    "reason": "requires the authorisation or consent of the other state; otherwise treated as countermeasures",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 12,
+    "name": "Countermeasures",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "countermeasures",
+    "legal_character": "circumstance precluding wrongfulness (ARSIWA)",
+    "treatment": "review",
+    "status": "open for review",
+    "reason": "an effect is observed: breach of an obligation and attribution to the state are examined in turn",
+    "required_grade": 3,
+    "attribution_met": true,
+    "further_confirmation": "prior internationally wrongful act; conditions of exercise and termination"
+   },
+   {
+    "measure_id": 13,
+    "name": "Self-defence",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "self_defence",
+    "legal_character": "Charter of the United Nations, Article 51",
+    "treatment": "review",
+    "status": "open for review",
+    "reason": "disruption and destruction is observed: review of whether the incident amounts to an armed attack",
+    "required_grade": 4,
+    "attribution_met": true,
+    "further_confirmation": "scale and effects of the attack; necessity; proportionality"
+   },
+   {
+    "measure_id": 14,
+    "name": "Plea of necessity",
+    "deterrence_type": "outside",
+    "punishment_subitem": null,
+    "legal_character": "circumstance precluding wrongfulness (ARSIWA)",
+    "treatment": "review",
+    "status": "open for review",
+    "reason": "the victim sector is an essential-interest sector",
+    "required_grade": null,
+    "attribution_met": true,
+    "further_confirmation": "requirements of ARSIWA Article 25"
+   },
+   {
+    "measure_id": 15,
+    "name": "Defensive measures on own systems",
+    "deterrence_type": "denial",
+    "punishment_subitem": null,
+    "legal_character": "measure within own jurisdiction",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 16,
+    "name": "Forward cyber defence operations",
+    "deterrence_type": "denial",
+    "punishment_subitem": null,
+    "legal_character": "depends on the state's position on sovereignty",
+    "treatment": "state_position",
+    "status": "depends on the state's position",
+    "reason": "depends on the state's position on sovereignty",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 17,
+    "name": "Monitoring and strategic patience",
+    "deterrence_type": "outside",
+    "punishment_subitem": null,
+    "legal_character": null,
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 18,
+    "name": "Treaties and cooperation",
+    "deterrence_type": "entanglement",
+    "punishment_subitem": null,
+    "legal_character": "treaty, multilateral cooperation",
+    "treatment": "timing_independent",
+    "status": "independent of timing",
+    "reason": "only the existence of treaties and cooperation is recorded",
+    "required_grade": null,
+    "attribution_met": true
+   },
+   {
+    "measure_id": 19,
+    "name": "Downgrading or severance of diplomatic relations",
+    "deterrence_type": "punishment",
+    "punishment_subitem": "diplomatic_economic",
+    "legal_character": "retorsion",
+    "treatment": "always",
+    "status": "available at any time",
+    "reason": "available at any time, provided that the measure breaches no other international obligation",
+    "required_grade": 2,
+    "attribution_met": true
+   }
+  ],
+  "countermeasures": {
+   "status": "open for review",
+   "reason": "an effect is observed: breach of an obligation and attribution to the state are examined in turn",
+   "purpose": "cessation"
+  },
+  "self_defence": {
+   "status": "open for review",
+   "review": "armed attack",
+   "reason": "disruption and destruction is observed: review of whether the incident amounts to an armed attack"
+  },
+  "necessity": {
+   "status": "open for review",
+   "reason": "the victim sector is an essential-interest sector",
+   "elements": {
+    "intrusion_state": "window of opportunity formed and continuing",
+    "intrusion_depth": "core",
+    "opportunity_to_prevent": "no opportunity to prevent the disruption remains (effect observed)",
+    "disruption_destruction_observed": "post",
+    "disruption_destruction_in_candidates": true
+   }
+  },
+  "forward_cyber_defence": {
+   "status": "depends on the state's position",
+   "reason": "depends on the state's position on sovereignty",
+   "by_state": {
+    "US": "may be claimed to be available",
+    "UK": "may be claimed to be available",
+    "FR": "may be unlawful",
+    "DE": "room remains for operations whose effects fall below the threshold",
+    "NL": "room remains for operations whose effects fall below the threshold",
+    "KR": "position not stated"
+   }
+  },
+  "defender_state": null,
+  "d3fend": {
+   "d3fend_version": "1.6.0",
+   "n_techniques": 44,
+   "techniques_not_in_d3fend": [],
+   "techniques_without_artifacts": [
+    "T1485",
+    "T1529",
+    "T1569",
+    "T1587",
+    "T1588",
+    "T1680",
+    "T1685"
+   ],
+   "n_techniques_with_artifacts": 37,
+   "n_artifacts": 88,
+   "n_artifacts_with_defences": 75,
+   "n_defensive_techniques": 120,
+   "defensive_tactic_counts": {
+    "Deceive": 4,
+    "Detect": 48,
+    "Evict": 11,
+    "Harden": 17,
+    "Isolate": 25,
+    "Model": 7,
+    "Restore": 8
+   },
+   "defensive_techniques": [
+    {
+     "defensive_technique": "d3f:AccessModeling",
+     "label": "Access Modeling",
+     "d3fend_id": "D3-AM",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1078",
+      "T1484"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:GroupPolicy",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:AccountLocking",
+     "label": "Account Locking",
+     "d3fend_id": "D3-AL",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:AdministrativeNetworkActivityAnalysis",
+     "label": "Administrative Network Activity Analysis",
+     "d3fend_id": "D3-ANAA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1047",
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:IntranetAdministrativeNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:AgentAuthentication",
+     "label": "Agent Authentication",
+     "d3fend_id": "D3-AA",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ApplicationExceptionMonitoring",
+     "label": "Application Exception Monitoring",
+     "d3fend_id": "D3-AEM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1070",
+      "T1110",
+      "T1140"
+     ],
+     "via_artifacts": [
+      "d3f:AuthenticationLog",
+      "d3f:CommandHistoryLog",
+      "d3f:EventLog"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ApplicationProtocolCommandAnalysis",
+     "label": "Application Protocol Command Analysis",
+     "d3fend_id": "D3-APCA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:Application-basedProcessIsolation",
+     "label": "Application-based Process Isolation",
+     "d3fend_id": "D3-ABPI",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:AssetVulnerabilityEnumeration",
+     "label": "Asset Vulnerability Enumeration",
+     "d3fend_id": "D3-AVE",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1056",
+      "T1195",
+      "T1542",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:BootLoader",
+      "d3f:Firmware",
+      "d3f:Software",
+      "d3f:SystemFirmware",
+      "d3f:SystemServiceSoftware",
+      "d3f:WebApplication"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:AuthenticationCacheInvalidation",
+     "label": "Authentication Cache Invalidation",
+     "d3fend_id": "D3-ANCI",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:BootloaderAuthentication",
+     "label": "Bootloader Authentication",
+     "d3fend_id": "D3-BA",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1542"
+     ],
+     "via_artifacts": [
+      "d3f:BootLoader"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CertificateAnalysis",
+     "label": "Certificate Analysis",
+     "d3fend_id": "D3-CA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1041",
+      "T1048",
+      "T1071",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:CertificateFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ChangeDefaultPassword",
+     "label": "Change Default Password",
+     "d3fend_id": "D3-CDP",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1078",
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:Password",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:Client-serverPayloadProfiling",
+     "label": "Client-server Payload Profiling",
+     "d3fend_id": "D3-CSPP",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ConfigurationInventory",
+     "label": "Configuration Inventory",
+     "d3fend_id": "D3-CI",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1484",
+      "T1547",
+      "T1553"
+     ],
+     "via_artifacts": [
+      "d3f:GroupPolicy",
+      "d3f:SystemConfigurationDatabaseRecord",
+      "d3f:SystemConfigurationInitDatabaseRecord"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ConnectionAttemptAnalysis",
+     "label": "Connection Attempt Analysis",
+     "d3fend_id": "D3-CAA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1021",
+      "T1047",
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ContentFiltering",
+     "label": "Content Filtering",
+     "d3fend_id": "D3-CF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ContentModification",
+     "label": "Content Modification",
+     "d3fend_id": "D3-CM",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ContentQuarantine",
+     "label": "Content Quarantine",
+     "d3fend_id": "D3-CQ",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 19,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1553",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:SystemConfigurationDatabaseRecord",
+      "d3f:SystemConfigurationInitDatabaseRecord",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CredentialCompromiseScopeAnalysis",
+     "label": "Credential Compromise Scope Analysis",
+     "d3fend_id": "D3-CCSA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CredentialHardening",
+     "label": "Credential Hardening",
+     "d3fend_id": "D3-CH",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CredentialRevocation",
+     "label": "Credential Revocation",
+     "d3fend_id": "D3-CR",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CredentialRotation",
+     "label": "Credential Rotation",
+     "d3fend_id": "D3-CRO",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:CredentialTransmissionScoping",
+     "label": "Credential Transmission Scoping",
+     "d3fend_id": "D3-CTS",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DNSAllowlisting",
+     "label": "DNS Allowlisting",
+     "d3fend_id": "D3-DNSAL",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DNSDenylisting",
+     "label": "DNS Denylisting",
+     "d3fend_id": "D3-DNSDL",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DNSTrafficAnalysis",
+     "label": "DNS Traffic Analysis",
+     "d3fend_id": "D3-DNSTA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DataInventory",
+     "label": "Data Inventory",
+     "d3fend_id": "D3-DI",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1033",
+      "T1112",
+      "T1543",
+      "T1555",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email",
+      "d3f:In-memoryPasswordStore",
+      "d3f:MacOSKeychain",
+      "d3f:PasswordFile",
+      "d3f:PasswordStore",
+      "d3f:SystemConfigurationDatabase",
+      "d3f:WindowsRegistry"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DatabaseQueryStringAnalysis",
+     "label": "Database Query String Analysis",
+     "d3fend_id": "D3-DQSA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1190"
+     ],
+     "via_artifacts": [
+      "d3f:DatabaseQuery"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DecoyEnvironment",
+     "label": "Decoy Environment",
+     "d3fend_id": "D3-DE",
+     "tactics": [
+      "Deceive"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1082"
+     ],
+     "via_artifacts": [
+      "d3f:DecoyArtifact"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DecoyFile",
+     "label": "Decoy File",
+     "d3fend_id": "D3-DF",
+     "tactics": [
+      "Deceive"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DecoyNetworkResource",
+     "label": "Decoy Network Resource",
+     "d3fend_id": "D3-DNR",
+     "tactics": [
+      "Deceive"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1070",
+      "T1491"
+     ],
+     "via_artifacts": [
+      "d3f:NetworkFileShareResource",
+      "d3f:NetworkResource"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DecoyUserCredential",
+     "label": "Decoy User Credential",
+     "d3fend_id": "D3-DUC",
+     "tactics": [
+      "Deceive"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DiskPartitioning",
+     "label": "Disk Partitioning",
+     "d3fend_id": "D3-DKP",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1561"
+     ],
+     "via_artifacts": [
+      "d3f:PartitionTable"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DomainAccountMonitoring",
+     "label": "Domain Account Monitoring",
+     "d3fend_id": "D3-DAM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:DomainUserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DomainTrustPolicy",
+     "label": "Domain Trust Policy",
+     "d3fend_id": "D3-DTP",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1033"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:DynamicAnalysis",
+     "label": "Dynamic Analysis",
+     "d3fend_id": "D3-DA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 6,
+     "attack_techniques": [
+      "T1027",
+      "T1036",
+      "T1059",
+      "T1140",
+      "T1547",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:EmailFiltering",
+     "label": "Email Filtering",
+     "d3fend_id": "D3-EF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:EmailRemoval",
+     "label": "Email Removal",
+     "d3fend_id": "D3-ER",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:EmulatedFileAnalysis",
+     "label": "Emulated File Analysis",
+     "d3fend_id": "D3-EFA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 6,
+     "attack_techniques": [
+      "T1027",
+      "T1036",
+      "T1059",
+      "T1140",
+      "T1547",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ExecutableAllowlisting",
+     "label": "Executable Allowlisting",
+     "d3fend_id": "D3-EAL",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 9,
+     "attack_techniques": [
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1047",
+      "T1053",
+      "T1059",
+      "T1082",
+      "T1140",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:CreateProcess",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ExecutableDenylisting",
+     "label": "Executable Denylisting",
+     "d3fend_id": "D3-EDL",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 9,
+     "attack_techniques": [
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1047",
+      "T1053",
+      "T1059",
+      "T1082",
+      "T1140",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:CreateProcess",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FileAnalysis",
+     "label": "File Analysis",
+     "d3fend_id": "D3-FA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FileCarving",
+     "label": "File Carving",
+     "d3fend_id": "D3-FC",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetFileTransferTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FileEncryption",
+     "label": "File Encryption",
+     "d3fend_id": "D3-FE",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FileEviction",
+     "label": "File Eviction",
+     "d3fend_id": "D3-FEV",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FileIntegrityMonitoring",
+     "label": "File Integrity Monitoring",
+     "d3fend_id": "D3-FIM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FirmwareBehaviorAnalysis",
+     "label": "Firmware Behavior Analysis",
+     "d3fend_id": "D3-FBA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1542"
+     ],
+     "via_artifacts": [
+      "d3f:Firmware",
+      "d3f:SystemFirmware"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FirmwareEmbeddedMonitoringCode",
+     "label": "Firmware Embedded Monitoring Code",
+     "d3fend_id": "D3-FEMC",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1542"
+     ],
+     "via_artifacts": [
+      "d3f:Firmware",
+      "d3f:SystemFirmware"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:FirmwareVerification",
+     "label": "Firmware Verification",
+     "d3fend_id": "D3-FV",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1542"
+     ],
+     "via_artifacts": [
+      "d3f:Firmware",
+      "d3f:SystemFirmware"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ForwardResolutionDomainDenylisting",
+     "label": "Forward Resolution Domain Denylisting",
+     "d3fend_id": "D3-FRDDL",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:HardwareComponentInventory",
+     "label": "Hardware Component Inventory",
+     "d3fend_id": "D3-HCI",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1056",
+      "T1195"
+     ],
+     "via_artifacts": [
+      "d3f:HardwareDevice",
+      "d3f:KeyboardInputDevice"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:Hardware-basedProcessIsolation",
+     "label": "Hardware-based Process Isolation",
+     "d3fend_id": "D3-HBPI",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1033",
+      "T1047",
+      "T1053",
+      "T1082",
+      "T1140"
+     ],
+     "via_artifacts": [
+      "d3f:CreateProcess",
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:HomoglyphDetection",
+     "label": "Homoglyph Detection",
+     "d3fend_id": "D3-HD",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1189",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email",
+      "d3f:URL"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:HostReboot",
+     "label": "Host Reboot",
+     "d3fend_id": "D3-HR",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:HostShutdown",
+     "label": "Host Shutdown",
+     "d3fend_id": "D3-HS",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:IOPortRestriction",
+     "label": "IO Port Restriction",
+     "d3fend_id": "D3-IOPR",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1056"
+     ],
+     "via_artifacts": [
+      "d3f:KeyboardInputDevice"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:IdentifierActivityAnalysis",
+     "label": "Identifier Activity Analysis",
+     "d3fend_id": "D3-IAA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1189",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:URL"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:InboundSessionVolumeAnalysis",
+     "label": "Inbound Session Volume Analysis",
+     "d3fend_id": "D3-ISVA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1190",
+      "T1499",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:InboundTrafficFiltering",
+     "label": "Inbound Traffic Filtering",
+     "d3fend_id": "D3-ITF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1190",
+      "T1499",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:InputDeviceAnalysis",
+     "label": "Input Device Analysis",
+     "d3fend_id": "D3-IDA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1056"
+     ],
+     "via_artifacts": [
+      "d3f:KeyboardInputDevice"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:Kernel-basedProcessIsolation",
+     "label": "Kernel-based Process Isolation",
+     "d3fend_id": "D3-KBPI",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:LocalAccountMonitoring",
+     "label": "Local Account Monitoring",
+     "d3fend_id": "D3-LAM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:LocalUserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:LocalFilePermissions",
+     "label": "Local File Permissions",
+     "d3fend_id": "D3-LFP",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Directory",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:MemoryBoundaryTracking",
+     "label": "Memory Boundary Tracking",
+     "d3fend_id": "D3-MBT",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1056",
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:ProcessCodeSegment"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:Multi-factorAuthentication",
+     "label": "Multi-factor Authentication",
+     "d3fend_id": "D3-MFA",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:NetworkResourceAccessMediation",
+     "label": "Network Resource Access Mediation",
+     "d3fend_id": "D3-NRAM",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1070",
+      "T1491"
+     ],
+     "via_artifacts": [
+      "d3f:NetworkFileShareResource",
+      "d3f:NetworkResource"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:NetworkTrafficCommunityDeviation",
+     "label": "Network Traffic Community Deviation",
+     "d3fend_id": "D3-NTCD",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:NetworkTrafficFiltering",
+     "label": "Network Traffic Filtering",
+     "d3fend_id": "D3-NTF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:NetworkTrafficPolicyMapping",
+     "label": "Network Traffic Policy Mapping",
+     "d3fend_id": "D3-NTPM",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1484"
+     ],
+     "via_artifacts": [
+      "d3f:GroupPolicy"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:NetworkTrafficSignatureAnalysis",
+     "label": "Network Traffic Signature Analysis",
+     "d3fend_id": "D3-NTSA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:One-timePassword",
+     "label": "One-time Password",
+     "d3fend_id": "D3-OTP",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:OperationalProcessMonitoring",
+     "label": "Operational Process Monitoring",
+     "d3fend_id": "D3-OPM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1070",
+      "T1110",
+      "T1140"
+     ],
+     "via_artifacts": [
+      "d3f:AuthenticationLog",
+      "d3f:CommandHistoryLog",
+      "d3f:EventLog"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:OutboundTrafficFiltering",
+     "label": "Outbound Traffic Filtering",
+     "d3fend_id": "D3-OTF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:PasswordAuthentication",
+     "label": "Password Authentication",
+     "d3fend_id": "D3-PWA",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:PasswordRotation",
+     "label": "Password Rotation",
+     "d3fend_id": "D3-PR",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:PerHostDownload-UploadRatioAnalysis",
+     "label": "Per Host Download-Upload Ratio Analysis",
+     "d3fend_id": "D3-PHDURA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessCodeSegmentVerification",
+     "label": "Process Code Segment Verification",
+     "d3fend_id": "D3-PCSV",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1056",
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:ProcessCodeSegment"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessLineageAnalysis",
+     "label": "Process Lineage Analysis",
+     "d3fend_id": "D3-PLA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessSegmentExecutionPrevention",
+     "label": "Process Segment Execution Prevention",
+     "d3fend_id": "D3-PSEP",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1033",
+      "T1056",
+      "T1189",
+      "T1190",
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:ProcessCodeSegment",
+      "d3f:ProcessSegment"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessSelf-ModificationDetection",
+     "label": "Process Self-Modification Detection",
+     "d3fend_id": "D3-PSMD",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessSpawnAnalysis",
+     "label": "Process Spawn Analysis",
+     "d3fend_id": "D3-PSA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1033",
+      "T1047",
+      "T1053",
+      "T1082",
+      "T1140"
+     ],
+     "via_artifacts": [
+      "d3f:CreateProcess",
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessSuspension",
+     "label": "Process Suspension",
+     "d3fend_id": "D3-PS",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProcessTermination",
+     "label": "Process Termination",
+     "d3fend_id": "D3-PT",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1033",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ProtocolMetadataAnomalyDetection",
+     "label": "Protocol Metadata Anomaly Detection",
+     "d3fend_id": "D3-PMAD",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RadiationHardening",
+     "label": "Radiation Hardening",
+     "d3fend_id": "D3-RH",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1056",
+      "T1195"
+     ],
+     "via_artifacts": [
+      "d3f:HardwareDevice",
+      "d3f:KeyboardInputDevice"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ReissueCredential",
+     "label": "Reissue Credential",
+     "d3fend_id": "D3-RIC",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RelayPatternAnalysis",
+     "label": "Relay Pattern Analysis",
+     "d3fend_id": "D3-RPA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RemoteFileAccessMediation",
+     "label": "Remote File Access Mediation",
+     "d3fend_id": "D3-RFAM",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RemoteTerminalSessionDetection",
+     "label": "Remote Terminal Session Detection",
+     "d3fend_id": "D3-RTSD",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreConfiguration",
+     "label": "Restore Configuration",
+     "d3fend_id": "D3-RC",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1484",
+      "T1547",
+      "T1553"
+     ],
+     "via_artifacts": [
+      "d3f:GroupPolicy",
+      "d3f:SystemConfigurationDatabaseRecord",
+      "d3f:SystemConfigurationInitDatabaseRecord"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreDatabase",
+     "label": "Restore Database",
+     "d3fend_id": "D3-RD",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1033",
+      "T1112",
+      "T1543",
+      "T1555"
+     ],
+     "via_artifacts": [
+      "d3f:In-memoryPasswordStore",
+      "d3f:MacOSKeychain",
+      "d3f:PasswordFile",
+      "d3f:PasswordStore",
+      "d3f:SystemConfigurationDatabase",
+      "d3f:WindowsRegistry"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreEmail",
+     "label": "Restore Email",
+     "d3fend_id": "D3-RE",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreFile",
+     "label": "Restore File",
+     "d3fend_id": "D3-RF",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 18,
+     "attack_techniques": [
+      "T1005",
+      "T1027",
+      "T1033",
+      "T1036",
+      "T1041",
+      "T1048",
+      "T1053",
+      "T1059",
+      "T1070",
+      "T1071",
+      "T1083",
+      "T1140",
+      "T1486",
+      "T1543",
+      "T1547",
+      "T1555",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:ApplicationConfigurationFile",
+      "d3f:CertificateFile",
+      "d3f:DatabaseFile",
+      "d3f:Email",
+      "d3f:ExecutableBinary",
+      "d3f:ExecutableFile",
+      "d3f:ExecutableScript",
+      "d3f:File",
+      "d3f:KernelModule",
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile",
+      "d3f:PasswordFile",
+      "d3f:PropertyListFile",
+      "d3f:SharedLibraryFile",
+      "d3f:SymbolicLink",
+      "d3f:UserStartupScriptFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreSoftware",
+     "label": "Restore Software",
+     "d3fend_id": "D3-RS",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1056",
+      "T1195",
+      "T1542",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:BootLoader",
+      "d3f:Firmware",
+      "d3f:Software",
+      "d3f:SystemFirmware",
+      "d3f:SystemServiceSoftware",
+      "d3f:WebApplication"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:RestoreUserAccountAccess",
+     "label": "Restore User Account Access",
+     "d3fend_id": "D3-RUAA",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ReverseResolutionIPDenylisting",
+     "label": "Reverse Resolution IP Denylisting",
+     "d3fend_id": "D3-RRID",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1071"
+     ],
+     "via_artifacts": [
+      "d3f:OutboundInternetDNSLookupTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ScheduledJobAnalysis",
+     "label": "Scheduled Job Analysis",
+     "d3fend_id": "D3-SJA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1036",
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:JobSchedule"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SegmentAddressOffsetRandomization",
+     "label": "Segment Address Offset Randomization",
+     "d3fend_id": "D3-SAOR",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 5,
+     "attack_techniques": [
+      "T1033",
+      "T1056",
+      "T1189",
+      "T1190",
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:ProcessCodeSegment",
+      "d3f:ProcessSegment"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SenderMTAReputationAnalysis",
+     "label": "Sender MTA Reputation Analysis",
+     "d3fend_id": "D3-SMRA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SenderReputationAnalysis",
+     "label": "Sender Reputation Analysis",
+     "d3fend_id": "D3-SRA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:Email"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ServiceBinaryVerification",
+     "label": "Service Binary Verification",
+     "d3fend_id": "D3-SBV",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1056"
+     ],
+     "via_artifacts": [
+      "d3f:WebApplication"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SessionTermination",
+     "label": "Session Termination",
+     "d3fend_id": "D3-ST",
+     "tactics": [
+      "Evict"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1021"
+     ],
+     "via_artifacts": [
+      "d3f:RDPSession",
+      "d3f:SSHSession"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:ShadowStackComparisons",
+     "label": "Shadow Stack Comparisons",
+     "d3fend_id": "D3-SSC",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:StackFrame"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SoftwareInventory",
+     "label": "Software Inventory",
+     "d3fend_id": "D3-SWI",
+     "tactics": [
+      "Model"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1056",
+      "T1195",
+      "T1542",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:BootLoader",
+      "d3f:Firmware",
+      "d3f:Software",
+      "d3f:SystemFirmware",
+      "d3f:SystemServiceSoftware",
+      "d3f:WebApplication"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SoftwareUpdate",
+     "label": "Software Update",
+     "d3fend_id": "D3-SU",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 4,
+     "attack_techniques": [
+      "T1056",
+      "T1195",
+      "T1542",
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:BootLoader",
+      "d3f:Firmware",
+      "d3f:Software",
+      "d3f:SystemFirmware",
+      "d3f:SystemServiceSoftware",
+      "d3f:WebApplication"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:StackFrameCanaryValidation",
+     "label": "Stack Frame Canary Validation",
+     "d3fend_id": "D3-SFCV",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1203"
+     ],
+     "via_artifacts": [
+      "d3f:StackFrame"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:StrongPasswordPolicy",
+     "label": "Strong Password Policy",
+     "d3fend_id": "D3-SPP",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1110"
+     ],
+     "via_artifacts": [
+      "d3f:Password"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemCallAnalysis",
+     "label": "System Call Analysis",
+     "d3fend_id": "D3-SCA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 7,
+     "attack_techniques": [
+      "T1033",
+      "T1036",
+      "T1047",
+      "T1053",
+      "T1082",
+      "T1140",
+      "T1555"
+     ],
+     "via_artifacts": [
+      "d3f:CopyToken",
+      "d3f:CreateProcess",
+      "d3f:GetSystemConfigValue",
+      "d3f:MoveFile",
+      "d3f:ReadFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemCallFiltering",
+     "label": "System Call Filtering",
+     "d3fend_id": "D3-SCF",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 7,
+     "attack_techniques": [
+      "T1033",
+      "T1036",
+      "T1047",
+      "T1053",
+      "T1082",
+      "T1140",
+      "T1555"
+     ],
+     "via_artifacts": [
+      "d3f:CopyToken",
+      "d3f:CreateProcess",
+      "d3f:DirectoryService",
+      "d3f:GetSystemConfigValue",
+      "d3f:MoveFile",
+      "d3f:ReadFile",
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemConfigurationPermissions",
+     "label": "System Configuration Permissions",
+     "d3fend_id": "D3-SCP",
+     "tactics": [
+      "Harden"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1112",
+      "T1543"
+     ],
+     "via_artifacts": [
+      "d3f:SystemConfigurationDatabase",
+      "d3f:WindowsRegistry"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemDaemonMonitoring",
+     "label": "System Daemon Monitoring",
+     "d3fend_id": "D3-SDM",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1053"
+     ],
+     "via_artifacts": [
+      "d3f:ScheduledJob"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemFileAnalysis",
+     "label": "System File Analysis",
+     "d3fend_id": "D3-SFA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 3,
+     "attack_techniques": [
+      "T1036",
+      "T1070",
+      "T1543"
+     ],
+     "via_artifacts": [
+      "d3f:OperatingSystemConfigurationFile",
+      "d3f:OperatingSystemExecutableFile",
+      "d3f:OperatingSystemLogFile"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemFirmwareVerification",
+     "label": "System Firmware Verification",
+     "d3fend_id": "D3-SFV",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1542"
+     ],
+     "via_artifacts": [
+      "d3f:SystemFirmware"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:SystemInitConfigAnalysis",
+     "label": "System Init Config Analysis",
+     "d3fend_id": "D3-SICA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1547"
+     ],
+     "via_artifacts": [
+      "d3f:SystemConfigurationInitDatabaseRecord"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:URLAnalysis",
+     "label": "URL Analysis",
+     "d3fend_id": "D3-UA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1189",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:URL"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:URLReputationAnalysis",
+     "label": "URL Reputation Analysis",
+     "d3fend_id": "D3-URA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 2,
+     "attack_techniques": [
+      "T1189",
+      "T1566"
+     ],
+     "via_artifacts": [
+      "d3f:URL"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:UnlockAccount",
+     "label": "Unlock Account",
+     "d3fend_id": "D3-ULA",
+     "tactics": [
+      "Restore"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:UserAccountPermissions",
+     "label": "User Account Permissions",
+     "d3fend_id": "D3-UAP",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1078"
+     ],
+     "via_artifacts": [
+      "d3f:CloudUserAccount",
+      "d3f:DefaultUserAccount",
+      "d3f:DomainUserAccount",
+      "d3f:LocalUserAccount",
+      "d3f:UserAccount"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:UserGeolocationLogonPatternAnalysis",
+     "label": "User Geolocation Logon Pattern Analysis",
+     "d3fend_id": "D3-UGLPA",
+     "tactics": [
+      "Detect"
+     ],
+     "n_attack_techniques": 14,
+     "attack_techniques": [
+      "T1021",
+      "T1041",
+      "T1047",
+      "T1048",
+      "T1071",
+      "T1102",
+      "T1105",
+      "T1110",
+      "T1189",
+      "T1190",
+      "T1499",
+      "T1542",
+      "T1566",
+      "T1573"
+     ],
+     "via_artifacts": [
+      "d3f:AdministrativeNetworkTraffic",
+      "d3f:InboundInternetMailTraffic",
+      "d3f:InboundInternetNetworkTraffic",
+      "d3f:InternetNetworkTraffic",
+      "d3f:IntranetAdministrativeNetworkTraffic",
+      "d3f:IntranetNetworkTraffic",
+      "d3f:OutboundInternetDNSLookupTraffic",
+      "d3f:OutboundInternetEncryptedTraffic",
+      "d3f:OutboundInternetFileTransferTraffic",
+      "d3f:OutboundInternetMailTraffic",
+      "d3f:OutboundInternetNetworkTraffic",
+      "d3f:OutboundInternetWebTraffic",
+      "d3f:TFTPNetworkTraffic"
+     ]
+    },
+    {
+     "defensive_technique": "d3f:WebSessionAccessMediation",
+     "label": "Web Session Access Mediation",
+     "d3fend_id": "D3-WSAM",
+     "tactics": [
+      "Isolate"
+     ],
+     "n_attack_techniques": 1,
+     "attack_techniques": [
+      "T1033"
+     ],
+     "via_artifacts": [
+      "d3f:DirectoryService"
+     ]
+    }
+   ],
+   "technique_artifacts": {
+    "T1005": [
+     {
+      "relation": "accesses",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:LocalResource"
+     }
+    ],
+    "T1021": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:RDPSession"
+     },
+     {
+      "relation": "creates",
+      "artifact": "d3f:SSHSession"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:AdministrativeNetworkTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:IntranetNetworkTraffic"
+     }
+    ],
+    "T1027": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:ExecutableFile"
+     },
+     {
+      "relation": "creates",
+      "artifact": "d3f:JavaScriptBlob"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:ExecutableBinary"
+     },
+     {
+      "relation": "obfuscates",
+      "artifact": "d3f:ExecutableFile"
+     }
+    ],
+    "T1033": [
+     {
+      "relation": "may-access",
+      "artifact": "d3f:DirectoryService"
+     },
+     {
+      "relation": "may-access",
+      "artifact": "d3f:GetSystemConfigValue"
+     },
+     {
+      "relation": "may-access",
+      "artifact": "d3f:PasswordFile"
+     },
+     {
+      "relation": "may-access",
+      "artifact": "d3f:ProcessSegment"
+     },
+     {
+      "relation": "may-invoke",
+      "artifact": "d3f:CopyToken"
+     },
+     {
+      "relation": "may-invoke",
+      "artifact": "d3f:CreateProcess"
+     }
+    ],
+    "T1036": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:ExecutableBinary"
+     },
+     {
+      "relation": "creates",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "invokes",
+      "artifact": "d3f:MoveFile"
+     },
+     {
+      "relation": "may-create",
+      "artifact": "d3f:ExecutableFile"
+     },
+     {
+      "relation": "may-create",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:OperatingSystemExecutableFile"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:FileSystemMetadata"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:JobSchedule"
+     }
+    ],
+    "T1041": [
+     {
+      "relation": "may-transfer",
+      "artifact": "d3f:CertificateFile"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:InternetNetworkTraffic"
+     }
+    ],
+    "T1047": [
+     {
+      "relation": "may-create",
+      "artifact": "d3f:IntranetAdministrativeNetworkTraffic"
+     },
+     {
+      "relation": "may-invoke",
+      "artifact": "d3f:CreateProcess"
+     }
+    ],
+    "T1048": [
+     {
+      "relation": "may-transfer",
+      "artifact": "d3f:CertificateFile"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:InternetNetworkTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetEncryptedTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetNetworkTraffic"
+     }
+    ],
+    "T1053": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:PropertyListFile"
+     },
+     {
+      "relation": "executes",
+      "artifact": "d3f:ScheduledJob"
+     },
+     {
+      "relation": "invokes",
+      "artifact": "d3f:CreateProcess"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:JobSchedule"
+     }
+    ],
+    "T1056": [
+     {
+      "relation": "accesses",
+      "artifact": "d3f:GraphicalUserInterface"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:KeyboardInputDevice"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:ProcessCodeSegment"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:WebApplication"
+     }
+    ],
+    "T1059": [
+     {
+      "relation": "executes",
+      "artifact": "d3f:ExecutableScript"
+     }
+    ],
+    "T1070": [
+     {
+      "relation": "deletes",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "forges",
+      "artifact": "d3f:FileSystemMetadata"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:CommandHistoryLog"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:EventLog"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:OperatingSystemLogFile"
+     },
+     {
+      "relation": "unmounts",
+      "artifact": "d3f:NetworkFileShareResource"
+     }
+    ],
+    "T1071": [
+     {
+      "relation": "may-transfer",
+      "artifact": "d3f:CertificateFile"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetDNSLookupTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetFileTransferTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetMailTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetNetworkTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetWebTraffic"
+     }
+    ],
+    "T1078": [
+     {
+      "relation": "uses",
+      "artifact": "d3f:CloudUserAccount"
+     },
+     {
+      "relation": "uses",
+      "artifact": "d3f:DefaultUserAccount"
+     },
+     {
+      "relation": "uses",
+      "artifact": "d3f:DomainUserAccount"
+     },
+     {
+      "relation": "uses",
+      "artifact": "d3f:LocalUserAccount"
+     },
+     {
+      "relation": "uses",
+      "artifact": "d3f:UserAccount"
+     }
+    ],
+    "T1082": [
+     {
+      "relation": "may-access",
+      "artifact": "d3f:DecoyArtifact"
+     },
+     {
+      "relation": "may-invoke",
+      "artifact": "d3f:CreateProcess"
+     }
+    ],
+    "T1083": [
+     {
+      "relation": "accesses",
+      "artifact": "d3f:Directory"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:File"
+     }
+    ],
+    "T1102": [
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetWebTraffic"
+     }
+    ],
+    "T1105": [
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetNetworkTraffic"
+     }
+    ],
+    "T1110": [
+     {
+      "relation": "accesses",
+      "artifact": "d3f:Password"
+     },
+     {
+      "relation": "may-create",
+      "artifact": "d3f:IntranetAdministrativeNetworkTraffic"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:AuthenticationLog"
+     }
+    ],
+    "T1112": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:WindowsRegistry"
+     }
+    ],
+    "T1140": [
+     {
+      "relation": "invokes",
+      "artifact": "d3f:CreateProcess"
+     },
+     {
+      "relation": "may-add",
+      "artifact": "d3f:ExecutableFile"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:EventLog"
+     }
+    ],
+    "T1189": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:ProcessSegment"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:InternetNetworkTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:URL"
+     }
+    ],
+    "T1190": [
+     {
+      "relation": "injects",
+      "artifact": "d3f:DatabaseQuery"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:ProcessSegment"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:InboundInternetNetworkTraffic"
+     }
+    ],
+    "T1195": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:HardwareDevice"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:Software"
+     }
+    ],
+    "T1203": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:ProcessCodeSegment"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:StackFrame"
+     }
+    ],
+    "T1484": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:GroupPolicy"
+     }
+    ],
+    "T1485": [],
+    "T1486": [
+     {
+      "relation": "encrypts",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "uses",
+      "artifact": "d3f:CryptographicKey"
+     }
+    ],
+    "T1491": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:NetworkResource"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:Resource"
+     }
+    ],
+    "T1499": [
+     {
+      "relation": "produces",
+      "artifact": "d3f:InboundInternetNetworkTraffic"
+     }
+    ],
+    "T1529": [],
+    "T1542": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:TFTPNetworkTraffic"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:BootLoader"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:BootSector"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:VolumeBootRecord"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:Firmware"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:SystemFirmware"
+     }
+    ],
+    "T1543": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:PropertyListFile"
+     },
+     {
+      "relation": "may-create",
+      "artifact": "d3f:OperatingSystemConfigurationFile"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:OperatingSystemConfigurationFile"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:PropertyListFile"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:SystemConfigurationDatabase"
+     }
+    ],
+    "T1547": [
+     {
+      "relation": "may-create",
+      "artifact": "d3f:SharedLibraryFile"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:SymbolicLink"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:SystemConfigurationInitDatabaseRecord"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:UserStartupScriptFile"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:ApplicationConfigurationFile"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:KernelModule"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:SystemConfigurationDatabaseRecord"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:SystemServiceSoftware"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:UserLogonInitResource"
+     }
+    ],
+    "T1553": [
+     {
+      "relation": "modifies",
+      "artifact": "d3f:CertificateTrustStore"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:FileSystemMetadata"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:SystemConfigurationDatabaseRecord"
+     }
+    ],
+    "T1555": [
+     {
+      "relation": "accesses",
+      "artifact": "d3f:DatabaseFile"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:In-memoryPasswordStore"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:MacOSKeychain"
+     },
+     {
+      "relation": "accesses",
+      "artifact": "d3f:PasswordStore"
+     },
+     {
+      "relation": "may-access",
+      "artifact": "d3f:DatabaseFile"
+     },
+     {
+      "relation": "may-access",
+      "artifact": "d3f:In-memoryPasswordStore"
+     },
+     {
+      "relation": "may-invoke",
+      "artifact": "d3f:ReadFile"
+     }
+    ],
+    "T1561": [
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:BootSector"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:Partition"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:PartitionTable"
+     },
+     {
+      "relation": "may-modify",
+      "artifact": "d3f:Volume"
+     },
+     {
+      "relation": "modifies",
+      "artifact": "d3f:BlockDevice"
+     }
+    ],
+    "T1566": [
+     {
+      "relation": "produces",
+      "artifact": "d3f:Email"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:File"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:InboundInternetMailTraffic"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:URL"
+     }
+    ],
+    "T1569": [],
+    "T1573": [
+     {
+      "relation": "creates",
+      "artifact": "d3f:OutboundInternetEncryptedTraffic"
+     },
+     {
+      "relation": "may-transfer",
+      "artifact": "d3f:CertificateFile"
+     },
+     {
+      "relation": "produces",
+      "artifact": "d3f:OutboundInternetEncryptedTraffic"
+     }
+    ],
+    "T1587": [],
+    "T1588": [],
+    "T1680": [],
+    "T1685": []
+   },
+   "artifacts": [
+    {
+     "artifact": "d3f:AdministrativeNetworkTraffic",
+     "label": "Administrative Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1021"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ApplicationConfigurationFile",
+     "label": "Application Configuration File",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:AuthenticationLog",
+     "label": "Authentication Log",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1110"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:BlockDevice",
+     "label": "Block Device",
+     "has_defence": false,
+     "relations": {
+      "modifies": [
+       "T1561"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:BootLoader",
+     "label": "Boot Loader",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1542"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:BootSector",
+     "label": "Boot Sector",
+     "has_defence": false,
+     "relations": {
+      "may-modify": [
+       "T1542",
+       "T1561"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CertificateFile",
+     "label": "Certificate File",
+     "has_defence": true,
+     "relations": {
+      "may-transfer": [
+       "T1041",
+       "T1048",
+       "T1071",
+       "T1573"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CertificateTrustStore",
+     "label": "Certificate Trust Store",
+     "has_defence": false,
+     "relations": {
+      "modifies": [
+       "T1553"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CloudUserAccount",
+     "label": "Cloud User Account",
+     "has_defence": true,
+     "relations": {
+      "uses": [
+       "T1078"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CommandHistoryLog",
+     "label": "Command History Log",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1070"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CopyToken",
+     "label": "Copy Token",
+     "has_defence": true,
+     "relations": {
+      "may-invoke": [
+       "T1033"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CreateProcess",
+     "label": "Create Process",
+     "has_defence": true,
+     "relations": {
+      "invokes": [
+       "T1053",
+       "T1140"
+      ],
+      "may-invoke": [
+       "T1033",
+       "T1047",
+       "T1082"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:CryptographicKey",
+     "label": "Cryptographic Key",
+     "has_defence": false,
+     "relations": {
+      "uses": [
+       "T1486"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DatabaseFile",
+     "label": "Database File",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1555"
+      ],
+      "may-access": [
+       "T1555"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DatabaseQuery",
+     "label": "Database Query",
+     "has_defence": true,
+     "relations": {
+      "injects": [
+       "T1190"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DecoyArtifact",
+     "label": "Decoy Artifact",
+     "has_defence": true,
+     "relations": {
+      "may-access": [
+       "T1082"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DefaultUserAccount",
+     "label": "Default User Account",
+     "has_defence": true,
+     "relations": {
+      "uses": [
+       "T1078"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Directory",
+     "label": "Directory",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1083"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DirectoryService",
+     "label": "Directory Service",
+     "has_defence": true,
+     "relations": {
+      "may-access": [
+       "T1033"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:DomainUserAccount",
+     "label": "Domain User Account",
+     "has_defence": true,
+     "relations": {
+      "uses": [
+       "T1078"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Email",
+     "label": "Email",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1566"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:EventLog",
+     "label": "Event Log",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1140"
+      ],
+      "modifies": [
+       "T1070"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ExecutableBinary",
+     "label": "Executable Binary",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1036"
+      ],
+      "modifies": [
+       "T1027"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ExecutableFile",
+     "label": "Executable File",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1027"
+      ],
+      "may-add": [
+       "T1140"
+      ],
+      "may-create": [
+       "T1036"
+      ],
+      "obfuscates": [
+       "T1027"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ExecutableScript",
+     "label": "Executable Script",
+     "has_defence": true,
+     "relations": {
+      "executes": [
+       "T1059"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:File",
+     "label": "File",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1005",
+       "T1083"
+      ],
+      "creates": [
+       "T1036"
+      ],
+      "deletes": [
+       "T1070"
+      ],
+      "encrypts": [
+       "T1486"
+      ],
+      "may-create": [
+       "T1036"
+      ],
+      "may-modify": [
+       "T1070"
+      ],
+      "produces": [
+       "T1566"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:FileSystemMetadata",
+     "label": "File System Metadata",
+     "has_defence": false,
+     "relations": {
+      "forges": [
+       "T1070"
+      ],
+      "modifies": [
+       "T1036",
+       "T1553"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Firmware",
+     "label": "Firmware",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1542"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:GetSystemConfigValue",
+     "label": "Get System Config Value",
+     "has_defence": true,
+     "relations": {
+      "may-access": [
+       "T1033"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:GraphicalUserInterface",
+     "label": "Graphical User Interface",
+     "has_defence": false,
+     "relations": {
+      "accesses": [
+       "T1056"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:GroupPolicy",
+     "label": "Group Policy",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1484"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:HardwareDevice",
+     "label": "Hardware Device",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1195"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:In-memoryPasswordStore",
+     "label": "In-memory Password Store",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1555"
+      ],
+      "may-access": [
+       "T1555"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:InboundInternetMailTraffic",
+     "label": "Inbound Internet Mail Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1566"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:InboundInternetNetworkTraffic",
+     "label": "Inbound Internet Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1190",
+       "T1499"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:InternetNetworkTraffic",
+     "label": "Internet Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1041",
+       "T1048",
+       "T1189"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:IntranetAdministrativeNetworkTraffic",
+     "label": "Intranet Administrative Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "may-create": [
+       "T1047",
+       "T1110"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:IntranetNetworkTraffic",
+     "label": "Intranet Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1021"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:JavaScriptBlob",
+     "label": "JavaScript Blob",
+     "has_defence": false,
+     "relations": {
+      "creates": [
+       "T1027"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:JobSchedule",
+     "label": "Job Schedule",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1036",
+       "T1053"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:KernelModule",
+     "label": "Kernel Module",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:KeyboardInputDevice",
+     "label": "Keyboard Input Device",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1056"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:LocalResource",
+     "label": "Local Resource",
+     "has_defence": false,
+     "relations": {
+      "accesses": [
+       "T1005"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:LocalUserAccount",
+     "label": "Local User Account",
+     "has_defence": true,
+     "relations": {
+      "uses": [
+       "T1078"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:MacOSKeychain",
+     "label": "MacOS Keychain",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1555"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:MoveFile",
+     "label": "Move File",
+     "has_defence": true,
+     "relations": {
+      "invokes": [
+       "T1036"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:NetworkFileShareResource",
+     "label": "Network File Share Resource",
+     "has_defence": true,
+     "relations": {
+      "unmounts": [
+       "T1070"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:NetworkResource",
+     "label": "Network Resource",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1491"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OperatingSystemConfigurationFile",
+     "label": "Operating System Configuration File",
+     "has_defence": true,
+     "relations": {
+      "may-create": [
+       "T1543"
+      ],
+      "may-modify": [
+       "T1543"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OperatingSystemExecutableFile",
+     "label": "Operating System Executable File",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1036"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OperatingSystemLogFile",
+     "label": "Operating System Log File",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1070"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetDNSLookupTraffic",
+     "label": "Outbound Internet DNS Lookup Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1071"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetEncryptedTraffic",
+     "label": "Outbound Internet Encrypted Traffic",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1573"
+      ],
+      "produces": [
+       "T1048",
+       "T1573"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetFileTransferTraffic",
+     "label": "Outbound Internet File Transfer Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1071"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetMailTraffic",
+     "label": "Outbound Internet Mail Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1071"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetNetworkTraffic",
+     "label": "Outbound Internet Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1048",
+       "T1071",
+       "T1105"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:OutboundInternetWebTraffic",
+     "label": "Outbound Internet Web Traffic",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1071",
+       "T1102"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Partition",
+     "label": "Partition",
+     "has_defence": false,
+     "relations": {
+      "may-modify": [
+       "T1561"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:PartitionTable",
+     "label": "Partition Table",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1561"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Password",
+     "label": "Password",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1110"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:PasswordFile",
+     "label": "Password File",
+     "has_defence": true,
+     "relations": {
+      "may-access": [
+       "T1033"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:PasswordStore",
+     "label": "Password Store",
+     "has_defence": true,
+     "relations": {
+      "accesses": [
+       "T1555"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ProcessCodeSegment",
+     "label": "Process Code Segment",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1056"
+      ],
+      "modifies": [
+       "T1203"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ProcessSegment",
+     "label": "Process Segment",
+     "has_defence": true,
+     "relations": {
+      "may-access": [
+       "T1033"
+      ],
+      "modifies": [
+       "T1189",
+       "T1190"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:PropertyListFile",
+     "label": "Property List File",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1053",
+       "T1543"
+      ],
+      "modifies": [
+       "T1543"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:RDPSession",
+     "label": "RDP Session",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1021"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ReadFile",
+     "label": "Read File",
+     "has_defence": true,
+     "relations": {
+      "may-invoke": [
+       "T1555"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Resource",
+     "label": "Resource",
+     "has_defence": false,
+     "relations": {
+      "modifies": [
+       "T1491"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SSHSession",
+     "label": "SSH Session",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1021"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:ScheduledJob",
+     "label": "Scheduled Job",
+     "has_defence": true,
+     "relations": {
+      "executes": [
+       "T1053"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SharedLibraryFile",
+     "label": "Shared Library File",
+     "has_defence": true,
+     "relations": {
+      "may-create": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Software",
+     "label": "Software",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1195"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:StackFrame",
+     "label": "Stack Frame",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1203"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SymbolicLink",
+     "label": "Symbolic Link",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SystemConfigurationDatabase",
+     "label": "System Configuration Database",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1543"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SystemConfigurationDatabaseRecord",
+     "label": "System Configuration Database Record",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1547",
+       "T1553"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SystemConfigurationInitDatabaseRecord",
+     "label": "System Configuration Init Database Record",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SystemFirmware",
+     "label": "System Firmware",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1542"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:SystemServiceSoftware",
+     "label": "System Service Software",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:TFTPNetworkTraffic",
+     "label": "TFTP Network Traffic",
+     "has_defence": true,
+     "relations": {
+      "creates": [
+       "T1542"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:URL",
+     "label": "URL",
+     "has_defence": true,
+     "relations": {
+      "produces": [
+       "T1189",
+       "T1566"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:UserAccount",
+     "label": "User Account",
+     "has_defence": true,
+     "relations": {
+      "uses": [
+       "T1078"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:UserLogonInitResource",
+     "label": "User Logon Init Resource",
+     "has_defence": false,
+     "relations": {
+      "modifies": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:UserStartupScriptFile",
+     "label": "User Startup Script File",
+     "has_defence": true,
+     "relations": {
+      "may-modify": [
+       "T1547"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:Volume",
+     "label": "Volume",
+     "has_defence": false,
+     "relations": {
+      "may-modify": [
+       "T1561"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:VolumeBootRecord",
+     "label": "Volume Boot Record",
+     "has_defence": false,
+     "relations": {
+      "may-modify": [
+       "T1542"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:WebApplication",
+     "label": "Web Application",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1056"
+      ]
+     }
+    },
+    {
+     "artifact": "d3f:WindowsRegistry",
+     "label": "Windows Registry",
+     "has_defence": true,
+     "relations": {
+      "modifies": [
+       "T1112"
+      ]
+     }
+    }
+   ],
+   "note": "Candidate set derived from the D3FEND ontology relations; it does not rank defences or assess their effect. n_attack_techniques is the number of observed techniques whose artefacts the defensive technique protects."
+  }
+ },
+ "phase4": {
+  "source": "EuRepoC Global Dataset v1.3, political and legal response columns",
+  "neighbours": [
+   {
+    "eurepoc_id": "3899",
+    "incident_name": "Chinese state-linked hacker group Salt Typhoon (aka FamousSparroww and GhostEmperor) breached wiretapping systems of US internet providers beginning August 2024",
+    "found": true,
+    "initiator_name": "Unknown",
+    "receiver_country": "United States;United States;United States;United States;United States;United States;United States",
+    "political": {
+     "count": 1,
+     "count_raw": "1",
+     "has_response": true,
+     "record": {
+      "date": "13.11.2024",
+      "type": "State Actors: Cooperative measures",
+      "subtype": null,
+      "responding_country": "United States",
+      "responding_actor": "Federal Bureau of Investigation (FBI)"
+     }
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": false
+   },
+   {
+    "eurepoc_id": "1575",
+    "incident_name": "Several Ukrainian government institutions as well as some banks were attacked by (amongst others) pro-Russian hacktivists through a DDoS attack on 23 February 2022",
+    "found": true,
+    "initiator_name": "Unknown",
+    "receiver_country": "Ukraine;Ukraine;Ukraine;Ukraine;Ukraine",
+    "political": {
+     "count": 1,
+     "count_raw": "1",
+     "has_response": true,
+     "record": {
+      "date": "23.02.2022",
+      "type": "State Actors: Stabilizing measures",
+      "subtype": "Statement by other ministers (or spokespersons)/members of parliament",
+      "responding_country": "Ukraine",
+      "responding_actor": "Mykhailo Fedorov (Minister of Digital Transformation, Ukraine)"
+     }
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": false
+   },
+   {
+    "eurepoc_id": "1502",
+    "incident_name": "Iranian state-sponsored hackers disrupted Albanian government websites and essential services on 15 July 2022",
+    "found": true,
+    "initiator_name": "Unknown",
+    "receiver_country": "Albania;Albania",
+    "political": {
+     "count": 5,
+     "count_raw": "5",
+     "has_response": true,
+     "record": {
+      "date": "06.09.2022;01.01.2023;08.09.2022;08.09.2022;21.09.2022",
+      "type": "State Actors: Stabilizing measures;State Actors: Preventive measures;EU: Stabilizing measures;International organizations: Stabilizing measures;State Actors: Preventive measures",
+      "subtype": "Statement by head of state/head of government (or executive official);Capacity building in third countries;Declaration of HR;Statement by secretary-general or similar;Awareness raising",
+      "responding_country": "Albania;United States;EU (region);NATO (region);United States",
+      "responding_actor": "Albanian Government;US Cyber ​​National Mission Force (CNMF);High Representative of the European Union for Foreign Affairs and Security Policy;North Atlantic Treaty Organization (NATO);Federal Bureau of Investigation (FBI)"
+     }
+    },
+    "legal": {
+     "count": 3,
+     "count_raw": "3",
+     "has_response": true,
+     "record": {
+      "date": "2022-12-2;2022-9-7;2022-9-9",
+      "type": "Other legal measures on national level (e.g. law enforcement investigations, arrests);Peaceful means: Retorsion (International Law);Peaceful means: Retorsion (International Law)",
+      "subtype": "Not available;Severance of diplomatic relations;Economic sanctions",
+      "responding_country": "Albania;Albania;United States",
+      "responding_actor": "Tirana Prosecutor’s Office (ALB);Council of ministers;US Department of the Treasury"
+     }
+    },
+    "no_record_found": false
+   },
+   {
+    "eurepoc_id": "747",
+    "incident_name": "Russsian hacker group APT 28 distrupted French TV network TV 5Monde and took control over their social media accounts in April 205",
+    "found": true,
+    "initiator_name": "Fancy Bear/APT28/Sofacy/Pawn Storm/Group 74/Sednit/Tsar Team/Forest Blizzard fka STRONTIUM/Grizzly Steppe/SNAKEMACKEREL/IRON TWILIGHT/TG-4127/Group G0007/ITG05/BlueDelta (GRU, 85th Main Special Service Center (GTsSS) Military Unit 26165)",
+    "receiver_country": "France",
+    "political": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": true
+   },
+   {
+    "eurepoc_id": "1247",
+    "incident_name": "Telecom Providers hack",
+    "found": true,
+    "initiator_name": "Greenbug;OilRig/APT34/Cobalt Gypsy/Helix Kitten/Crambus/G0049/Hazel Sandstorm fka EUROPIUM",
+    "receiver_country": "South Asia (region)",
+    "political": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": true
+   },
+   {
+    "eurepoc_id": "578",
+    "incident_name": "Chinese hacking group APT suspected of MSP Theft Campaign Operation Cloud Hopper between 2014-2018",
+    "found": true,
+    "initiator_name": "APT10/Stone Panda/MenuPass Team/Cloud Hopper/Red Apollo/Cicada/POTASSIUM/BRONZE RIVERSIDE/CVNX/HOGFISH/G0045 (MSS, Tianjin State Security Bureau)",
+    "receiver_country": "Brazil;Canada;France;Japan;United States;India;United Arab Emirates;Germany;Finland;Sweden;Japan;South Africa;United States",
+    "political": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": true
+   },
+   {
+    "eurepoc_id": "3962",
+    "incident_name": "Russian State-Sponsored Hacking Group of the Main Intelligence Directorate (GRU) Hacked the Georgian Government and Major Companies Between 2017 and 2020",
+    "found": true,
+    "initiator_name": "Unknown",
+    "receiver_country": "Georgia;Georgia;Georgia;Georgia",
+    "political": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "legal": {
+     "count": 0,
+     "count_raw": "0",
+     "has_response": false,
+     "record": null
+    },
+    "no_record_found": true
+   }
+  ],
+  "proportions": {
+   "political": {
+    "n": 3,
+    "of": 7,
+    "share": 0.42857142857142855
+   },
+   "legal": {
+    "n": 1,
+    "of": 7,
+    "share": 0.14285714285714285
+   },
+   "any": {
+    "n": 3,
+    "of": 7,
+    "share": 0.42857142857142855
+   }
+  }
+ },
+ "assessment": {
+  "state_attribution_grade": 4,
+  "summary": {
+   "available": [
+    "denial",
+    "punishment: diplomatic and economic",
+    "punishment: law enforcement",
+    "punishment: countermeasures",
+    "punishment: self-defence",
+    "norms"
+   ],
+   "conditionally available": [],
+   "unavailable": []
+  },
+  "judgements": [
+   {
+    "type": "denial",
+    "judgement": "available",
+    "available_measures": [
+     15
+    ],
+    "conditional_or_closed": [
+     {
+      "measure_id": 16,
+      "status": "depends on the state's position",
+      "reason": "depends on the state's position"
+     }
+    ],
+    "further_confirmation": "the defending state's position on sovereignty; where the action takes effect",
+    "measures": [
+     {
+      "measure_id": 15,
+      "name": "Defensive measures on own systems",
+      "status": "available at any time",
+      "required_grade": null,
+      "kind": "available"
+     },
+     {
+      "measure_id": 16,
+      "name": "Forward cyber defence operations",
+      "status": "depends on the state's position",
+      "required_grade": null,
+      "kind": "condition"
+     }
+    ]
+   },
+   {
+    "type": "punishment: diplomatic and economic",
+    "judgement": "available",
+    "available_measures": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     19
+    ],
+    "conditional_or_closed": [],
+    "further_confirmation": "grounds of state attribution; whether another international obligation is breached",
+    "measures": [
+     {
+      "measure_id": 2,
+      "name": "Expulsion of diplomats",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 3,
+      "name": "Visa restrictions",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 4,
+      "name": "Asset freezes",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 5,
+      "name": "Economic sanctions",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 6,
+      "name": "Export controls",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 7,
+      "name": "Suspension of aid",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 8,
+      "name": "Suspension of dialogue or negotiations",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 9,
+      "name": "Refusal of mutual legal assistance",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     },
+     {
+      "measure_id": 19,
+      "name": "Downgrading or severance of diplomatic relations",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     }
+    ]
+   },
+   {
+    "type": "punishment: law enforcement",
+    "judgement": "available",
+    "available_measures": [
+     10
+    ],
+    "conditional_or_closed": [
+     {
+      "measure_id": 11,
+      "status": "subject to authorisation or consent",
+      "reason": "subject to authorisation or consent"
+     }
+    ],
+    "further_confirmation": "authorisation or consent of the other state",
+    "measures": [
+     {
+      "measure_id": 10,
+      "name": "Criminal prosecution and other exercise of domestic enforcement jurisdiction",
+      "status": "available at any time",
+      "required_grade": null,
+      "kind": "available"
+     },
+     {
+      "measure_id": 11,
+      "name": "Extraterritorial enforcement",
+      "status": "subject to authorisation or consent",
+      "required_grade": null,
+      "kind": "condition"
+     }
+    ]
+   },
+   {
+    "type": "punishment: countermeasures",
+    "judgement": "available",
+    "available_measures": [
+     12
+    ],
+    "conditional_or_closed": [],
+    "further_confirmation": "prior wrongful act; conditions of exercise and termination",
+    "measures": [
+     {
+      "measure_id": 12,
+      "name": "Countermeasures",
+      "status": "open for review",
+      "required_grade": 3,
+      "kind": "available"
+     }
+    ]
+   },
+   {
+    "type": "punishment: self-defence",
+    "judgement": "available",
+    "available_measures": [
+     13
+    ],
+    "conditional_or_closed": [],
+    "further_confirmation": "necessity, proportionality, temporal relation",
+    "measures": [
+     {
+      "measure_id": 13,
+      "name": "Self-defence",
+      "status": "open for review",
+      "required_grade": 4,
+      "kind": "available"
+     }
+    ]
+   },
+   {
+    "type": "norms",
+    "judgement": "available",
+    "available_measures": [
+     1
+    ],
+    "conditional_or_closed": [],
+    "further_confirmation": "grounds of state attribution; whether another international obligation is breached",
+    "measures": [
+     {
+      "measure_id": 1,
+      "name": "Public attribution",
+      "status": "available at any time",
+      "required_grade": 2,
+      "kind": "available"
+     }
+    ]
+   }
+  ],
+  "no_judgement": [
+   {
+    "type": "entanglement",
+    "judgement": null,
+    "available_measures": [],
+    "further_confirmation": "whether treaties and cooperation exist at the time",
+    "measures": [
+     {
+      "measure_id": 18,
+      "name": "Treaties and cooperation",
+      "status": "independent of timing",
+      "kind": "off_axis"
+     }
+    ]
+   },
+   {
+    "type": "outside the four types",
+    "judgement": null,
+    "available_measures": [
+     14,
+     17
+    ],
+    "further_confirmation": "whether the victim sector is an essential interest (plea of necessity)",
+    "measures": [
+     {
+      "measure_id": 14,
+      "name": "Plea of necessity",
+      "status": "open for review",
+      "kind": "available"
+     },
+     {
+      "measure_id": 17,
+      "name": "Monitoring and strategic patience",
+      "status": "available at any time",
+      "kind": "available"
+     }
+    ]
+   }
+  ],
+  "note": "A judgement of available means that the conditions are in place for examining the measures of that type in law and policy; it is not a recommendation."
+ }
+}

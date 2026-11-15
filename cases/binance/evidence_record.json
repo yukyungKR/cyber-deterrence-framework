@@ -1,0 +1,161 @@
+{
+ "case_id": "BINANCE-2026",
+ "name": "바이낸스 탈취 사건(2026)",
+ "alias": [
+  "Jade Sleet",
+  "UNC4899",
+  "Slow Pisces",
+  "Pressure Chollima"
+ ],
+ "actor": "TraderTraitor",
+ "c_id": {
+  "grade": 5,
+  "basis": "식별 시점(2026-11-12) 등급 5 — 정부 문서가 이 작전을 단정 서술어로 TraderTraitor의 것으로 지목: FBI(2026-10-31) 「The FBI refers to this specific North Korean malicious cyber activity as \"TraderTraitor.\"」(tech_04_FBI_20261031.txt:8) · 미 법무부(2026-11-12) 「members of the North Korean military, referred to by the FBI as “TraderTraitor” stole more than $6 billion worth of virtual assets from the Binance cryptocurrency exchange」(resp_16_DOJ_20261112.txt:30). 그 전 시점(2026-10-29~30)은 보안업체 귀속 — TRM 「TRM attributes the attack to TraderTraitor, North Korea’s elite hacking unit, based on robust on and off-chain intelligence. We make this judgment with high confidence.」(tech_05_TRMLabs_20261029.txt:14) · Chainalysis 「Chainalysis attributes the hack to TraderTraitor, a North Korean cybercrime group.」(tech_08_Chainalysis_20261030.txt:20) · Elliptic은 FBI 발표 전 'likely'(tech_07_Elliptic_20261030.txt:24). 식별 시점 뒤의 상승: 묶음에 없음(자료 기준일 2026-11-12).",
+  "source": "tech_04_FBI_20261031.txt; resp_16_DOJ_20261112.txt"
+ },
+ "state_attribution": "북한",
+ "c_st": {
+  "grade": 5,
+  "basis": "식별 시점(2026-11-12) 기준 등급 5(국가기관 소속 특정) — 미 법무부 보도자료(2026-11-12)가 수행자를 북한 군 소속으로 특정: 「members of the North Korean military, referred to by the FBI as “TraderTraitor” stole more than $6 billion worth of virtual assets from the Binance cryptocurrency exchange」(resp_16_DOJ_20261112.txt:30). 첫 공식 귀속 성명일 2026-10-31 — FBI 「The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026.」(tech_04_FBI_20261031.txt:8; 날짜는 「On October 31, 2026, the FBI, the U.S. Secret Service and IRS Criminal Investigation attributed the theft to North Korea’s TraderTraitor.」 tech_13_ReversingLabs_20261031.txt:110). FBI 성명만 있던 2026-10-31~11-11 구간의 값은 4로 판단(국가 책임 단정 · 수행 기관 소속은 특정하지 않음). 보안업체 귀속(TRM·Chainalysis·Elliptic, 2026-10-29~30)은 공식 성명이 아니어서 등급 근거로 쓰지 않음. 북한 측 부인: tech_13_ReversingLabs_20261031.txt:110 · tech_17_Rekt_20261106.txt:425.",
+  "source": "resp_16_DOJ_20261112.txt; tech_04_FBI_20261031.txt",
+  "reference_date": "2026-11-12"
+ },
+ "victim_sector": [
+  "finance_commerce"
+ ],
+ "victim_state": "미국",
+ "techniques": [
+  "T1003",
+  "T1027",
+  "T1036",
+  "T1059",
+  "T1070",
+  "T1071",
+  "T1078",
+  "T1105",
+  "T1140",
+  "T1190",
+  "T1195",
+  "T1204",
+  "T1486",
+  "T1518",
+  "T1528",
+  "T1539",
+  "T1548",
+  "T1550",
+  "T1552",
+  "T1553",
+  "T1555",
+  "T1565",
+  "T1566"
+ ],
+ "terminal_objective": {},
+ "access_depth": {
+  "draft": "core",
+  "basis": "한 침투 안의 최댓값 = 내부 지갑 서명 서비스(특권 자산) 도달: 「The attacker exploited unauthorized access to an internal wallet signing service to initiate transactions outside the normal withdrawal process.」(tech_01_Binance_20261103.txt:27) · 「the attacker logged onto Software Engineer C’s computer, used the credentials stolen from Wallet DevOps Engineer A, deployed a container, and triggered a malicious script to launch the attack.」(tech_01_Binance_20261103.txt:83). 진입 벡터(엔지니어 업무용 컴퓨터)와 도달 자산(서명 서비스)을 구분했고, OT/ICS 자산은 묶음에 없음."
+ },
+ "timing_grade": "절대(사건 수준)",
+ "effect_realized": {
+  "value": "post",
+  "by_type": {
+   "1": "post",
+   "2": "post",
+   "3": "pre"
+  },
+  "boundary_flag": true,
+  "note": "유형 ②: 자산 탈취는 지시문 §3-3에 따라 유형 ②(조작·공개) 칸에서 판정 — 「The attackers submitted 50 signing transactions to manipulate the account nonce and establish malicious delegation authorizations.」(tech_01_Binance_20261103.txt:41) · 「The attacker exploited unauthorized access to an internal wallet signing service to initiate transactions outside the normal withdrawal process.」(tech_01_Binance_20261103.txt:27) · 「The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026.」(tech_04_FBI_20261031.txt:8). 유형 ①: 자산 탈취와 별개로 엔지니어 컴퓨터에서 자격증명·토큰과 조직 정보가 탈취됨 — 「used the credentials stolen from Wallet DevOps Engineer A」(tech_01_Binance_20261103.txt:83) · 「However, Engineer A’s role and his related colleagues on our wallet infrastructure team was exposed to the hacker.」(tech_01_Binance_20261103.txt:55). 유형 ③: 공격자의 파괴·교란 효과 서술 없음 — 출금 중단은 피해자의 차단 조치이고 입금은 정상 — 「Temporarily suspended withdrawals while we complete a security revamp of the withdrawal service and its related addresses」(tech_02_RichardTeng_20261030.txt:27) · 「Deposits are unaffected and operating as normal」(tech_02_RichardTeng_20261030.txt:24). 경계: ①을 수단(자격증명 접근)으로 보아 pre로 둘지, ③을 출금 중단·'disruption'(tech_01_Binance_20261103.txt:9)으로 post로 둘지는 저자 확인 대상.",
+  "time_basis": "식별 시점 2026-11-12 기준(효과 발현: 자산 이동 2026-10-29 20:05~23:56 UTC — tech_01_Binance_20261103.txt:29 · tech_01_Binance_20261103.txt:47; 자격증명 탈취는 2026-10-20~29 — tech_01_Binance_20261103.txt:81 · tech_01_Binance_20261103.txt:83)"
+ },
+ "intrusion_state": {
+  "value": "terminated",
+  "basis": "식별 시점(2026-11-12)에 존속하는 무단 접근 서술 없음 — 2026-11-03 보고 기준 진입점 폐쇄·경로 시스템 재구축: 「The entry points identified as having been used in the attack have been closed. Systems touched in the attack path have been rebuilt or replaced.」(tech_01_Binance_20261103.txt:15); 마지막 무단 이체 2026-10-29 23:56 UTC 뒤 추가 이체 없음: 「No further unauthorised transfers were observed after.」(tech_01_Binance_20261103.txt:47); EIP-7702 위임 해제 2026-10-30 00:10 UTC: 「At 00:10 UTC on 30 October 2026, Binance executed a new authorization from the Binance14 hot wallet to the zero address, clearing the EIP-7702 delegation code.」(tech_01_Binance_20261103.txt:49). 탈취 자산의 세탁은 침해 밖의 활동이라 이 값의 근거로 쓰지 않음."
+ },
+ "countermeasure_availability": "",
+ "conflict_nexus": "none",
+ "legal_characterization": [
+  {
+   "value": "domestic_political_framing",
+   "quote": "identifying, mitigating, and disrupting North Korea's illicit cybercrime and virtual asset theft activities",
+   "source": "tech_04_FBI_20261031.txt:18",
+   "needs_author_review": true
+  },
+  {
+   "value": "domestic_political_framing",
+   "quote": "we worked together to freeze this massive criminal fraud in its tracks",
+   "source": "resp_16_DOJ_20261112.txt:19",
+   "needs_author_review": true
+  }
+ ],
+ "responses": [
+  {
+   "type": "public_attribution",
+   "actor_state": "미국",
+   "date": "2026-10-31",
+   "invoked_legal_basis": "none_stated",
+   "source": "tech_04_FBI_20261031.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점에 자산 탈취(2026-10-29 20:05~23:56 UTC)는 이미 발현 — 「The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026.」(tech_04_FBI_20261031.txt:8)"
+   }
+  },
+  {
+   "type": "criminal_investigation",
+   "actor_state": "미국",
+   "date": "2026-10-31",
+   "invoked_legal_basis": "none_stated",
+   "source": "tech_04_FBI_20261031.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점에 자산 탈취(2026-10-29 20:05~23:56 UTC)는 이미 발현 — 「The Federal Bureau of Investigation (FBI) is releasing information advising the Democratic People's Republic of Korea (North Korea) was responsible for the theft of more than $6 billion USD in virtual assets from cryptocurrency exchange Binance, on or about October 29, 2026.」(tech_04_FBI_20261031.txt:8)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "미국",
+   "date": "2026-11-12",
+   "invoked_legal_basis": "none_stated",
+   "source": "resp_16_DOJ_20261112.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점에 자산 탈취는 이미 발현 — 「members of the North Korean military, referred to by the FBI as “TraderTraitor” stole more than $6 billion worth of virtual assets from the Binance cryptocurrency exchange」(resp_16_DOJ_20261112.txt:30)"
+   }
+  },
+  {
+   "type": "criminal_investigation",
+   "actor_state": "미국",
+   "date": "2026-11-12",
+   "invoked_legal_basis": "none_stated",
+   "source": "resp_16_DOJ_20261112.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점에 자산 탈취는 이미 발현 — 「members of the North Korean military, referred to by the FBI as “TraderTraitor” stole more than $6 billion worth of virtual assets from the Binance cryptocurrency exchange」(resp_16_DOJ_20261112.txt:30)"
+   }
+  }
+ ],
+ "aftermath": "식별 시점(2026-11-12) 이후의 후속: 묶음에 근거 없음(자료 기준일도 2026-11-12). 식별 시점에 진행 중으로 적힌 것 — 미 법무부(2026-11-12) 「Efforts to trace, freeze, seize, and forfeit the stolen virtual assets are ongoing, as TraderTraitor actors continue to launder such assets through various cryptocurrency bridges, mixers, and exchanges.」(resp_16_DOJ_20261112.txt:31) · 한국 외교부(2026-11-10) 독자 제재 등 추가 대응은 내부 검토 중·미확정(resp_18_외교부_20261110.txt:19).",
+ "tier": "v3_case",
+ "boundary_flag": true,
+ "boundary_reason": "효과 유형 경계 — 묶음은 이 사건을 'theft'(tech_04_FBI_20261031.txt:8)로 서술하나 저자 결정에 따라 자산 탈취를 유형 ②(조작·공개)로 판정했다(유형 ①과의 경계). ③(출금 중단·'disruption' tech_01_Binance_20261103.txt:9)도 경계. conflict_nexus는 none이라 그 요건과는 무관.",
+ "annotation_pass": "two_model_author_confirmed",
+ "notes": "⑴ 금전 동기(판정에 쓰지 않음): 「This group has repeatedly targeted the cryptocurrency industry, exchanges, DeFi protocols, and investors to raise funds for the regime.」(tech_08_Chainalysis_20261030.txt:30) · 「North Korea’s government bankrolls its rogue regime and illicit weapons program through cryptocurrency theft」(resp_16_DOJ_20261112.txt:16) · 「The US government has linked these thefts to the funding of North Korea’s weapons programs.」(tech_07_Elliptic_20261030.txt:40). ⑵ 벤더 쪽 법적 규정(격하): Cointegrity 「Until a government names North Korea, exposure to these funds is stolen-property risk. After an FBI statement or OFAC designation, the same exposure becomes sanctions risk」(tech_10_Cointegrity_20261030.txt:230). ⑶ 북한 부인: 김여정 KCNA 성명(tech_17_Rekt_20261106.txt:425) · tech_13_ReversingLabs_20261031.txt:110. ⑷ 행위자 경계: SafeDep은 면접 단계를 「Contagious Interview, a North Korea-linked campaign」로 봄(tech_14_SafeDep_20261103.txt:95) — RL은 「most vendors track Contagious Interview as a separate North Korean cluster, so the two are not the same claim.」(tech_13_ReversingLabs_20261031.txt:142). 법무부의 FaceStealer(Sapphire Sleet 등, resp_16_DOJ_20261112.txt:24)는 「Separately from the FaceStealer campaign」(resp_16_DOJ_20261112.txt:30)라 이 작전의 행위자·별칭에 넣지 않음. 'Lazarus umbrella'(tech_13_ReversingLabs_20261031.txt:142)는 상위 묶음 표현이라 alias에서 뺌. ⑸ Constella 로그(2026-03)는 「There is no evidence that this log was used in the attack.」(tech_19_Constella_20261111.txt:70) — 근거로 쓰지 않음. ⑹ 한국 외교부(2026-11-05·11-10)는 바이낸스 질의에 북한 불법 사이버 활동 일반으로 답하고 독자 제재 등을 검토 중이라고만 함(resp_17_외교부_20261105.txt:28 · resp_18_외교부_20261110.txt:19) — 공개 귀속·대응으로 넣지 않음.",
+ "unit_type": "campaign",
+ "collection_mode": "organic",
+ "collection_mode_basis": "저자가 사례로 선정(2026-11-13), 표적 수집 아님",
+ "target_specificity": "specific_victim",
+ "target_specificity_basis": "바이낸스와 그 지갑 인프라 담당자를 특정해 겨냥: 「Software Engineer B had a profile on the platform that referenced his experience at Binance.」(tech_01_Binance_20261103.txt:59) · 「However, Engineer A’s role and his related colleagues on our wallet infrastructure team was exposed to the hacker.」(tech_01_Binance_20261103.txt:55) · 「the attacker used that mechanism to give an attacker-controlled smart contract partial execution rights over a Binance hot wallet.」(tech_01_Binance_20261103.txt:37).",
+ "victim_sector_sub": [
+  "financial_services"
+ ],
+ "victim_sector_sub_note": "주 표적(관측 범위 서술에서 방어국 미국을 겨냥한 적대 행위의 주된 피해 기관) = 암호화폐 거래소 바이낸스: 「cryptocurrency exchange Binance」(tech_04_FBI_20261031.txt:8) · 「Binance, a virtual currency exchange」(resp_16_DOJ_20261112.txt:15) · 「Binance, the world's largest cryptoasset exchange」(tech_07_Elliptic_20261030.txt:34). 묶음에는 바이낸스와 미국의 관계(소재지·법인)를 적은 구절이 없다 — 미국 관점은 저자 결정의 메타 값. 다른 부문 피해 기관은 묶음에 없음(동결에 참여한 발행사·프로토콜은 대응 주체).",
+ "victim_assets": [
+  {
+   "value": "Laptop Computer",
+   "kind": "d3fend",
+   "quote": "the security incident may involve a compromised DevOps engineer’s laptop, which allowed an attacker to gain access to a service container",
+   "source": "tech_23_Binance_20261030.txt:9"
+  }
+ ],
+ "identified_date": "2026-11-12",
+ "excluded_report_ids": [],
+ "name_en": "Binance theft (2026)"
+}

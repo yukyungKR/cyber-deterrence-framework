@@ -1,0 +1,290 @@
+{
+ "case_id": "VIASAT-2022",
+ "name": "Viasat KA-SAT 망 공격(2022)",
+ "alias": [
+  "EuRepoC incident 1514",
+  "Viasat hack",
+  "KA-SAT Network cyber attack",
+  "AcidRain",
+  "ukrop",
+  "GRU",
+  "Main Directorate of the General Staff of the Armed Forces of the Russian Federation",
+  "Russian Military Intelligence"
+ ],
+ "actor": "GRU",
+ "c_id": {
+  "grade": 2,
+  "basis": "식별 시점(2022-02-24) 기준 등급 2(추정 보도 수준). 식별 당일 묶음에는 행위자를 지목한 문서가 없고, 사후 서술이 당시의 추정만 전한다 — 「The timing coincided with the Russian invasion of Ukraine and suspicions arose that an attempt to take out Ukrainian military command-and-control capabilities by hindering satellite connectivity spilled over to affect German critical infrastructure. No technical details became available; technical speculation has been rampant.」(04_orkl_a097c1ac.txt:29-32). 이후 상승: 2022-03-31 SentinelLabs가 AcidRain과 VPNFilter 파괴 플러그인의 개발상 유사성을 중간 확신도로 평가 「We assess with medium-confidence that there are developmental similarities between AcidRain and a VPNFilter stage 3 destructive plugin.」(04_orkl_a097c1ac.txt:13-14) · 2022-05-10 영국 NCSC 「The NCSC assesses that Russia was almost certainly responsible for the attack.」(14_uk_ncsc_2022-05-10.txt:39) · 2022-12-16 Carnegie 「hackers working for the Main Directorate of the General Staff of the Armed Forces of the Russian Federation—commonly known as the GRU—perpetrated the so-called Viasat hack.」(22_orkl_572fe6bb.txt:363-364).",
+  "source": "20_orkl_5ad57873.txt; 16_s1_acidrain_2022-03-31.txt; 22_orkl_572fe6bb.txt; 14_uk_ncsc_2022-05-10.txt"
+ },
+ "state_attribution": "러시아",
+ "c_st": {
+  "grade": 4,
+  "basis": "귀속 기준일(2022-05-10 · 첫 공식 귀속 성명일) 기준 등급 4 — 국가(러시아 연방)의 행위라고 단정하되 국가기관(조직)은 특정하지 않음. EU 「strongly condemn the malicious cyber activity conducted by the Russian Federation against Ukraine, which targeted the satellite KA-SAT network, owned by Viasat.」(12_eu_hr_2022-05-10.txt:110) · 미국 「the United States is sharing publicly its assessment that Russia launched cyber attacks in late February against commercial satellite communications networks to disrupt Ukrainian command and control during the invasion」(13_us_state_2022-05-10.txt:57) · 영국 「The NCSC assesses that Russia was almost certainly responsible for the attack.」(14_uk_ncsc_2022-05-10.txt:39) · 「The NCSC also assesses that it is almost certain Russia was responsible for the subsequent cyber-attack impacting Viasat on 24 February.」(15_uk_fcdo_2022-05-10.txt:48). 식별 시점(2022-02-24) 기준 등급 2 — 식별 당일 공식 귀속 성명이 없고 침공과의 시간 일치에 따른 추정만 있었음 「The timing coincided with the Russian invasion of Ukraine and suspicions arose that an attempt to take out Ukrainian military command-and-control capabilities by hindering satellite connectivity spilled over to affect German critical infrastructure.」(04_orkl_a097c1ac.txt:29-32). 국가기관 특정(등급 5 해당)은 공식 성명이 아닌 자료에만 있음 — EuRepoC 「name: Viasat Hack: Russian Military Intelligence disrupted Ukrainian satellite broadband services in February 2022」(01_eurepoc_1514.txt:2) · 「state_responsibility_actor: Direct (official members of state entities / agencies / units responsible)」(01_eurepoc_1514.txt:67) · Carnegie(22_orkl_572fe6bb.txt:363-364).",
+  "source": "12_eu_hr_2022-05-10.txt:110; 13_us_state_2022-05-10.txt:57; 14_uk_ncsc_2022-05-10.txt:39; 15_uk_fcdo_2022-05-10.txt:48",
+  "reference_date": "2022-05-10"
+ },
+ "victim_sector": [
+  "ict",
+  "critical_infrastructure"
+ ],
+ "victim_state": "우크라이나",
+ "techniques": [
+  "T1005",
+  "T1021",
+  "T1027",
+  "T1033",
+  "T1036",
+  "T1041",
+  "T1047",
+  "T1048",
+  "T1053",
+  "T1056",
+  "T1059",
+  "T1070",
+  "T1071",
+  "T1078",
+  "T1082",
+  "T1083",
+  "T1102",
+  "T1105",
+  "T1110",
+  "T1112",
+  "T1140",
+  "T1189",
+  "T1190",
+  "T1195",
+  "T1203",
+  "T1484",
+  "T1485",
+  "T1486",
+  "T1491",
+  "T1499",
+  "T1529",
+  "T1542",
+  "T1543",
+  "T1547",
+  "T1553",
+  "T1555",
+  "T1561",
+  "T1566",
+  "T1569",
+  "T1573",
+  "T1587",
+  "T1588",
+  "T1680",
+  "T1685"
+ ],
+ "terminal_objective": {},
+ "access_depth": {
+  "draft": "core",
+  "basis": "공격자가 VPN 장비의 설정 오류를 통해 KA-SAT 망의 신뢰된 관리 세그먼트에 원격 접근하고, 망을 관리·운영하는 특정 네트워크 세그먼트까지 횡적 이동한 뒤 그 접근으로 다수 모뎀에 관리 명령을 실행했다 — 망 운영·관리 세그먼트(특권 자산)에 도달했으므로 core. 「exploiting a misconfiguration in a VPN appliance to gain remote access to the trusted management segment of the KA-SAT network. The attacker moved laterally through this trusted management network to a specific network segment used to manage and operate the network, and then used this network access to execute legitimate, targeted management commands on a large number of residential modems simultaneously.」(11_viasat_2022-03-30.txt:54). OT 환경 도달은 서술되지 않음 — 위성·지상 인프라 자체는 침해되지 않았고 「nor is there any evidence that the KA-SAT satellite itself or its supporting satellite ground infrastructure itself were directly involved, impaired or compromised.」(11_viasat_2022-03-30.txt:40), 풍력 터빈은 원격 감시·제어 통신만 끊겼음 「the wind turbines themselves were not rendered inoperable but “remote monitoring and control of the wind turbines” became unavailable due to issues with satellite communications.」(04_orkl_a097c1ac.txt:28-29)."
+ },
+ "timing_grade": "절대(사건 수준)",
+ "effect_realized": {
+  "value": "post",
+  "by_type": {
+   "1": "pre",
+   "2": "pre",
+   "3": "post"
+  },
+  "boundary_flag": false,
+  "note": "③ 파괴·교란 = post: 식별 시점(2022-02-24) 당일에 DoS 트래픽 탐지와 함께 수만 대 모뎀이 망에서 이탈했고 재접속을 시도하지 않았다 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52). ① 절취 = pre, ② 조작·공개 = pre: 데이터 접근·유출·공개 관측 없음 「There is no evidence that any end-user data was accessed or compromised, nor customer personal equipment (PCs, mobile devices, etc.) was improperly accessed」(11_viasat_2022-03-30.txt:40) · 「We believe the purpose of the attack was to interrupt service.」(11_viasat_2022-03-30.txt:40). 플래시 메모리 덧쓰기는 ③(파괴)으로 분류했다.",
+  "time_basis": "기준 시점 = 식별 시점 2022-02-24. 「At approximately 0302 UTC on 24 February 2022, high volumes of focused, malicious traffic were detected emanating from several SurfBeam2 and SurfBeam 2+ modems」(11_viasat_2022-03-30.txt:46) · 「This gradual decline of connected modems continued until approximately 0415 UTC, when Viasat and Skylogic observed larger numbers of modems across much of Europe exiting the network over the course of about 45 minutes.」(11_viasat_2022-03-30.txt:50)."
+ },
+ "intrusion_state": {
+  "value": "persisting",
+  "basis": "식별 시점(2022-02-24) 기준 — 식별 뒤에도 공격자의 트래픽 공격이 수 시간 이어졌고 관리 세그먼트에서의 파괴 명령 실행이 진행 중이었다 「As Viasat personnel engaged with Skylogic personnel to triage the situation, and worked to force the malicious modems offline, other modems emerged on the network to continue the targeted traffic-based attack throughout the next several hours」(11_viasat_2022-03-30.txt:48) · 「This gradual decline of connected modems continued until approximately 0415 UTC」(11_viasat_2022-03-30.txt:50). 이후 축출·안정화는 aftermath — 「the network was largely stabilized within hours and fully stabilized within several days.」(11_viasat_2022-03-30.txt:38). 2022-03-31 Viasat은 여전히 「ongoing attack」을 언급 「Due to the ongoing investigation and to ensure the security of our systems from ongoing attack, we cannot publicly share all forensic details of the event.」(02_orkl_06ffedd8.txt:84-85)."
+ },
+ "countermeasure_availability": "",
+ "conflict_nexus": "ambiguous",
+ "legal_characterization": [
+  {
+   "value": "commitment_violation",
+   "quote": "Such behaviour is contrary to the expectations set by all UN Member States, including the Russian Federation, of responsible State behaviour and the intentions of States in cyberspace.",
+   "source": "12_eu_hr_2022-05-10.txt",
+   "needs_author_review": false
+  },
+  {
+   "value": "use_of_force",
+   "quote": "The cyberattack took place one hour before Russia’s unprovoked and unjustified invasion of Ukraine on 24 February 2022 thus facilitating the military aggression.",
+   "source": "12_eu_hr_2022-05-10.txt",
+   "needs_author_review": true
+  },
+  {
+   "value": "commitment_violation",
+   "quote": "As nations committed to upholding the rules-based international order in cyberspace, the United States and its allies and partners are taking steps to defend against Russia’s irresponsible actions.",
+   "source": "13_us_state_2022-05-10.txt",
+   "needs_author_review": true
+  },
+  {
+   "value": "use_of_force",
+   "quote": "We will continue to call out Russia’s malign behaviour and unprovoked aggression across land, sea and cyberspace, and ensure it faces severe consequences.",
+   "source": "15_uk_fcdo_2022-05-10.txt",
+   "needs_author_review": true
+  }
+ ],
+ "responses": [
+  {
+   "type": "self_help_defense",
+   "actor_state": "미국",
+   "date": "2022-03-17",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-03-17) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "criminal_investigation",
+   "actor_state": "미국",
+   "date": "2022-03-30",
+   "invoked_legal_basis": "none_stated",
+   "source": "11_viasat_2022-03-30.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-03-30) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "유럽연합",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "UN 회원국이 설정한 책임 있는 국가 행동 기대 — 「Such behaviour is contrary to the expectations set by all UN Member States, including the Russian Federation, of responsible State behaviour and the intentions of States in cyberspace.」(12_eu_hr_2022-05-10.txt:114)",
+   "source": "12_eu_hr_2022-05-10.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점(2022-05-10) 이전인 2022-02-24에 모뎀 수만 대의 망 이탈·플래시 메모리 덧쓰기가 이미 발생 「tens of thousands of modems that were previously online and active dropped off the network」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "미국",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "규칙 기반 국제질서 — 「As nations committed to upholding the rules-based international order in cyberspace」(13_us_state_2022-05-10.txt:59)",
+   "source": "13_us_state_2022-05-10.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응 개시 시점(2022-05-10) 이전인 2022-02-24에 모뎀 수만 대의 망 이탈·플래시 메모리 덧쓰기가 이미 발생 「tens of thousands of modems that were previously online and active dropped off the network」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "영국",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "none_stated",
+   "source": "15_uk_fcdo_2022-05-10.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-05-10) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "캐나다",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-05-10) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "호주",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-05-10) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "뉴질랜드",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-05-10) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "retorsion",
+   "actor_state": "뉴질랜드",
+   "date": "2022-05-10",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "subtype": "sanction",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-05-10) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  },
+  {
+   "type": "public_attribution",
+   "actor_state": "유럽연합",
+   "date": "2022-07-19",
+   "invoked_legal_basis": "none_stated",
+   "source": "01_eurepoc_1514.txt",
+   "effect_at_response": {
+    "value": "post",
+    "basis": "대응일(2022-07-19) 이전인 2022-02-24에 교란 효과 발현 — 「Ultimately, tens of thousands of modems that were previously online and active dropped off the network, and these modems were not observed attempting to re-enter the network.」(11_viasat_2022-03-30.txt:52)"
+   }
+  }
+ ],
+ "aftermath": "2022-02-24 식별 뒤 수 시간 내 망 대부분 안정화, 며칠 내 완전 안정화(11_viasat_2022-03-30.txt:38) · 2022-03-15 EuRepoC 기록상 망 「stabilized」(01_eurepoc_1514.txt:3) · 2022-03-15 AcidRain 표본(파일명 ukrop)이 이탈리아에서 VirusTotal에 업로드(04_orkl_a097c1ac.txt:71-72) · 2022-03-17 미국 CISA·FBI가 SATCOM 위험 경고 발령(01_eurepoc_1514.txt:3) · 2022-03-30 Viasat 사건 개요 공개(11_viasat_2022-03-30.txt:26) · 2022-03-31 SentinelLabs가 AcidRain을 공개하고 Viasat이 그 사용을 확인(04_orkl_a097c1ac.txt:17-18) · 보안연구자가 피해 모뎀 플래시 덤프로 파괴 패턴 확인(03_orkl_9bb5eb63.txt:18-19) · Viasat이 교체 모뎀 약 3만 대 출하(11_viasat_2022-03-30.txt:64) · 2022-05-10 EU·미국·영국이 러시아를 공개 귀속, EuRepoC 기록상 뉴질랜드·캐나다·호주도 성명·뉴질랜드 제재(12·13·14·15 · 01_eurepoc_1514.txt:37-41, 72-76) · 2022-07-19 EU HR 선언(01_eurepoc_1514.txt:23, 37-41) · 2024-03-16 AcidRain 변종 AcidPour 발견, CERT-UA가 그 활동을 UAC-0165(Sandworm 하위 클러스터)에 귀속(09_orkl_ba259eb4.txt:39-47, 355-357 · 08_orkl_80592130.txt:19-22). 인과 주장은 하지 않음.",
+ "tier": "v3_case",
+ "boundary_flag": true,
+ "boundary_reason": "conflict_nexus 3요건 가운데 ⑴ 무장분쟁의 존재·⑵ 작전과 분쟁의 관련성은 EU 선언(12_eu_hr_2022-05-10.txt:112, 114)과 미국 성명(13_us_state_2022-05-10.txt:57)에 구절이 있으나, ⑶ IHL 어휘의 원용은 묶음의 국가·국제기구 문서에 구절이 없다(EU 선언의 「indiscriminate communication outages」는 일반어 사용). 따라서 ambiguous · 평시 트랙 잔류.",
+ "annotation_pass": "two_model_author_confirmed",
+ "notes": "① 벤더·연구자·데이터셋의 법적·성격 규정(격하): EuRepoC 「il_breach_indicator: International telecommunication law;Due diligence;Sovereignty」(01_eurepoc_1514.txt:68) · 「attribution_legal_reference: International peace」(01_eurepoc_1514.txt:77) · 「response_indicator: Countermeasures under international law justified (state-atttribution & breach of international law)」(01_eurepoc_1514.txt:79) — 연구 데이터셋 코딩이라 legal_characterization에 넣지 않음. Kaspersky 「sabotage」(20_orkl_5ad57873.txt:109) · 「ICS/OT wipers (AcidRain, Industroyer2)」(20_orkl_5ad57873.txt:64) — access_depth는 Viasat 서술(관리 세그먼트 도달)대로 core로 두었다. ② 행위자 표기: actor는 EuRepoC 제목의 「Russian Military Intelligence」(01_eurepoc_1514.txt:2)를 그대로 썼다. EuRepoC 「initiator_name: Unknown」·「initiator_country: Russia」(01_eurepoc_1514.txt:16-17). 2022-05-10 공식 성명은 「Russia」·「the Russian Federation」만 지목. Sandworm·UAC-0165 귀속은 2024년 AcidPour 활동에 대한 CERT-UA 귀속(08_orkl_80592130.txt:19-22 · 09_orkl_ba259eb4.txt:355-357)이고, AcidRain–VPNFilter(Sandworm) 연결은 중간 확신도의 개발상 유사성에 그친다 「we cannot definitively tie AcidRain to VPNFilter (or the larger Sandworm threat cluster)」(04_orkl_a097c1ac.txt:182) — alias에 넣지 않았다. ③ 묶음끼리 어긋나는 곳: SentinelLabs의 「supply-chain attack」 가설(04_orkl_a097c1ac.txt:58-59) vs Viasat 「no evidence of any supply-chain interference」(11_viasat_2022-03-30.txt:56) · 「we don’t view this as a supply chain attack or vulnerability」(02_orkl_06ffedd8.txt:80) — T1195는 넣지 않았다. Trustwave의 「exploitation of vulnerabilities in public facing applications such as the VPN appliances」(18_orkl_2d804484.txt:64-65) vs Viasat 「misconfiguration in a VPN appliance」(11_viasat_2022-03-30.txt:54). 군 통신 영향: Zhora의 「a really huge loss in communications」 vs 대변인 「no information that [the hack] worsened communications within Ukraine’s military」(22_orkl_572fe6bb.txt:395-400). ④ EuRepoC의 attribution_date는 19.07.2022(01_eurepoc_1514.txt:23)이나 묶음의 첫 공식 귀속 성명은 2022-05-10(12~15)이라 reference_date는 2022-05-10으로 했다. ⑤ responses에 넣지 않은 것: 미국 「State Actors: Preventive measures」·「Capacity building in third countries」(01_eurepoc_1514.txt:38-40)와 13_us_state_2022-05-10.txt:59의 우크라이나 지원은 11종 허용값에 맞는 것이 없음 · CISA·FBI 2022-03-17 SATCOM 경고(01_eurepoc_1514.txt:3)도 허용값 불일치 · 뉴질랜드·캐나다·호주 성명의 type은 EuRepoC 「Statement by minister of foreign affairs」와 number_attributions 8(01_eurepoc_1514.txt:21, 39)에서 public_attribution으로 옮긴 것이라 저자 확인 필요. ⑥ 금전 동기 서술 없음.",
+ "unit_type": "campaign",
+ "collection_mode": "organic",
+ "collection_mode_basis": "저자 결정(우크라이나 사례 = Viasat KA-SAT · EuRepoC 1514)으로 저자가 사례로 지정한 사건이다 — 특정 라벨·시점 상태를 메우려는 표적 수집이 아니다. 회차 2 묶음에 더한 문서 7건은 저자 결정(검색어 언급 합계 10회 이상 결정론 규칙)으로 정했다.",
+ "target_specificity": "specific_victim",
+ "target_specificity_basis": "특정 피해 조직(Viasat KA-SAT 망의 소비자용 파티션)을 겨냥한 침투·파괴 「a multifaceted and deliberate cyber-attack against Viasat’s KA-SAT network」(11_viasat_2022-03-30.txt:36) · 「This incident was localized to a single consumer-oriented partition of the KA-SAT network」(11_viasat_2022-03-30.txt:36) · 「an operation targeting commercial communications company Viasat in Ukraine」(14_uk_ncsc_2022-05-10.txt:35). 우크라이나 내 모뎀이 DoS 트래픽 발원지로 쓰였으나(11_viasat_2022-03-30.txt:46) 그 모뎀 자체가 피해 망의 일부이므로 compromised_infrastructure가 아니다.",
+ "victim_sector_sub": [
+  "communications",
+  "energy"
+ ],
+ "victim_sector_sub_note": "주 표적(첫 값) = communications: 피해 기관은 위성 광대역 통신망 운영사 Viasat(KA-SAT)이고 EuRepoC도 7개 피해국 모두 「receiver_category: Critical infrastructure」·「receiver_subcategory: Telecommunications」로 코딩(01_eurepoc_1514.txt:14-15). 둘째 값 energy = 파급 피해: 독일 Enercon 풍력 터빈 5,800기의 원격 감시·제어 통신 상실 「Spillover from this attack rendered 5,800 Enercon wind turbines in Germany unable to communicate for remote monitoring or control.」(04_orkl_a097c1ac.txt:7-8). 영국은 「the primary target is believed to have been the Ukrainian military」(14_uk_ncsc_2022-05-10.txt:41)라 하지만 군은 Viasat 고객(이용자)으로서 영향을 받은 것이고 피해 기관(공격받은 자산의 운영자)은 통신사다 — 저자 확인 대상.",
+ "victim_assets": [
+  {
+   "value": "Radio Modem",
+   "kind": "d3fend",
+   "quote": "deployed in the cyberattack that targeted the KA-SAT satellite broadband service to wipe SATCOM modems on February 24",
+   "source": "02_orkl_06ffedd8.txt:4-5"
+  },
+  {
+   "value": "VPN Server",
+   "kind": "d3fend",
+   "quote": "a ground-based network intrusion by an attacker exploiting a misconfiguration in a VPN appliance to gain remote access to the trusted management segment of the KA-SAT network",
+   "source": "11_viasat_2022-03-30.txt:54"
+  }
+ ],
+ "identified_date": "2022-02-24",
+ "excluded_report_ids": [
+  "06ffedd8-e0a6-447e-a51c-65b6b822b030",
+  "2d804484-f204-40d5-9431-9a3fb05f056b",
+  "3fb76771-4fcb-4eee-9245-33f27ce71157",
+  "4d2199c5-ae89-44fd-9a61-5e06b165a97f",
+  "4e0707bd-f8dc-4fd2-9f84-5810c5d1dd0e",
+  "572fe6bb-d4de-465e-b20e-7f6d3ec4957d",
+  "5ad57873-ba6c-42ef-a16d-1dedd61eb95d",
+  "74f570fc-aa8a-43e7-bb37-ef55fdea1665",
+  "7a676c83-9a85-4e11-8141-193f035c2394",
+  "80592130-6c80-46d1-9dfe-0d3b4ea6fff0",
+  "8e8f2355-f045-4af4-902f-d77b0baac5c1",
+  "9bb5eb63-c8a8-4134-84c1-1013180569b2",
+  "a097c1ac-743e-4cf7-a56b-aca5b2f0258b",
+  "a2975eaf-142c-46a6-9da4-9e3df102acf8",
+  "ba259eb4-971e-48b9-addf-ced24f00afd8",
+  "bf272245-5a99-466f-b0d7-efa493469452"
+ ],
+ "name_en": "Viasat KA-SAT network attack (2022)"
+}

@@ -1,0 +1,581 @@
+{
+ "case_id": "VIASAT-2022",
+ "_설명": [
+  "Viasat KA-SAT(2022) 회차 2 저자 확정 파일 — 대조 시트 §1 「저자 확정」 열(44필드)을 조립 스크립트의 읽기 규칙으로 읽어 필드마다 저자 선택의 꼴을 옮겼다(값을 고르지 않음). cell = 칸 글 그대로.",
+  "form: A 일치값 확인 · B 코더 판(coder) · C 회차 1 값 · D 템플릿 값 · E 코더 판 항목 구성(legal_characterization) · F 항목 목록(responses) · G 직접 기입(value). 값은 병합기가 꼴대로 두 코더 산출 · 회차 1 확정 레코드 · 템플릿에서 가져온다(입력 sha256은 inputs).",
+  "assembly_rules = 저자가 칸에서 정하지 않은 자리의 조립 규칙(R-1~R-4). meta = 시트 44필드 밖 키(annotation_pass)."
+ ],
+ "결정 원천": "대조 시트 §1 「저자 확정」 열(2026-10-14 · 저자 선택) · V-1 · F-4 (가) · legal_characterization 정정판(정정 뒤 재상정 2026-10-14) · R-3 조립 규칙(2026-10-14)",
+ "inputs": {
+  "대조 시트(회차 2)": "3ab51485edda9a02d8d7aedad9a3b5a74387285541e6ca71b5edfa98fbad014a",
+  "coding_r2_claude_opus.json": {
+   "raw": "bbc2d4d24539b39cb6cedffe48e2de95ebf81629615d078c54cac92982649920",
+   "lf": "e20e66cc36d4333e675351007c8daaa01d8bccba207da243491e5c510d35e7f9"
+  },
+  "coding_r2_claude_fable.json": {
+   "raw": "9b8f287da84659e904d40127cde979a55b1ba101b42f2034c4a73f43255059bb",
+   "lf": "9b8f287da84659e904d40127cde979a55b1ba101b42f2034c4a73f43255059bb"
+  },
+  "회차 1 확정 레코드": "663e6d2400ef9fced26fee5d2a33fabeee3fb349b2fecd13d9e5d8a191e6dea5",
+  "입력레코드_viasat_r2_템플릿.jsonl": "d2793765fbd758bca13e8601c681062fc34ed64c883d9d0dc42d233fc1b5e6fa"
+ },
+ "decisions": {
+  "case_id": {
+   "no": 1,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "VIASAT-2022",
+   "cell": "VIASAT-2022 (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "name": {
+   "no": 2,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "C 회차 1 값",
+   "shown": "Viasat KA-SAT 망 공격(2022)",
+   "cell": "회차 1 확정 문구: Viasat KA-SAT 망 공격(2022)",
+   "cell_verbatim": true
+  },
+  "alias": {
+   "no": 3,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "G2 직접 기입(합집합)",
+   "value": [
+    "EuRepoC incident 1514",
+    "Viasat hack",
+    "KA-SAT Network cyber attack",
+    "AcidRain",
+    "ukrop",
+    "GRU",
+    "Main Directorate of the General Staff of the Armed Forces of the Russian Federation",
+    "Russian Military Intelligence"
+   ],
+   "cell": "합집합 8개: EuRepoC incident 1514 / Viasat hack / KA-SAT Network cyber attack / AcidRain / ukrop / GRU / Main Directorate of the General Staff of the Armed Forces of the Russian Federation / Russian Military Intelligence",
+   "cell_verbatim": true
+  },
+  "actor": {
+   "no": 4,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "G3 직접 기입(낱값)",
+   "value": "GRU",
+   "cell": "GRU",
+   "cell_verbatim": true
+  },
+  "c_id.grade": {
+   "no": 5,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "G3 직접 기입(낱값)",
+   "value": 2,
+   "cell": "2",
+   "cell_verbatim": true
+  },
+  "c_id.basis": {
+   "no": 6,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "c_id.source": {
+   "no": 7,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "B 코더 판",
+   "coder": "claude_opus",
+   "sub": "B3 값 N개 파일 유지",
+   "shown": "20_orkl_5ad57873.txt; 16_s1_acidrain_2022-03-31.txt; 22_orkl_572fe6bb.txt; 14_uk_ncsc_2022-05-10.txt",
+   "note": "근거 문구 #6 Fable 문구와 인용 파일이 어긋남을 안내받고 유지 선택",
+   "cell": "Opus r2 값 4개 파일 유지: 20_orkl_5ad57873.txt; 16_s1_acidrain_2022-03-31.txt; 22_orkl_572fe6bb.txt; 14_uk_ncsc_2022-05-10.txt (근거 문구 #6 Fable 문구와 인용 파일이 어긋남을 안내받고 유지 선택)",
+   "cell_verbatim": true
+  },
+  "state_attribution": {
+   "no": 8,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "러시아",
+   "cell": "러시아 (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "c_st.grade": {
+   "no": 9,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "4",
+   "cell": "4 (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "c_st.basis": {
+   "no": 10,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "c_st.source": {
+   "no": 11,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B2 값 그대로",
+   "shown": "12_eu_hr_2022-05-10.txt:110; 13_us_state_2022-05-10.txt:57; 14_uk_ncsc_2022-05-10.txt:39; 15_uk_fcdo_2022-05-10.txt:48",
+   "cell": "Fable r2 값 그대로: 12_eu_hr_2022-05-10.txt:110; 13_us_state_2022-05-10.txt:57; 14_uk_ncsc_2022-05-10.txt:39; 15_uk_fcdo_2022-05-10.txt:48",
+   "cell_verbatim": true
+  },
+  "c_st.reference_date": {
+   "no": 12,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "2022-05-10",
+   "cell": "2022-05-10 (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "victim_sector": {
+   "no": 13,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "G1 직접 기입(목록)",
+   "value": [
+    "ict",
+    "critical_infrastructure"
+   ],
+   "note": "첫 값 ict = 주 표적",
+   "cell": "[ict, critical_infrastructure] (첫 값 ict = 주 표적)",
+   "cell_verbatim": true
+  },
+  "victim_state": {
+   "no": 14,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "G3 직접 기입(낱값)",
+   "value": "우크라이나",
+   "cell": "우크라이나",
+   "cell_verbatim": true
+  },
+  "techniques": {
+   "no": 15,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B4 N개 목록",
+   "shown": "T1498, T1190, T1133, T1072, T1485, T1561.001, T1495, T1529, T1083",
+   "cell": "Fable r2 9개: T1498, T1190, T1133, T1072, T1485, T1561.001, T1495, T1529, T1083",
+   "cell_verbatim": true
+  },
+  "terminal_objective": {
+   "no": 16,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "{}",
+   "cell": "{} (빈 객체 · 그대로)",
+   "cell_verbatim": true
+  },
+  "access_depth.draft": {
+   "no": 17,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "core",
+   "cell": "core (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "access_depth.basis": {
+   "no": 18,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "timing_grade": {
+   "no": 19,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "절대(사건 수준)",
+   "cell": "절대(사건 수준) (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "effect_realized.value": {
+   "no": 20,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "post",
+   "cell": "post (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "effect_realized.by_type": {
+   "no": 21,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "{\"1\": \"pre\", \"2\": \"pre\", \"3\": \"post\"}",
+   "cell": "{\"1\": \"pre\", \"2\": \"pre\", \"3\": \"post\"} (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "effect_realized.boundary_flag": {
+   "no": 22,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "false",
+   "cell": "false (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "effect_realized.note": {
+   "no": 23,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "effect_realized.time_basis": {
+   "no": 24,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "intrusion_state.value": {
+   "no": 25,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "persisting",
+   "cell": "persisting (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "intrusion_state.basis": {
+   "no": 26,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "countermeasure_availability": {
+   "no": 27,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "(빈 값)",
+   "cell": "(빈 값) (그대로)",
+   "cell_verbatim": true
+  },
+  "conflict_nexus": {
+   "no": 28,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "ambiguous",
+   "cell": "ambiguous (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "legal_characterization": {
+   "no": 29,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "E 코더 판 항목 구성",
+   "coder": "claude_opus",
+   "items": [
+    {
+     "no": "①",
+     "value": "commitment_violation",
+     "subject": "EU",
+     "cell_ref": "12:114",
+     "coder_source": "12_eu_hr_2022-05-10.txt"
+    },
+    {
+     "no": "②",
+     "value": "use_of_force",
+     "subject": "EU",
+     "cell_ref": "12:112",
+     "coder_source": "12_eu_hr_2022-05-10.txt"
+    },
+    {
+     "no": "③",
+     "value": "commitment_violation",
+     "subject": "미국",
+     "cell_ref": "13:59",
+     "coder_source": "13_us_state_2022-05-10.txt"
+    },
+    {
+     "no": "④",
+     "value": "use_of_force",
+     "subject": "영국",
+     "cell_ref": "15:58",
+     "coder_source": "15_uk_fcdo_2022-05-10.txt"
+    }
+   ],
+   "cell": "4항목 모두 채택(Opus r2 항목 구성): ① commitment_violation EU 12:114 / ② use_of_force EU 12:112 / ③ commitment_violation 미국 13:59 / ④ use_of_force 영국 15:58",
+   "cell_verbatim": true
+  },
+  "responses": {
+   "no": 30,
+   "status": "확정",
+   "verdict": "값 불일치",
+   "form": "F 항목 목록",
+   "items": [
+    {
+     "no": "⑴",
+     "type": "self_help_defense",
+     "actor_state": "미국",
+     "date": "2022-03-17",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑵",
+     "type": "criminal_investigation",
+     "actor_state": "미국",
+     "date": "2022-03-30",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑶",
+     "type": "public_attribution",
+     "actor_state": "유럽연합",
+     "date": "2022-05-10",
+     "invoked_legal_basis": {
+      "from": "claude_fable",
+      "prefix": "UN 회원국이 설정한 책임 있는 국가 행동 기대"
+     },
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑷",
+     "type": "public_attribution",
+     "actor_state": "미국",
+     "date": "2022-05-10",
+     "invoked_legal_basis": {
+      "from": "claude_fable",
+      "prefix": "규칙 기반 국제질서"
+     },
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑸",
+     "type": "public_attribution",
+     "actor_state": "영국",
+     "date": "2022-05-10",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑹",
+     "type": "public_attribution",
+     "actor_state": "캐나다",
+     "date": "2022-05-10",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑺",
+     "type": "public_attribution",
+     "actor_state": "호주",
+     "date": "2022-05-10",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑻",
+     "type": "public_attribution",
+     "actor_state": "뉴질랜드",
+     "date": "2022-05-10",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑼",
+     "type": "retorsion",
+     "subtype": "sanction",
+     "actor_state": "뉴질랜드",
+     "date": "2022-05-10",
+     "effect_at_response.value": "post"
+    },
+    {
+     "no": "⑽",
+     "type": "public_attribution",
+     "actor_state": "유럽연합",
+     "date": "2022-07-19",
+     "invoked_legal_basis": "none_stated",
+     "effect_at_response.value": "post"
+    }
+   ],
+   "note": "effect_at_response 근거 문구는 저자 미선택 — 조립 시 항목 출처 코더 판",
+   "cell": "10항목: ⑴ self_help_defense·미국·2022-03-17 / ⑵ criminal_investigation·미국·2022-03-30 / ⑶ public_attribution·유럽연합·2022-05-10·invoked_legal_basis=Fable r2 문구(UN 회원국이 설정한 책임 있는 국가 행동 기대) / ⑷ public_attribution·미국·2022-05-10·invoked_legal_basis=Fable r2 문구(규칙 기반 국제질서) / ⑸ 영국 ⑹ 캐나다 ⑺ 호주 ⑻ 뉴질랜드 모두 public_attribution·2022-05-10·none_stated / ⑼ retorsion·subtype=sanction·뉴질랜드·2022-05-10 / ⑽ public_attribution·유럽연합·2022-07-19·none_stated. 모두 효과 post. (effect_at_response 근거 문구는 저자 미선택 — 조립 시 항목 출처 코더 판)",
+   "cell_verbatim": true
+  },
+  "aftermath": {
+   "no": 31,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "tier": {
+   "no": 32,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "v3_case",
+   "cell": "v3_case (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "boundary_flag": {
+   "no": 33,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "true",
+   "cell": "true (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "boundary_reason": {
+   "no": 34,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "notes": {
+   "no": 35,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "unit_type": {
+   "no": 36,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "campaign",
+   "cell": "campaign (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "collection_mode": {
+   "no": 37,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "organic",
+   "cell": "organic (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "collection_mode_basis": {
+   "no": 38,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "D 템플릿 값",
+   "note": "묶음 보충 결정 문장 포함",
+   "cell": "회차 2 템플릿 문구 그대로(묶음 보충 결정 문장 포함)",
+   "cell_verbatim": true
+  },
+  "target_specificity": {
+   "no": 39,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "specific_victim",
+   "cell": "specific_victim (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "target_specificity_basis": {
+   "no": 40,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "victim_sector_sub": {
+   "no": 41,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "[communications, energy]",
+   "cell": "[communications, energy] (일치 · 그대로)",
+   "cell_verbatim": true
+  },
+  "victim_sector_sub_note": {
+   "no": 42,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B1 문구 그대로",
+   "cell": "Fable r2 문구 그대로(부록 B)",
+   "cell_verbatim": true
+  },
+  "victim_assets": {
+   "no": 43,
+   "status": "확정",
+   "verdict": "서술 차이",
+   "form": "B 코더 판",
+   "coder": "claude_fable",
+   "sub": "B5 인용 그대로",
+   "shown": "Radio Modem 02_orkl_06ffedd8.txt:4-5 / VPN Server 11_viasat_2022-03-30.txt:54",
+   "cell": "Fable r2 인용 그대로: Radio Modem 02_orkl_06ffedd8.txt:4-5 / VPN Server 11_viasat_2022-03-30.txt:54",
+   "cell_verbatim": true
+  },
+  "identified_date": {
+   "no": 44,
+   "status": "확정",
+   "verdict": "일치",
+   "form": "A 일치값 확인",
+   "shown": "2022-02-24",
+   "cell": "2022-02-24 (일치 · 그대로)",
+   "cell_verbatim": true
+  }
+ },
+ "meta": {
+  "annotation_pass": "two_model_author_confirmed"
+ },
+ "meta_notes": {
+  "annotation_pass": "저자 결정 — Viasat 확정 레코드 annotation_pass 표기(회차 1 확정 레코드와 같다)"
+ },
+ "assembly_rules": {
+  "R-1": "일치값 확인(A) 필드의 바이트 = 첫 코더(Opus) 값 — 회차 1 조립 규칙 ⑵ 승계",
+  "R-2": "legal_characterization의 needs_author_review 표시 = 저자가 고른 코더 판(Opus r2) 표시 그대로(조립 규칙 · 선례). 4항목 구성(저자 칸): 회차 1 저자 결정에서 제외한 미국 commitment_violation을 회차 2에서 다시 넣음 · 저자 확인(정정 뒤 재상정 · 정정판 · 2026-10-14) · 나머지 3항목의 value는 회차 1과 같음. source(줄 번호 없음)도 그대로 — 다른 코더 판의 줄 번호를 섞지 않음",
+  "R-3": "responses 항목 출처 코더(source · effect_at_response.basis · 칸에 없는 invoked_legal_basis · 키 순서) — 저자 미선택 · 조립 규칙 적용(2026-10-14): 칸 값 구조와 같은 항목이 한 코더에만 있으면 그 코더 판(⑴ ⑵ Opus · ⑶ ⑷ Fable), 두 코더 공통이면 첫 코더 Opus(⑸~⑽ · 회차 1 조립 규칙 ⑵ 승계) · 저자가 칸에 적은 낱말은 칸 값",
+  "R-4": "annotation_pass = meta"
+ }
+}

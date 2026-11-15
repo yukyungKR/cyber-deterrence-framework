@@ -1,0 +1,20 @@
+measure_id,name,deterrence_type,punishment_subitem,legal_character,treatment,required_grade
+1,Public attribution,norms,,retorsion,always,2
+2,Expulsion of diplomats,punishment,diplomatic_economic,retorsion,always,2
+3,Visa restrictions,punishment,diplomatic_economic,retorsion,always,2
+4,Asset freezes,punishment,diplomatic_economic,retorsion,always,2
+5,Economic sanctions,punishment,diplomatic_economic,retorsion,always,2
+6,Export controls,punishment,diplomatic_economic,retorsion,always,2
+7,Suspension of aid,punishment,diplomatic_economic,retorsion,always,2
+8,Suspension of dialogue or negotiations,punishment,diplomatic_economic,retorsion,always,2
+9,Refusal of mutual legal assistance,punishment,diplomatic_economic,retorsion,always,2
+10,Criminal prosecution and other exercise of domestic enforcement jurisdiction,punishment,law_enforcement,jurisdiction,always,
+11,Extraterritorial enforcement,punishment,law_enforcement,consent of the other state,consent,
+12,Countermeasures,punishment,countermeasures,circumstance precluding wrongfulness (ARSIWA),review,3
+13,Self-defence,punishment,self_defence,"Charter of the United Nations, Article 51",review,4
+14,Plea of necessity,outside,,circumstance precluding wrongfulness (ARSIWA),review,
+15,Defensive measures on own systems,denial,,measure within own jurisdiction,always,
+16,Forward cyber defence operations,denial,,depends on the state's position on sovereignty,state_position,
+17,Monitoring and strategic patience,outside,,,always,
+18,Treaties and cooperation,entanglement,,"treaty, multilateral cooperation",timing_independent,
+19,Downgrading or severance of diplomatic relations,punishment,diplomatic_economic,retorsion,always,2

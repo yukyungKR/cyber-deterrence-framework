@@ -1,0 +1,364 @@
+{
+ "run": "viasat",
+ "case_id": "VIASAT-2022",
+ "source_note": "Values extracted from the outputs of the original implementation; countermeasures_purpose is taken from the rule stated in the article (Section 3.4), because the original outputs print a purpose only for the no-effect, terminated path.",
+ "rounding": "similarities and Jaccard values compared after rounding to 4 decimal places",
+ "pool": {
+  "after_exclusion_list": 636,
+  "after_cutoff": 305,
+  "query_pool": 305,
+  "n_actors_after_cutoff": 105
+ },
+ "neighbours": [
+  {
+   "eurepoc_id": "3899",
+   "similarity": 0.5014,
+   "jaccard": 0.4459,
+   "objectives": []
+  },
+  {
+   "eurepoc_id": "1575",
+   "similarity": 0.4585,
+   "jaccard": 0.5094,
+   "objectives": [
+    "disruption_destruction"
+   ]
+  },
+  {
+   "eurepoc_id": "1502",
+   "similarity": 0.4562,
+   "jaccard": 0.5068,
+   "objectives": [
+    "disruption_destruction",
+    "exfiltration",
+    "manipulation_disclosure"
+   ]
+  },
+  {
+   "eurepoc_id": "747",
+   "similarity": 0.4038,
+   "jaccard": 0.4487,
+   "objectives": [
+    "disruption_destruction"
+   ]
+  },
+  {
+   "eurepoc_id": "1247",
+   "similarity": 0.3942,
+   "jaccard": 0.3269,
+   "objectives": [
+    "exfiltration"
+   ]
+  },
+  {
+   "eurepoc_id": "578",
+   "similarity": 0.3937,
+   "jaccard": 0.4375,
+   "objectives": [
+    "exfiltration"
+   ]
+  },
+  {
+   "eurepoc_id": "3962",
+   "similarity": 0.3879,
+   "jaccard": 0.431,
+   "objectives": []
+  }
+ ],
+ "frequencies": {
+  "exfiltration": 3,
+  "manipulation_disclosure": 1,
+  "disruption_destruction": 3
+ },
+ "k": 7,
+ "candidate_objectives": [
+  "disruption_destruction",
+  "exfiltration"
+ ],
+ "measures": {
+  "15": {
+   "status": "available at any time",
+   "required_grade": null,
+   "attribution_met": true
+  },
+  "16": {
+   "status": "depends on the state's position",
+   "required_grade": null,
+   "attribution_met": null
+  },
+  "2": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "3": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "4": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "5": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "6": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "7": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "8": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "9": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "19": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "10": {
+   "status": "available at any time",
+   "required_grade": null,
+   "attribution_met": true
+  },
+  "11": {
+   "status": "subject to authorisation or consent",
+   "required_grade": null,
+   "attribution_met": null
+  },
+  "12": {
+   "status": "open for review",
+   "required_grade": 3,
+   "attribution_met": true
+  },
+  "13": {
+   "status": "open for review",
+   "required_grade": 4,
+   "attribution_met": true
+  },
+  "1": {
+   "status": "available at any time",
+   "required_grade": 2,
+   "attribution_met": true
+  },
+  "18": {
+   "status": "independent of timing",
+   "required_grade": null,
+   "attribution_met": null
+  },
+  "14": {
+   "status": "open for review",
+   "required_grade": null,
+   "attribution_met": true
+  },
+  "17": {
+   "status": "available at any time",
+   "required_grade": null,
+   "attribution_met": true
+  }
+ },
+ "self_defence_review": "armed attack",
+ "countermeasures_purpose": "cessation",
+ "d3fend": {
+  "n_defensive_techniques": 120,
+  "defensive_techniques": [
+   "d3f:AccessModeling",
+   "d3f:AccountLocking",
+   "d3f:AdministrativeNetworkActivityAnalysis",
+   "d3f:AgentAuthentication",
+   "d3f:Application-basedProcessIsolation",
+   "d3f:ApplicationExceptionMonitoring",
+   "d3f:ApplicationProtocolCommandAnalysis",
+   "d3f:AssetVulnerabilityEnumeration",
+   "d3f:AuthenticationCacheInvalidation",
+   "d3f:BootloaderAuthentication",
+   "d3f:CertificateAnalysis",
+   "d3f:ChangeDefaultPassword",
+   "d3f:Client-serverPayloadProfiling",
+   "d3f:ConfigurationInventory",
+   "d3f:ConnectionAttemptAnalysis",
+   "d3f:ContentFiltering",
+   "d3f:ContentModification",
+   "d3f:ContentQuarantine",
+   "d3f:CredentialCompromiseScopeAnalysis",
+   "d3f:CredentialHardening",
+   "d3f:CredentialRevocation",
+   "d3f:CredentialRotation",
+   "d3f:CredentialTransmissionScoping",
+   "d3f:DNSAllowlisting",
+   "d3f:DNSDenylisting",
+   "d3f:DNSTrafficAnalysis",
+   "d3f:DataInventory",
+   "d3f:DatabaseQueryStringAnalysis",
+   "d3f:DecoyEnvironment",
+   "d3f:DecoyFile",
+   "d3f:DecoyNetworkResource",
+   "d3f:DecoyUserCredential",
+   "d3f:DiskPartitioning",
+   "d3f:DomainAccountMonitoring",
+   "d3f:DomainTrustPolicy",
+   "d3f:DynamicAnalysis",
+   "d3f:EmailFiltering",
+   "d3f:EmailRemoval",
+   "d3f:EmulatedFileAnalysis",
+   "d3f:ExecutableAllowlisting",
+   "d3f:ExecutableDenylisting",
+   "d3f:FileAnalysis",
+   "d3f:FileCarving",
+   "d3f:FileEncryption",
+   "d3f:FileEviction",
+   "d3f:FileIntegrityMonitoring",
+   "d3f:FirmwareBehaviorAnalysis",
+   "d3f:FirmwareEmbeddedMonitoringCode",
+   "d3f:FirmwareVerification",
+   "d3f:ForwardResolutionDomainDenylisting",
+   "d3f:Hardware-basedProcessIsolation",
+   "d3f:HardwareComponentInventory",
+   "d3f:HomoglyphDetection",
+   "d3f:HostReboot",
+   "d3f:HostShutdown",
+   "d3f:IOPortRestriction",
+   "d3f:IdentifierActivityAnalysis",
+   "d3f:InboundSessionVolumeAnalysis",
+   "d3f:InboundTrafficFiltering",
+   "d3f:InputDeviceAnalysis",
+   "d3f:Kernel-basedProcessIsolation",
+   "d3f:LocalAccountMonitoring",
+   "d3f:LocalFilePermissions",
+   "d3f:MemoryBoundaryTracking",
+   "d3f:Multi-factorAuthentication",
+   "d3f:NetworkResourceAccessMediation",
+   "d3f:NetworkTrafficCommunityDeviation",
+   "d3f:NetworkTrafficFiltering",
+   "d3f:NetworkTrafficPolicyMapping",
+   "d3f:NetworkTrafficSignatureAnalysis",
+   "d3f:One-timePassword",
+   "d3f:OperationalProcessMonitoring",
+   "d3f:OutboundTrafficFiltering",
+   "d3f:PasswordAuthentication",
+   "d3f:PasswordRotation",
+   "d3f:PerHostDownload-UploadRatioAnalysis",
+   "d3f:ProcessCodeSegmentVerification",
+   "d3f:ProcessLineageAnalysis",
+   "d3f:ProcessSegmentExecutionPrevention",
+   "d3f:ProcessSelf-ModificationDetection",
+   "d3f:ProcessSpawnAnalysis",
+   "d3f:ProcessSuspension",
+   "d3f:ProcessTermination",
+   "d3f:ProtocolMetadataAnomalyDetection",
+   "d3f:RadiationHardening",
+   "d3f:ReissueCredential",
+   "d3f:RelayPatternAnalysis",
+   "d3f:RemoteFileAccessMediation",
+   "d3f:RemoteTerminalSessionDetection",
+   "d3f:RestoreConfiguration",
+   "d3f:RestoreDatabase",
+   "d3f:RestoreEmail",
+   "d3f:RestoreFile",
+   "d3f:RestoreSoftware",
+   "d3f:RestoreUserAccountAccess",
+   "d3f:ReverseResolutionIPDenylisting",
+   "d3f:ScheduledJobAnalysis",
+   "d3f:SegmentAddressOffsetRandomization",
+   "d3f:SenderMTAReputationAnalysis",
+   "d3f:SenderReputationAnalysis",
+   "d3f:ServiceBinaryVerification",
+   "d3f:SessionTermination",
+   "d3f:ShadowStackComparisons",
+   "d3f:SoftwareInventory",
+   "d3f:SoftwareUpdate",
+   "d3f:StackFrameCanaryValidation",
+   "d3f:StrongPasswordPolicy",
+   "d3f:SystemCallAnalysis",
+   "d3f:SystemCallFiltering",
+   "d3f:SystemConfigurationPermissions",
+   "d3f:SystemDaemonMonitoring",
+   "d3f:SystemFileAnalysis",
+   "d3f:SystemFirmwareVerification",
+   "d3f:SystemInitConfigAnalysis",
+   "d3f:URLAnalysis",
+   "d3f:URLReputationAnalysis",
+   "d3f:UnlockAccount",
+   "d3f:UserAccountPermissions",
+   "d3f:UserGeolocationLogonPatternAnalysis",
+   "d3f:WebSessionAccessMediation"
+  ],
+  "n_artifacts": 88,
+  "n_artifacts_with_defences": 75,
+  "techniques_without_artifacts": [
+   "T1485",
+   "T1529",
+   "T1569",
+   "T1587",
+   "T1588",
+   "T1680",
+   "T1685"
+  ],
+  "techniques_not_in_d3fend": []
+ },
+ "phase4": {
+  "neighbours": [
+   {
+    "eurepoc_id": "3899",
+    "number_political_responses": 1,
+    "number_legal_responses": 0
+   },
+   {
+    "eurepoc_id": "1575",
+    "number_political_responses": 1,
+    "number_legal_responses": 0
+   },
+   {
+    "eurepoc_id": "1502",
+    "number_political_responses": 5,
+    "number_legal_responses": 3
+   },
+   {
+    "eurepoc_id": "747",
+    "number_political_responses": 0,
+    "number_legal_responses": 0
+   },
+   {
+    "eurepoc_id": "1247",
+    "number_political_responses": 0,
+    "number_legal_responses": 0
+   },
+   {
+    "eurepoc_id": "578",
+    "number_political_responses": 0,
+    "number_legal_responses": 0
+   },
+   {
+    "eurepoc_id": "3962",
+    "number_political_responses": 0,
+    "number_legal_responses": 0
+   }
+  ],
+  "with_political_response": 3,
+  "with_legal_response": 1
+ },
+ "judgements": {
+  "denial": "available",
+  "punishment: diplomatic and economic": "available",
+  "punishment: law enforcement": "available",
+  "punishment: countermeasures": "available",
+  "punishment: self-defence": "available",
+  "norms": "available"
+ },
+ "c_st": 4
+}
