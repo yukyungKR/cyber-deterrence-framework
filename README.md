@@ -10,7 +10,7 @@ reviews 19 response measures as at the time of identification and derives the ma
 judgement for each deterrence type (deterrence strategy assessment). The repository reproduces the results of the
 article for the Viasat KA-SAT incident (2022) and the Binance theft (2026).
 
-Archived version: Zenodo, DOI `[to be added]`.
+Archived version: Zenodo, release v1.0.0, DOI [10.5281/zenodo.24247702](https://doi.org/10.5281/zenodo.24247702).
 
 ## Scope of version 1.0
 
@@ -199,3 +199,5 @@ Third-party notices: `data/THIRD_PARTY_NOTICES.md`.
 
 Kim Y. A cyber deterrence decision-making framework: from threat intelligence to deterrence strategy assessment.
 Journal of Cybersecurity (under review).
+
+Code and data: Kim Y. cyber-deterrence-framework, release v1.0.0. Zenodo, 2026. https://doi.org/10.5281/zenodo.24247702
